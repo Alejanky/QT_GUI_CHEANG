@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1438</width>
+    <height>801</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Messenger</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1441</width>
+      <height>801</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="TB_1">
+     <attribute name="title">
+      <string>Test Tab</string>
+     </attribute>
+     <widget class="QPushButton" name="pB_SmCS">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>650</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Send  Test  Message</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pB_StartLS">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>150</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Start Local Server</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="l_Recived">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>141</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Server Satuss: Offline</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lBcStatus">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>570</y>
+        <width>171</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Clien Status: Discconectes</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pB_ConnCS">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>620</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Connect To server</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="tE_textCS">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>20</y>
+        <width>221</width>
+        <height>741</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_Server">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>500</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Server Addres</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_Message">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>650</y>
+        <width>191</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Escribe mensaje a enviar...</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pB_Cstate">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>680</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Change State of client</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="tE_textLS">
+      <property name="geometry">
+       <rect>
+        <x>930</x>
+        <y>20</y>
+        <width>221</width>
+        <height>741</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pB_CreateLS">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>70</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Create Local Server</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pB_EndLS">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>200</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>End Local Server</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pB_EndCS">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>710</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>End Client Service</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pB_CCS">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>560</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Create Client Service</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pB_ALS">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>110</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Attatch Local Server to GUI</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pB_DeleteCS">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>740</y>
+        <width>121</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Delete Client Service</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pB_ACS">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>590</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Attatch Client Service to GUI</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pB_DeleteLS">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>250</y>
+        <width>121</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Delete Local Server</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="TB_2">
+     <attribute name="title">
+      <string>Log in</string>
+     </attribute>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>130</y>
+        <width>401</width>
+        <height>261</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="formLayout">
+       <item row="1" column="0" colspan="2">
+        <widget class="QLabel" name="label_User">
+         <property name="text">
+          <string>Username: </string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="Line" name="line">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="le_User">
+         <property name="placeholderText">
+          <string>Server Addres</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0" colspan="2">
+        <widget class="QLabel" name="label_Pass">
+         <property name="text">
+          <string>Password: </string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0" colspan="2">
+        <widget class="Line" name="line_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0" colspan="2">
+        <widget class="QLineEdit" name="le_Pass">
+         <property name="echoMode">
+          <enum>QLineEdit::Password</enum>
+         </property>
+         <property name="placeholderText">
+          <string>Put your Password here ...</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="0" colspan="2">
+        <widget class="QPushButton" name="pB_Log">
+         <property name="text">
+          <string>Login</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

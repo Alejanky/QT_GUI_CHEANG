@@ -17,15 +17,16 @@ void Thread::StartThread(int state,int tap){
 void Thread::run(){
     QString a;
     // swith for case for running  cycle for client or server
-    switch (this->tp) {
-        case 0:// case 0 =  client  Initialize
-            a = "Escuchado....";
-            emit commClient(a);
-            this->clientEx();
-        break;
-        case 1:// case 1 = server Initialize
-            this->serverEx();
-        break;
+    while(true){
+        switch (this->tp) {
+            case 0:{
+                    // case 0 =  client  Initialize
+                    this->clientEx();
+                   }
+                break;
+            case 1:// case 1 = server Initialize
+                this->serverEx();
+        }
     }
 }
 
@@ -97,15 +98,12 @@ void Thread::clientConnect(){
 }
 
 void Thread::clientEx(){
-
     switch (this->state) {
         case 0:// case 0 =  client listens
-
             this->State0();
         break;
         case 1:// case 1 = client sends message to server;
             this->server();
-        break;
     }
 }
 
@@ -268,21 +266,35 @@ void Thread::terminate(){
 
 void Thread::State0(){
      // Receive until the peer closes the connection
+    /// aqui tengo que utilzar el select y si no sale el timout entonces  buelbo ha preguntar
     QString a;
-    iResult = recv(ClientSocket, recvbuf, recvbuflen, 0);
-    if ( iResult > 0 ){
-        a="Bytes received cliente:\n";
-        a+= recvbuf;
+    fd_set ReadFDs;
+    FD_ZERO(&ReadFDs);
+    FD_SET(ClientSocket, &ReadFDs);
+            struct timeval *tv = new timeval();
+            tv->tv_sec = 0;
+            tv->tv_usec = 250000;
+    if(::select(0,&ReadFDs ,NULL, NULL,tv) != 0){
+        a = " entre a recv";
         emit commClient(a);
-    }
-    else if ( iResult == 0 ){
-        a="Connection closed\n";
-       emit commClient(a);
-    }
-    else{
-        a="recv failed with error: %d\n";
-            char aChar = '0' + WSAGetLastError();
-        a=a+ aChar;
+        iResult = recv(ClientSocket, recvbuf, recvbuflen, 0);
+        if ( iResult > 0 ){
+            a="Bytes received cliente:\n";
+            a+= recvbuf;
+            emit commClient(a);
+        }
+        else if ( iResult == 0 ){
+            a="Connection closed\n";
+           emit commClient(a);
+        }
+        else{
+            a="recv failed with error: %d\n";
+                char aChar = '0' + WSAGetLastError();
+            a=a+ aChar;
+            emit commClient(a);
+        }
+    }else{
+        a = "pasaron 200 millisegundos y voy a repetirlo escuchandoooo.....";
         emit commClient(a);
     }
 }

@@ -130,9 +130,6 @@
         serverClient->StartThread(0,0);
         serverClient->set_serverIP(a);
         serverClient->clientConnect();
-
-
-
         serverClient->start();
     }
 

@@ -15,9 +15,12 @@ void Thread::StartThread(int state,int tap){
 }
 ////// main fuction
 void Thread::run(){
+    QString a;
     // swith for case for running  cycle for client or server
-    switch (tp) {
+    switch (this->tp) {
         case 0:// case 0 =  client  Initialize
+            a = "Escuchado....";
+            emit commClient(a);
             this->clientEx();
         break;
         case 1:// case 1 = server Initialize
@@ -44,8 +47,8 @@ void Thread::clientConnect(){
     QString a;
     ZeroMemory( &hints, sizeof(hints) );
     hints.ai_family = AF_INET;
-    hints.ai_socktype = SOCK_STREAM;
-    hints.ai_protocol = IPPROTO_TCP;
+    hints.ai_socktype = SOCK_DGRAM;
+    hints.ai_protocol = IPPROTO_UDP;
     // Resolve the server address and port
     // socket to get ip adress
     std::string current_locale_text = qs.toLocal8Bit().constData();
@@ -93,66 +96,17 @@ void Thread::clientConnect(){
 
 }
 
- void Thread::clientEx(){
-    // aqui es donde voy a poner lo de dependiendo del estado
-    // para que el cliente se comporte de difetentes modos
-    // dependiendo de que es lo que quiero que jhaga
-    // pero creo que este solo ahce enviar mensajes y recibir la respuesta
-    // tengo que probrar
-     QString a;
-/*
+void Thread::clientEx(){
 
-    std::string xs ;
-    std::string current_locale_text = message;
-    const char *cstr = current_locale_text.c_str();
-    int i = (int)current_locale_text.length();
-    if(!std::strcmp(cstr,"")){
-            xs = "hola";
-            cstr = xs.c_str();
-            i=5;
-            iResult = send( ClientSocket, cstr,i-1, 0 );
-            a="Bytes Sent:\n";
-            a = a+ cstr;
-            emit commClient(a);
-    }
-    else{
-        iResult = send( ClientSocket, cstr,i-1, 0 );
-        a="Bytes Sent:\n";
-        a = a+ cstr;
-        emit commClient(a);
-    }
-    if (iResult == SOCKET_ERROR) {
-        a="send failed with error: ";
-        char aChar = '0' + WSAGetLastError();
-        a = a + aChar;
-        emit commClient(a);
-        closesocket(ClientSocket);
-        WSACleanup();
-    }
-    */
-    // Receive until the peer closes the connection
-     a = "Escuchado....";
-     emit commClient(a);
+    switch (this->state) {
+        case 0:// case 0 =  client listens
 
-    do {
-        iResult = recv(ClientSocket, recvbuf, recvbuflen, 0);
-        if ( iResult > 0 ){
-            a="Bytes received cliente:\n";
-            a+= recvbuf;
-            emit commClient(a);
-            break;
-        }
-        else if ( iResult == 0 ){
-            a="Connection closed\n";
-           emit commClient(a);
-        }
-        else{
-            a="recv failed with error: %d\n";
-                char aChar = '0' + WSAGetLastError();
-            a=a+ aChar;
-            emit commClient(a);
-        }
-    } while( iResult > 0 );
+            this->State0();
+        break;
+        case 1:// case 1 = client sends message to server;
+            this->server();
+        break;
+    }
 }
 
 void Thread::server(){
@@ -310,6 +264,66 @@ void Thread::terminate(){
     // <-- wits till the thread has exited
     deleteLater();
 }
+
+
+void Thread::State0(){
+     // Receive until the peer closes the connection
+    QString a;
+    iResult = recv(ClientSocket, recvbuf, recvbuflen, 0);
+    if ( iResult > 0 ){
+        a="Bytes received cliente:\n";
+        a+= recvbuf;
+        emit commClient(a);
+    }
+    else if ( iResult == 0 ){
+        a="Connection closed\n";
+       emit commClient(a);
+    }
+    else{
+        a="recv failed with error: %d\n";
+            char aChar = '0' + WSAGetLastError();
+        a=a+ aChar;
+        emit commClient(a);
+    }
+}
+
+void Thread::State1(){
+    // state to send message
+    QString a;
+    std::string xs ;
+    std::string current_locale_text = message;
+    const char *cstr = current_locale_text.c_str();
+    int i = (int)current_locale_text.length();
+    if(!std::strcmp(cstr,"")){
+            xs = "hola";
+            cstr = xs.c_str();
+            i=5;
+            iResult = send( ClientSocket, cstr,i-1, 0 );
+            a="Bytes Sent:\n";
+            a = a+ cstr;
+            emit commClient(a);
+    }
+    else{
+        iResult = send( ClientSocket, cstr,i-1, 0 );
+        a="Bytes Sent:\n";
+        a = a+ cstr;
+        emit commClient(a);
+    }
+    if (iResult == SOCKET_ERROR) {
+        a="send failed with error: ";
+        char aChar = '0' + WSAGetLastError();
+        a = a + aChar;
+        emit commClient(a);
+        closesocket(ClientSocket);
+        WSACleanup();
+    }
+
+}
+
+void Thread::State2(){
+
+}
+
 ///////// Set and setting Variables /////////////////
 void Thread::c_State(int a){
     this->state = a ;

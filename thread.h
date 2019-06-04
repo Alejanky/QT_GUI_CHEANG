@@ -41,6 +41,10 @@
         void sendy(QString str,char* buffer);
         void clientEx();
         void serverEx();
+        void State0();
+        void State1();
+        void State2();
+
 
 
 

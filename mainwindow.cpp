@@ -96,13 +96,12 @@
     }
 
     void MainWindow::on_pB_EndLS_clicked(){
-        server1->cut();
+       server1->cut();
     }
 
     void MainWindow::on_pB_DeleteLS_clicked(){
-        server1->terminate();
-        QObject::disconnect(server1,&Thread::resultReady,this,&MainWindow::updateLabel);
-        QObject::disconnect(server1,&Thread::commServer,this,&MainWindow::server_EM);
+      //  QObject::disconnect(server1,&Thread::resultReady,this,&MainWindow::updateLabel);
+        //QObject::disconnect(server1,&Thread::commServer,this,&MainWindow::server_EM);
         server1= nullptr;
     }
 
@@ -140,6 +139,7 @@
     void MainWindow::on_pB_Cstate_clicked(){
         QString a= ui->le_Message->text();
         serverClient->c_State(a.toInt());
+
     }
 
     void MainWindow::on_pB_EndCS_clicked(){
@@ -147,9 +147,8 @@
     }
 
     void MainWindow::on_pB_DeleteCS_clicked(){
-        serverClient->terminate();
-        QObject::disconnect(serverClient,&Thread::resultReady,this,&MainWindow::updateLabel2);
-        QObject::disconnect(serverClient,&Thread::commClient,this,&MainWindow::client_EM);
+       // QObject::disconnect(serverClient,&Thread::resultReady,this,&MainWindow::updateLabel2);
+        //QObject::disconnect(serverClient,&Thread::commClient,this,&MainWindow::client_EM);
         serverClient= nullptr;
     }
 

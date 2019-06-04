@@ -44,6 +44,7 @@
         void State0();
         void State1();
         void State2();
+        void State3();
 
 
 
@@ -62,6 +63,7 @@
         int recvbuflen = DEFAULT_BUFLEN;
         std::string message;
         QString qs;
+        bool runl = TRUE;
     };
 
     #endif // THREAD_H

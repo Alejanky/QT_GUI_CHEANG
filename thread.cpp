@@ -17,7 +17,7 @@ void Thread::StartThread(int state,int tap){
 void Thread::run(){
     QString a;
     // swith for case for running  cycle for client or server
-    while(true){
+    while(runl){
         switch (this->tp) {
             case 0:{
                     // case 0 =  client  Initialize
@@ -103,7 +103,14 @@ void Thread::clientEx(){
             this->State0();
         break;
         case 1:// case 1 = client sends message to server;
-            this->server();
+            this->State1();
+        break;
+        case 2: //case 2 = Subribe to a room
+            this->State2();
+        break;
+        case 3: //case 2 = Query older messages
+            this->State3();
+        break;
     }
 }
 
@@ -239,6 +246,7 @@ void Thread::cut(){
         WSACleanup();
         a= "client cut";
         emit commClient(a);
+        this->terminate();
     }else{
         // shutdown the connection since we're done
         iResult = shutdown(ClientSocket, SD_SEND);
@@ -255,12 +263,15 @@ void Thread::cut(){
        WSACleanup();
        a= "server cut";
        emit commServer(a);
+        this->terminate();
     }
+
 }
 
 void Thread::terminate(){
     // <-- wits till the thread has exited
-    deleteLater();
+    this->deleteLater();
+    this->runl = false;
 }
 
 
@@ -302,6 +313,9 @@ void Thread::State0(){
 void Thread::State1(){
     // state to send message
     QString a;
+     a = "POSTING";
+     emit commClient(a);
+    /*
     std::string xs ;
     std::string current_locale_text = message;
     const char *cstr = current_locale_text.c_str();
@@ -329,11 +343,23 @@ void Thread::State1(){
         closesocket(ClientSocket);
         WSACleanup();
     }
-
+*/
+     this->state = 0;
 }
 
 void Thread::State2(){
+    QString a;
+        a= "SUBSCRIBING";
+    emit commClient(a);
+     this->state = 0;
+}
 
+void Thread::State3(){
+    QString a;
+        a= "MESSAGES";
+        emit commClient(a);
+
+    this->state =0;
 }
 
 ///////// Set and setting Variables /////////////////

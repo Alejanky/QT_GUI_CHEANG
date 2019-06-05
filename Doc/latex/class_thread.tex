@@ -48,19 +48,114 @@ void \mbox{\hyperlink{class_thread_a1ca03e56eccdb06ca9efb32cee4063b9}{terminate}
 \item 
 void \mbox{\hyperlink{class_thread_a580dfe219e95afd325ddad77e2a59fef}{client\+Connect}} ()
 \end{DoxyCompactItemize}
-\subsection*{Public Attributes}
+\subsection*{Data Fields}
 \begin{DoxyCompactItemize}
 \item 
 Q\+String \mbox{\hyperlink{class_thread_a15698411cab05d061db35b2cc3e4299e}{MessageN}}
 \end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_thread_ad9373d8d725c46717dfce3130018fe3a}{run}} ()
+\item 
+void \mbox{\hyperlink{class_thread_a4146abfb147f50ec1f12861a8d19bdbc}{sendy}} (Q\+String str, char $\ast$buffer)
+\item 
+void \mbox{\hyperlink{class_thread_a852c3ba7d23b38d01e21a568f3e068d3}{client\+Ex}} ()
+\item 
+void \mbox{\hyperlink{class_thread_a3d30026f53648772a9d7a87dfb9d4472}{server\+Ex}} ()
+\item 
+void \mbox{\hyperlink{class_thread_a8aec2c879ec2f091a5a2c13479eb37ad}{State0}} ()
+\item 
+void \mbox{\hyperlink{class_thread_ac8fa1a7c29e2c09fed3a16c49c59b32a}{State1}} ()
+\item 
+void \mbox{\hyperlink{class_thread_aff26f1fb31bf2a610065e584338a2aa4}{State2}} ()
+\item 
+void \mbox{\hyperlink{class_thread_af850fa46507b1738f624e495f1e14c1e}{State3}} ()
+\item 
+void \mbox{\hyperlink{class_thread_acf42fbee7bf6fea082344560ab6044f0}{State4}} ()
+\item 
+void \mbox{\hyperlink{class_thread_ae7901935e36a5fec4dba4db73fd00cbe}{React0}} ()
+\item 
+void \mbox{\hyperlink{class_thread_a1f4fe3b88fc87bab5246ebea0167413b}{React1}} ()
+\item 
+void \mbox{\hyperlink{class_thread_a2f6f8970c77f9dd30ab9d15271980f98}{React2}} (Q\+String\+List \mbox{\hyperlink{class_thread_a45dce23a8d89cb27b41f8823df44765b}{read}})
+\item 
+void \mbox{\hyperlink{class_thread_ae2837ccfe468e07e4be85bcffea20cb7}{React3}} (Q\+String\+List \mbox{\hyperlink{class_thread_a45dce23a8d89cb27b41f8823df44765b}{read}})
+\item 
+void \mbox{\hyperlink{class_thread_a6fca79a0d729f44cef7e84ef8ef3c527}{React4}} (Q\+String\+List \mbox{\hyperlink{class_thread_a45dce23a8d89cb27b41f8823df44765b}{read}})
+\item 
+void \mbox{\hyperlink{class_thread_a49dfdb57b8e29858c9fa3f33c5db327d}{Aliz}} (char char\+Array\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+W\+S\+A\+D\+A\+TA \mbox{\hyperlink{class_thread_af4e6c4fe4f46ba6b7c9218d3c02b9a20}{wsa\+Data}}
+\item 
+Q\+String\+List \mbox{\hyperlink{class_thread_a45dce23a8d89cb27b41f8823df44765b}{read}}
+\item 
+int \mbox{\hyperlink{class_thread_ac6084f44e9af9c2df1f58d77403468ec}{i\+Result}}
+\item 
+int \mbox{\hyperlink{class_thread_a0715eab05808859fe29d0f2915ee9899}{state}} = 0
+\item 
+int \mbox{\hyperlink{class_thread_a80dcf80149790844e887bdd9d3e47581}{tp}} =0
+\item 
+S\+O\+C\+K\+ET \mbox{\hyperlink{class_thread_a97ba65f7258f257c2098a134b09ec0c5}{Listen\+Socket}} = I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+O\+C\+K\+ET
+\item 
+S\+O\+C\+K\+ET \mbox{\hyperlink{class_thread_a4ba1ac27a80f640f16522192482a490d}{Client\+Socket}} = I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+O\+C\+K\+ET
+\item 
+struct addrinfo $\ast$ \mbox{\hyperlink{class_thread_ab24e019c57c28ad3116d26c8afeec89a}{result}} = N\+U\+LL
+\item 
+struct addrinfo $\ast$ \mbox{\hyperlink{class_thread_a40a0d1a3ecf39b32382c7838b6ced7bb}{ptr}} = N\+U\+LL
+\item 
+struct addrinfo \mbox{\hyperlink{class_thread_a548be7819a538cd747af578cd50e8cc0}{hints}}
+\item 
+int \mbox{\hyperlink{class_thread_aaab7b602b708cc86645e9d0e37790fa8}{i\+Send\+Result}}
+\item 
+char \mbox{\hyperlink{class_thread_a20474513ec818150b2162ad5604b2166}{recvbuf}} \mbox{[}\mbox{\hyperlink{thread_8h_a5261516a174b035b084a9ae06dc85730}{D\+E\+F\+A\+U\+L\+T\+\_\+\+B\+U\+F\+L\+EN}}\mbox{]}
+\item 
+int \mbox{\hyperlink{class_thread_abc47600f8570a82743be94f54b6092fd}{recvbuflen}} = \mbox{\hyperlink{thread_8h_a5261516a174b035b084a9ae06dc85730}{D\+E\+F\+A\+U\+L\+T\+\_\+\+B\+U\+F\+L\+EN}}
+\item 
+std\+::string \mbox{\hyperlink{class_thread_afed0854962aaacec661b4e746c28e13d}{message}}
+\item 
+Q\+String \mbox{\hyperlink{class_thread_a646b66f6fe01dde790ccf875bb112eb6}{qs}}
+\item 
+bool \mbox{\hyperlink{class_thread_ab516b75aa819bfec85f8cf0af28f7ddc}{runl}} = T\+R\+UE
+\item 
+Q\+String \mbox{\hyperlink{class_thread_a2deb54a8426f7deccbe806abb1134768}{Room}}
+\item 
+Q\+String \mbox{\hyperlink{class_thread_a4a60de5c09592bf2a778e04ded6e6441}{Poster}}
+\item 
+Q\+String \mbox{\hyperlink{class_thread_acbf38b0bc389598b66d3af13894c048f}{Sub}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 20 of file thread.\+h.
+
 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_thread_a49dfdb57b8e29858c9fa3f33c5db327d}\label{class_thread_a49dfdb57b8e29858c9fa3f33c5db327d}} 
+\index{Thread@{Thread}!Aliz@{Aliz}}
+\index{Aliz@{Aliz}!Thread@{Thread}}
+\subsubsection{\texorpdfstring{Aliz()}{Aliz()}}
+{\footnotesize\ttfamily void Thread\+::\+Aliz (\begin{DoxyParamCaption}\item[{char}]{char\+Array\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 410 of file thread.\+cpp.
+
 \mbox{\Hypertarget{class_thread_a9277677620d5ddb091b7b2c1bf06d3de}\label{class_thread_a9277677620d5ddb091b7b2c1bf06d3de}} 
 \index{Thread@{Thread}!c\+\_\+\+State@{c\+\_\+\+State}}
 \index{c\+\_\+\+State@{c\+\_\+\+State}!Thread@{Thread}}
 \subsubsection{\texorpdfstring{c\+\_\+\+State()}{c\_State()}}
 {\footnotesize\ttfamily void Thread\+::c\+\_\+\+State (\begin{DoxyParamCaption}\item[{int}]{a }\end{DoxyParamCaption})}
+
+
+
+Definition at line 452 of file thread.\+cpp.
 
 \mbox{\Hypertarget{class_thread_ac4eb870d2e959ed19546eb2776ccd4f0}\label{class_thread_ac4eb870d2e959ed19546eb2776ccd4f0}} 
 \index{Thread@{Thread}!client@{client}}
@@ -68,11 +163,29 @@ Q\+String \mbox{\hyperlink{class_thread_a15698411cab05d061db35b2cc3e4299e}{Messa
 \subsubsection{\texorpdfstring{client()}{client()}}
 {\footnotesize\ttfamily void Thread\+::client (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
 
+
+
+Definition at line 33 of file thread.\+cpp.
+
 \mbox{\Hypertarget{class_thread_a580dfe219e95afd325ddad77e2a59fef}\label{class_thread_a580dfe219e95afd325ddad77e2a59fef}} 
 \index{Thread@{Thread}!client\+Connect@{client\+Connect}}
 \index{client\+Connect@{client\+Connect}!Thread@{Thread}}
 \subsubsection{\texorpdfstring{client\+Connect()}{clientConnect()}}
 {\footnotesize\ttfamily void Thread\+::client\+Connect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 47 of file thread.\+cpp.
+
+\mbox{\Hypertarget{class_thread_a852c3ba7d23b38d01e21a568f3e068d3}\label{class_thread_a852c3ba7d23b38d01e21a568f3e068d3}} 
+\index{Thread@{Thread}!client\+Ex@{client\+Ex}}
+\index{client\+Ex@{client\+Ex}!Thread@{Thread}}
+\subsubsection{\texorpdfstring{client\+Ex()}{clientEx()}}
+{\footnotesize\ttfamily void Thread\+::client\+Ex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 100 of file thread.\+cpp.
 
 \mbox{\Hypertarget{class_thread_a263c49745ef39e51461339f482da6465}\label{class_thread_a263c49745ef39e51461339f482da6465}} 
 \index{Thread@{Thread}!comm\+Client@{comm\+Client}}
@@ -92,11 +205,81 @@ Q\+String \mbox{\hyperlink{class_thread_a15698411cab05d061db35b2cc3e4299e}{Messa
 \subsubsection{\texorpdfstring{cut()}{cut()}}
 {\footnotesize\ttfamily void Thread\+::cut (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Definition at line 243 of file thread.\+cpp.
+
+\mbox{\Hypertarget{class_thread_ae7901935e36a5fec4dba4db73fd00cbe}\label{class_thread_ae7901935e36a5fec4dba4db73fd00cbe}} 
+\index{Thread@{Thread}!React0@{React0}}
+\index{React0@{React0}!Thread@{Thread}}
+\subsubsection{\texorpdfstring{React0()}{React0()}}
+{\footnotesize\ttfamily void Thread\+::\+React0 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 431 of file thread.\+cpp.
+
+\mbox{\Hypertarget{class_thread_a1f4fe3b88fc87bab5246ebea0167413b}\label{class_thread_a1f4fe3b88fc87bab5246ebea0167413b}} 
+\index{Thread@{Thread}!React1@{React1}}
+\index{React1@{React1}!Thread@{Thread}}
+\subsubsection{\texorpdfstring{React1()}{React1()}}
+{\footnotesize\ttfamily void Thread\+::\+React1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 435 of file thread.\+cpp.
+
+\mbox{\Hypertarget{class_thread_a2f6f8970c77f9dd30ab9d15271980f98}\label{class_thread_a2f6f8970c77f9dd30ab9d15271980f98}} 
+\index{Thread@{Thread}!React2@{React2}}
+\index{React2@{React2}!Thread@{Thread}}
+\subsubsection{\texorpdfstring{React2()}{React2()}}
+{\footnotesize\ttfamily void Thread\+::\+React2 (\begin{DoxyParamCaption}\item[{Q\+String\+List}]{read }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 439 of file thread.\+cpp.
+
+\mbox{\Hypertarget{class_thread_ae2837ccfe468e07e4be85bcffea20cb7}\label{class_thread_ae2837ccfe468e07e4be85bcffea20cb7}} 
+\index{Thread@{Thread}!React3@{React3}}
+\index{React3@{React3}!Thread@{Thread}}
+\subsubsection{\texorpdfstring{React3()}{React3()}}
+{\footnotesize\ttfamily void Thread\+::\+React3 (\begin{DoxyParamCaption}\item[{Q\+String\+List}]{read }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 443 of file thread.\+cpp.
+
+\mbox{\Hypertarget{class_thread_a6fca79a0d729f44cef7e84ef8ef3c527}\label{class_thread_a6fca79a0d729f44cef7e84ef8ef3c527}} 
+\index{Thread@{Thread}!React4@{React4}}
+\index{React4@{React4}!Thread@{Thread}}
+\subsubsection{\texorpdfstring{React4()}{React4()}}
+{\footnotesize\ttfamily void Thread\+::\+React4 (\begin{DoxyParamCaption}\item[{Q\+String\+List}]{read }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 447 of file thread.\+cpp.
+
 \mbox{\Hypertarget{class_thread_aa850562d414991f4b235d23623902ce6}\label{class_thread_aa850562d414991f4b235d23623902ce6}} 
 \index{Thread@{Thread}!result\+Ready@{result\+Ready}}
 \index{result\+Ready@{result\+Ready}!Thread@{Thread}}
 \subsubsection{\texorpdfstring{result\+Ready}{resultReady}}
 {\footnotesize\ttfamily void Thread\+::result\+Ready (\begin{DoxyParamCaption}\item[{Q\+String}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+\mbox{\Hypertarget{class_thread_ad9373d8d725c46717dfce3130018fe3a}\label{class_thread_ad9373d8d725c46717dfce3130018fe3a}} 
+\index{Thread@{Thread}!run@{run}}
+\index{run@{run}!Thread@{Thread}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Thread\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 17 of file thread.\+cpp.
+
+\mbox{\Hypertarget{class_thread_a4146abfb147f50ec1f12861a8d19bdbc}\label{class_thread_a4146abfb147f50ec1f12861a8d19bdbc}} 
+\index{Thread@{Thread}!sendy@{sendy}}
+\index{sendy@{sendy}!Thread@{Thread}}
+\subsubsection{\texorpdfstring{sendy()}{sendy()}}
+{\footnotesize\ttfamily void Thread\+::sendy (\begin{DoxyParamCaption}\item[{Q\+String}]{str,  }\item[{char $\ast$}]{buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 \mbox{\Hypertarget{class_thread_a295966eb0f2a153e131c0cadb4602aaa}\label{class_thread_a295966eb0f2a153e131c0cadb4602aaa}} 
 \index{Thread@{Thread}!server@{server}}
@@ -104,11 +287,29 @@ Q\+String \mbox{\hyperlink{class_thread_a15698411cab05d061db35b2cc3e4299e}{Messa
 \subsubsection{\texorpdfstring{server()}{server()}}
 {\footnotesize\ttfamily void Thread\+::server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Definition at line 120 of file thread.\+cpp.
+
+\mbox{\Hypertarget{class_thread_a3d30026f53648772a9d7a87dfb9d4472}\label{class_thread_a3d30026f53648772a9d7a87dfb9d4472}} 
+\index{Thread@{Thread}!server\+Ex@{server\+Ex}}
+\index{server\+Ex@{server\+Ex}!Thread@{Thread}}
+\subsubsection{\texorpdfstring{server\+Ex()}{serverEx()}}
+{\footnotesize\ttfamily void Thread\+::server\+Ex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 185 of file thread.\+cpp.
+
 \mbox{\Hypertarget{class_thread_a162f450146da3365851a64da5ae88bcf}\label{class_thread_a162f450146da3365851a64da5ae88bcf}} 
 \index{Thread@{Thread}!set\+\_\+\+Message@{set\+\_\+\+Message}}
 \index{set\+\_\+\+Message@{set\+\_\+\+Message}!Thread@{Thread}}
 \subsubsection{\texorpdfstring{set\+\_\+\+Message()}{set\_Message()}}
 {\footnotesize\ttfamily void Thread\+::set\+\_\+\+Message (\begin{DoxyParamCaption}\item[{Q\+String}]{x }\end{DoxyParamCaption})}
+
+
+
+Definition at line 456 of file thread.\+cpp.
 
 \mbox{\Hypertarget{class_thread_aa38bc77304c37909143ae577e607ead2}\label{class_thread_aa38bc77304c37909143ae577e607ead2}} 
 \index{Thread@{Thread}!set\+\_\+\+Poster@{set\+\_\+\+Poster}}
@@ -116,11 +317,19 @@ Q\+String \mbox{\hyperlink{class_thread_a15698411cab05d061db35b2cc3e4299e}{Messa
 \subsubsection{\texorpdfstring{set\+\_\+\+Poster()}{set\_Poster()}}
 {\footnotesize\ttfamily void Thread\+::set\+\_\+\+Poster (\begin{DoxyParamCaption}\item[{Q\+String}]{str }\end{DoxyParamCaption})}
 
+
+
+Definition at line 468 of file thread.\+cpp.
+
 \mbox{\Hypertarget{class_thread_a7c9d9fa5e7a54311ef8ebcade4ea690f}\label{class_thread_a7c9d9fa5e7a54311ef8ebcade4ea690f}} 
 \index{Thread@{Thread}!set\+\_\+\+Room@{set\+\_\+\+Room}}
 \index{set\+\_\+\+Room@{set\+\_\+\+Room}!Thread@{Thread}}
 \subsubsection{\texorpdfstring{set\+\_\+\+Room()}{set\_Room()}}
 {\footnotesize\ttfamily void Thread\+::set\+\_\+\+Room (\begin{DoxyParamCaption}\item[{Q\+String}]{str }\end{DoxyParamCaption})}
+
+
+
+Definition at line 464 of file thread.\+cpp.
 
 \mbox{\Hypertarget{class_thread_a5f2ffa447921453d789057a0744a7f47}\label{class_thread_a5f2ffa447921453d789057a0744a7f47}} 
 \index{Thread@{Thread}!set\+\_\+server\+IP@{set\+\_\+server\+IP}}
@@ -128,17 +337,81 @@ Q\+String \mbox{\hyperlink{class_thread_a15698411cab05d061db35b2cc3e4299e}{Messa
 \subsubsection{\texorpdfstring{set\+\_\+server\+I\+P()}{set\_serverIP()}}
 {\footnotesize\ttfamily void Thread\+::set\+\_\+server\+IP (\begin{DoxyParamCaption}\item[{Q\+String}]{z }\end{DoxyParamCaption})}
 
+
+
+Definition at line 460 of file thread.\+cpp.
+
 \mbox{\Hypertarget{class_thread_a4072fbf1a74fd7bac98765f02d238b5a}\label{class_thread_a4072fbf1a74fd7bac98765f02d238b5a}} 
 \index{Thread@{Thread}!set\+\_\+\+Sub@{set\+\_\+\+Sub}}
 \index{set\+\_\+\+Sub@{set\+\_\+\+Sub}!Thread@{Thread}}
 \subsubsection{\texorpdfstring{set\+\_\+\+Sub()}{set\_Sub()}}
 {\footnotesize\ttfamily void Thread\+::set\+\_\+\+Sub (\begin{DoxyParamCaption}\item[{Q\+String}]{str }\end{DoxyParamCaption})}
 
+
+
+Definition at line 472 of file thread.\+cpp.
+
 \mbox{\Hypertarget{class_thread_afc20a50819284acf6f225c0a1e8815a4}\label{class_thread_afc20a50819284acf6f225c0a1e8815a4}} 
 \index{Thread@{Thread}!Start\+Thread@{Start\+Thread}}
 \index{Start\+Thread@{Start\+Thread}!Thread@{Thread}}
 \subsubsection{\texorpdfstring{Start\+Thread()}{StartThread()}}
 {\footnotesize\ttfamily void Thread\+::\+Start\+Thread (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Definition at line 4 of file thread.\+cpp.
+
+\mbox{\Hypertarget{class_thread_a8aec2c879ec2f091a5a2c13479eb37ad}\label{class_thread_a8aec2c879ec2f091a5a2c13479eb37ad}} 
+\index{Thread@{Thread}!State0@{State0}}
+\index{State0@{State0}!Thread@{Thread}}
+\subsubsection{\texorpdfstring{State0()}{State0()}}
+{\footnotesize\ttfamily void Thread\+::\+State0 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+aqui tengo que utilzar el select y si no sale el timout entonces buelbo ha preguntar 
+
+Definition at line 280 of file thread.\+cpp.
+
+\mbox{\Hypertarget{class_thread_ac8fa1a7c29e2c09fed3a16c49c59b32a}\label{class_thread_ac8fa1a7c29e2c09fed3a16c49c59b32a}} 
+\index{Thread@{Thread}!State1@{State1}}
+\index{State1@{State1}!Thread@{Thread}}
+\subsubsection{\texorpdfstring{State1()}{State1()}}
+{\footnotesize\ttfamily void Thread\+::\+State1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 314 of file thread.\+cpp.
+
+\mbox{\Hypertarget{class_thread_aff26f1fb31bf2a610065e584338a2aa4}\label{class_thread_aff26f1fb31bf2a610065e584338a2aa4}} 
+\index{Thread@{Thread}!State2@{State2}}
+\index{State2@{State2}!Thread@{Thread}}
+\subsubsection{\texorpdfstring{State2()}{State2()}}
+{\footnotesize\ttfamily void Thread\+::\+State2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 339 of file thread.\+cpp.
+
+\mbox{\Hypertarget{class_thread_af850fa46507b1738f624e495f1e14c1e}\label{class_thread_af850fa46507b1738f624e495f1e14c1e}} 
+\index{Thread@{Thread}!State3@{State3}}
+\index{State3@{State3}!Thread@{Thread}}
+\subsubsection{\texorpdfstring{State3()}{State3()}}
+{\footnotesize\ttfamily void Thread\+::\+State3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+pos
+
+nmemb 
+
+Definition at line 361 of file thread.\+cpp.
+
+\mbox{\Hypertarget{class_thread_acf42fbee7bf6fea082344560ab6044f0}\label{class_thread_acf42fbee7bf6fea082344560ab6044f0}} 
+\index{Thread@{Thread}!State4@{State4}}
+\index{State4@{State4}!Thread@{Thread}}
+\subsubsection{\texorpdfstring{State4()}{State4()}}
+{\footnotesize\ttfamily void Thread\+::\+State4 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 387 of file thread.\+cpp.
 
 \mbox{\Hypertarget{class_thread_a1ca03e56eccdb06ca9efb32cee4063b9}\label{class_thread_a1ca03e56eccdb06ca9efb32cee4063b9}} 
 \index{Thread@{Thread}!terminate@{terminate}}
@@ -148,12 +421,210 @@ Q\+String \mbox{\hyperlink{class_thread_a15698411cab05d061db35b2cc3e4299e}{Messa
 
 
 
-\subsection{Member Data Documentation}
+Definition at line 274 of file thread.\+cpp.
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{class_thread_a4ba1ac27a80f640f16522192482a490d}\label{class_thread_a4ba1ac27a80f640f16522192482a490d}} 
+\index{Thread@{Thread}!Client\+Socket@{Client\+Socket}}
+\index{Client\+Socket@{Client\+Socket}!Thread@{Thread}}
+\subsubsection{\texorpdfstring{Client\+Socket}{ClientSocket}}
+{\footnotesize\ttfamily S\+O\+C\+K\+ET Thread\+::\+Client\+Socket = I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+O\+C\+K\+ET\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 67 of file thread.\+h.
+
+\mbox{\Hypertarget{class_thread_a548be7819a538cd747af578cd50e8cc0}\label{class_thread_a548be7819a538cd747af578cd50e8cc0}} 
+\index{Thread@{Thread}!hints@{hints}}
+\index{hints@{hints}!Thread@{Thread}}
+\subsubsection{\texorpdfstring{hints}{hints}}
+{\footnotesize\ttfamily struct addrinfo Thread\+::hints\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 69 of file thread.\+h.
+
+\mbox{\Hypertarget{class_thread_ac6084f44e9af9c2df1f58d77403468ec}\label{class_thread_ac6084f44e9af9c2df1f58d77403468ec}} 
+\index{Thread@{Thread}!i\+Result@{i\+Result}}
+\index{i\+Result@{i\+Result}!Thread@{Thread}}
+\subsubsection{\texorpdfstring{i\+Result}{iResult}}
+{\footnotesize\ttfamily int Thread\+::i\+Result\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 63 of file thread.\+h.
+
+\mbox{\Hypertarget{class_thread_aaab7b602b708cc86645e9d0e37790fa8}\label{class_thread_aaab7b602b708cc86645e9d0e37790fa8}} 
+\index{Thread@{Thread}!i\+Send\+Result@{i\+Send\+Result}}
+\index{i\+Send\+Result@{i\+Send\+Result}!Thread@{Thread}}
+\subsubsection{\texorpdfstring{i\+Send\+Result}{iSendResult}}
+{\footnotesize\ttfamily int Thread\+::i\+Send\+Result\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 70 of file thread.\+h.
+
+\mbox{\Hypertarget{class_thread_a97ba65f7258f257c2098a134b09ec0c5}\label{class_thread_a97ba65f7258f257c2098a134b09ec0c5}} 
+\index{Thread@{Thread}!Listen\+Socket@{Listen\+Socket}}
+\index{Listen\+Socket@{Listen\+Socket}!Thread@{Thread}}
+\subsubsection{\texorpdfstring{Listen\+Socket}{ListenSocket}}
+{\footnotesize\ttfamily S\+O\+C\+K\+ET Thread\+::\+Listen\+Socket = I\+N\+V\+A\+L\+I\+D\+\_\+\+S\+O\+C\+K\+ET\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 66 of file thread.\+h.
+
+\mbox{\Hypertarget{class_thread_afed0854962aaacec661b4e746c28e13d}\label{class_thread_afed0854962aaacec661b4e746c28e13d}} 
+\index{Thread@{Thread}!message@{message}}
+\index{message@{message}!Thread@{Thread}}
+\subsubsection{\texorpdfstring{message}{message}}
+{\footnotesize\ttfamily std\+::string Thread\+::message\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 73 of file thread.\+h.
+
 \mbox{\Hypertarget{class_thread_a15698411cab05d061db35b2cc3e4299e}\label{class_thread_a15698411cab05d061db35b2cc3e4299e}} 
 \index{Thread@{Thread}!MessageN@{MessageN}}
 \index{MessageN@{MessageN}!Thread@{Thread}}
 \subsubsection{\texorpdfstring{MessageN}{MessageN}}
 {\footnotesize\ttfamily Q\+String Thread\+::\+MessageN}
+
+
+
+Definition at line 35 of file thread.\+h.
+
+\mbox{\Hypertarget{class_thread_a4a60de5c09592bf2a778e04ded6e6441}\label{class_thread_a4a60de5c09592bf2a778e04ded6e6441}} 
+\index{Thread@{Thread}!Poster@{Poster}}
+\index{Poster@{Poster}!Thread@{Thread}}
+\subsubsection{\texorpdfstring{Poster}{Poster}}
+{\footnotesize\ttfamily Q\+String Thread\+::\+Poster\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 77 of file thread.\+h.
+
+\mbox{\Hypertarget{class_thread_a40a0d1a3ecf39b32382c7838b6ced7bb}\label{class_thread_a40a0d1a3ecf39b32382c7838b6ced7bb}} 
+\index{Thread@{Thread}!ptr@{ptr}}
+\index{ptr@{ptr}!Thread@{Thread}}
+\subsubsection{\texorpdfstring{ptr}{ptr}}
+{\footnotesize\ttfamily struct addrinfo $\ast$ Thread\+::ptr = N\+U\+LL\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 68 of file thread.\+h.
+
+\mbox{\Hypertarget{class_thread_a646b66f6fe01dde790ccf875bb112eb6}\label{class_thread_a646b66f6fe01dde790ccf875bb112eb6}} 
+\index{Thread@{Thread}!qs@{qs}}
+\index{qs@{qs}!Thread@{Thread}}
+\subsubsection{\texorpdfstring{qs}{qs}}
+{\footnotesize\ttfamily Q\+String Thread\+::qs\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 74 of file thread.\+h.
+
+\mbox{\Hypertarget{class_thread_a45dce23a8d89cb27b41f8823df44765b}\label{class_thread_a45dce23a8d89cb27b41f8823df44765b}} 
+\index{Thread@{Thread}!read@{read}}
+\index{read@{read}!Thread@{Thread}}
+\subsubsection{\texorpdfstring{read}{read}}
+{\footnotesize\ttfamily Q\+String\+List Thread\+::read\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 62 of file thread.\+h.
+
+\mbox{\Hypertarget{class_thread_a20474513ec818150b2162ad5604b2166}\label{class_thread_a20474513ec818150b2162ad5604b2166}} 
+\index{Thread@{Thread}!recvbuf@{recvbuf}}
+\index{recvbuf@{recvbuf}!Thread@{Thread}}
+\subsubsection{\texorpdfstring{recvbuf}{recvbuf}}
+{\footnotesize\ttfamily char Thread\+::recvbuf\mbox{[}\mbox{\hyperlink{thread_8h_a5261516a174b035b084a9ae06dc85730}{D\+E\+F\+A\+U\+L\+T\+\_\+\+B\+U\+F\+L\+EN}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 71 of file thread.\+h.
+
+\mbox{\Hypertarget{class_thread_abc47600f8570a82743be94f54b6092fd}\label{class_thread_abc47600f8570a82743be94f54b6092fd}} 
+\index{Thread@{Thread}!recvbuflen@{recvbuflen}}
+\index{recvbuflen@{recvbuflen}!Thread@{Thread}}
+\subsubsection{\texorpdfstring{recvbuflen}{recvbuflen}}
+{\footnotesize\ttfamily int Thread\+::recvbuflen = \mbox{\hyperlink{thread_8h_a5261516a174b035b084a9ae06dc85730}{D\+E\+F\+A\+U\+L\+T\+\_\+\+B\+U\+F\+L\+EN}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 72 of file thread.\+h.
+
+\mbox{\Hypertarget{class_thread_ab24e019c57c28ad3116d26c8afeec89a}\label{class_thread_ab24e019c57c28ad3116d26c8afeec89a}} 
+\index{Thread@{Thread}!result@{result}}
+\index{result@{result}!Thread@{Thread}}
+\subsubsection{\texorpdfstring{result}{result}}
+{\footnotesize\ttfamily struct addrinfo$\ast$ Thread\+::result = N\+U\+LL\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 68 of file thread.\+h.
+
+\mbox{\Hypertarget{class_thread_a2deb54a8426f7deccbe806abb1134768}\label{class_thread_a2deb54a8426f7deccbe806abb1134768}} 
+\index{Thread@{Thread}!Room@{Room}}
+\index{Room@{Room}!Thread@{Thread}}
+\subsubsection{\texorpdfstring{Room}{Room}}
+{\footnotesize\ttfamily Q\+String Thread\+::\+Room\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 76 of file thread.\+h.
+
+\mbox{\Hypertarget{class_thread_ab516b75aa819bfec85f8cf0af28f7ddc}\label{class_thread_ab516b75aa819bfec85f8cf0af28f7ddc}} 
+\index{Thread@{Thread}!runl@{runl}}
+\index{runl@{runl}!Thread@{Thread}}
+\subsubsection{\texorpdfstring{runl}{runl}}
+{\footnotesize\ttfamily bool Thread\+::runl = T\+R\+UE\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 75 of file thread.\+h.
+
+\mbox{\Hypertarget{class_thread_a0715eab05808859fe29d0f2915ee9899}\label{class_thread_a0715eab05808859fe29d0f2915ee9899}} 
+\index{Thread@{Thread}!state@{state}}
+\index{state@{state}!Thread@{Thread}}
+\subsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily int Thread\+::state = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 64 of file thread.\+h.
+
+\mbox{\Hypertarget{class_thread_acbf38b0bc389598b66d3af13894c048f}\label{class_thread_acbf38b0bc389598b66d3af13894c048f}} 
+\index{Thread@{Thread}!Sub@{Sub}}
+\index{Sub@{Sub}!Thread@{Thread}}
+\subsubsection{\texorpdfstring{Sub}{Sub}}
+{\footnotesize\ttfamily Q\+String Thread\+::\+Sub\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 78 of file thread.\+h.
+
+\mbox{\Hypertarget{class_thread_a80dcf80149790844e887bdd9d3e47581}\label{class_thread_a80dcf80149790844e887bdd9d3e47581}} 
+\index{Thread@{Thread}!tp@{tp}}
+\index{tp@{tp}!Thread@{Thread}}
+\subsubsection{\texorpdfstring{tp}{tp}}
+{\footnotesize\ttfamily int Thread\+::tp =0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 65 of file thread.\+h.
+
+\mbox{\Hypertarget{class_thread_af4e6c4fe4f46ba6b7c9218d3c02b9a20}\label{class_thread_af4e6c4fe4f46ba6b7c9218d3c02b9a20}} 
+\index{Thread@{Thread}!wsa\+Data@{wsa\+Data}}
+\index{wsa\+Data@{wsa\+Data}!Thread@{Thread}}
+\subsubsection{\texorpdfstring{wsa\+Data}{wsaData}}
+{\footnotesize\ttfamily W\+S\+A\+D\+A\+TA Thread\+::wsa\+Data\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 61 of file thread.\+h.
 
 
 

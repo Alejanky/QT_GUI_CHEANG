@@ -408,30 +408,46 @@ void Thread::State4(){
 }
 
 void Thread::Aliz(char charArray[]){
-    std::string a = charArray;
-   auto x  = std::remove(std::begin(a), std::end(a), 0);
-    int n = a.size();
-    n ++;
-
-    //strcpy(char_array, a.c_str());
-    //n++;
+   QString a ;
+   a = a +charArray;
+   this->read =a.split("|");
+   if(read.value(0)=="OK"){
+        this->React0();
+   }
+   if(read.value(0)=="Bad Message"){
+        this->React1();
+   }
+   if(read.value(0)=="n"){
+        this->React2(this->read);
+   }
+   if(read.value(0)=="m"){
+        this->React3(this->read);
+   }
+   if(read.value(0)=="w"){
+        this->React4(this->read);
+   }
 }
 
 void Thread::React0(){
-
+    // doo nothig beacuase  you dont need to do nothing
 }
+
 void Thread::React1(){
-
+    // probably give an allert because you fucked up already but maybe  impement it later
 }
-void Thread::React2(){
 
+void Thread::React2( QStringList read){
+    // n
 }
-void Thread::React3(){
 
+void Thread::React3( QStringList read){
+    //m
 }
-void Thread::React4(){
 
+void Thread::React4( QStringList read){
+    //w
 }
+
 ///////// Set and setting Variables /////////////////
 void Thread::c_State(int a){
     this->state = a ;

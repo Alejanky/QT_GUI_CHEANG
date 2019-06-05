@@ -51,13 +51,15 @@
         void State4();
         void React0();
         void React1();
-        void React2();
-        void React3();
-        void React4();
+        void React2(QStringList read);
+        void React3(QStringList read);
+        void React4(QStringList read);
         void Aliz(char charArray[]);
+
 
     private:
         WSADATA wsaData;
+         QStringList read;
         int iResult;
         int state = 0; // state = 0  DO NOTHING
         int tp=0; //  type of thread client or server

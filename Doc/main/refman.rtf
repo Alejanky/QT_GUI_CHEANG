@@ -1,0 +1,4089 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\paperw11900\paperh16840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 9;}
+{\s50\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext51 List Continue 0;}
+{\s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext52 List Continue 1;}
+{\s52\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext53 List Continue 2;}
+{\s53\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext54 List Continue 3;}
+{\s54\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext55 List Continue 4;}
+{\s55\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext56 List Continue 5;}
+{\s56\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext57 List Continue 6;}
+{\s57\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext58 List Continue 7;}
+{\s58\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext59 List Continue 8;}
+{\s59\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext59 List Continue 9;}
+{\s60\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext61 DescContinue 0;}
+{\s61\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext62 DescContinue 1;}
+{\s62\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext63 DescContinue 2;}
+{\s63\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext64 DescContinue 3;}
+{\s64\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext65 DescContinue 4;}
+{\s65\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext66 DescContinue 5;}
+{\s66\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext67 DescContinue 6;}
+{\s67\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext68 DescContinue 7;}
+{\s68\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext69 DescContinue 8;}
+{\s69\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext69 DescContinue 9;}
+{\s70\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext81 LatexTOC 0;}
+{\s71\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext82 LatexTOC 1;}
+{\s72\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext83 LatexTOC 2;}
+{\s73\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext84 LatexTOC 3;}
+{\s74\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext85 LatexTOC 4;}
+{\s75\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext86 LatexTOC 5;}
+{\s76\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext87 LatexTOC 6;}
+{\s77\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext88 LatexTOC 7;}
+{\s78\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext89 LatexTOC 8;}
+{\s79\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext89 LatexTOC 9;}
+{\s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext81 \sautoupd List Bullet 0;}
+{\s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid \sbasedon0 \snext82 \sautoupd List Bullet 1;}
+{\s82\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls3\adjustright \fs20\cgrid \sbasedon0 \snext83 \sautoupd List Bullet 2;}
+{\s83\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls4\adjustright \fs20\cgrid \sbasedon0 \snext84 \sautoupd List Bullet 3;}
+{\s84\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls5\adjustright \fs20\cgrid \sbasedon0 \snext85 \sautoupd List Bullet 4;}
+{\s85\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls6\adjustright \fs20\cgrid \sbasedon0 \snext86 \sautoupd List Bullet 5;}
+{\s86\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls7\adjustright \fs20\cgrid \sbasedon0 \snext87 \sautoupd List Bullet 6;}
+{\s87\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls8\adjustright \fs20\cgrid \sbasedon0 \snext88 \sautoupd List Bullet 7;}
+{\s88\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls9\adjustright \fs20\cgrid \sbasedon0 \snext89 \sautoupd List Bullet 8;}
+{\s89\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls10\adjustright \fs20\cgrid \sbasedon0 \snext89 \sautoupd List Bullet 9;}
+{\s90\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext91 \sautoupd List Enum 0;}
+{\s91\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext92 \sautoupd List Enum 1;}
+{\s92\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext93 \sautoupd List Enum 2;}
+{\s93\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext94 \sautoupd List Enum 3;}
+{\s94\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext95 \sautoupd List Enum 4;}
+{\s95\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext96 \sautoupd List Enum 5;}
+{\s96\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext96 \sautoupd List Enum 5;}
+{\s97\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext98 \sautoupd List Enum 7;}
+{\s98\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext99 \sautoupd List Enum 8;}
+{\s99\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext99 \sautoupd List Enum 9;}
+}
+{\info 
+{\title {\comment Cliente Windows  {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+1.0 \par
+}}Cliente Windows}
+{\comment Generated byDoxgyen. }
+{\creatim \yr2019\mo6\dy5\hr10\min34\sec33}
+}\pard\plain 
+\sectd\pgnlcrm
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\vertalc\qc\par\par\par\par\par\par\par
+\pard\plain \s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid 
+{\field\fldedit {\*\fldinst TITLE \\*MERGEFORMAT}{\fldrslt Cliente Windows}}\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\par
+\par\par\par\par\par\par\par\par\par\par\par\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+{\field\fldedit {\*\fldinst AUTHOR \\*MERGEFORMAT}{\fldrslt AUTHOR}}\par
+Version 1.0\par{\field\fldedit {\*\fldinst CREATEDATE \\*MERGEFORMAT}{\fldrslt Wed Jun 5 2019 }}\par
+\page\page\vertalt
+\pard\plain 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Table of Contents\par
+\pard\plain \par
+{\field\fldedit {\*\fldinst TOC \\f \\*MERGEFORMAT}{\fldrslt Table of contents}}\par
+\pard\plain 
+\sect \sbkpage \pgndec \pgnrestart
+\sect \sectd \sbknone
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+README{\tc \v README}\par \pard\plain 
+{\bkmkstart AAAAAAAAIC}
+{\bkmkend AAAAAAAAIC}
+\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+"# QT_GUI_CHEANG" \par
+}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Namespace Index\par \pard\plain 
+{\tc \v Namespace Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Namespace List\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Here is a list of all namespaces with brief descriptions:}
+{
+\par
+\pard\plain \s71\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAF" }{}}{\fldrslt {\cs37\ul\cf2 Ui}}}
+ } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAF \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Hierarchical Index\par \pard\plain 
+{\tc \v Hierarchical Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Class Hierarchy\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid This inheritance list is sorted roughly, but not completely, alphabetically:}
+{
+\par
+\pard\plain \s71\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+QMainWindow
+{
+\par
+\pard\plain \s72\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+MainWindow\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAD \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+}\par
+QThread
+{
+\par
+\pard\plain \s72\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+Thread\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAJ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+}\par
+QWidget
+{
+\par
+\pard\plain \s72\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+Roomf_Form\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAW \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+}\par
+}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Data Structure Index\par \pard\plain 
+{\tc \v Data Structure Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Data Structures\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Here are the data structures with brief descriptions:}
+{
+\par
+\pard\plain \s71\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAD" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow}}}
+ } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAD \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAW" }{}}{\fldrslt {\cs37\ul\cf2 Roomf_Form}}}
+ } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAW \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAJ" }{}}{\fldrslt {\cs37\ul\cf2 Thread}}}
+ } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAJ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+File Index\par \pard\plain 
+{\tc \v File Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+File List\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Here is a list of all files with brief descriptions:}
+{
+\par
+\pard\plain \s71\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADY" }{}}{\fldrslt {\cs37\ul\cf2 main.cpp}}}
+ } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADY \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEB" }{}}{\fldrslt {\cs37\ul\cf2 mainwindow.cpp}}}
+ } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAEB \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAA" }{}}{\fldrslt {\cs37\ul\cf2 mainwindow.h}}}
+ } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAA \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEG" }{}}{\fldrslt {\cs37\ul\cf2 roomf_form.cpp}}}
+ } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAEG \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABV" }{}}{\fldrslt {\cs37\ul\cf2 roomf_form.h}}}
+ } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABV \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEH" }{}}{\fldrslt {\cs37\ul\cf2 thread.cpp}}}
+ } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAEH \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAB" }{}}{\fldrslt {\cs37\ul\cf2 thread.h}}}
+ } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAB \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Namespace Documentation\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Ui Namespace Reference\par \pard\plain 
+{\tc\tcl2 \v Ui}
+{\xe \v Ui}
+{\bkmkstart AAAAAAAAAF}
+{\bkmkend AAAAAAAAAF}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Data Structure Documentation{\tc \v Data Structure Documentation}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+MainWindow Class Reference\par \pard\plain 
+{\tc\tcl2 \v MainWindow}
+{\xe \v MainWindow}
+{\bkmkstart AAAAAAAAAD}
+{\bkmkend AAAAAAAAAD}
+\par
+{
+{\f2 #include <mainwindow.h>}}\par
+Inheritance diagram for MainWindow:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_main_window__inherit__graph.jpg" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+Collaboration diagram for MainWindow:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_main_window__coll__graph.jpg" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Slots\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABH" }{}}{\fldrslt {\cs37\ul\cf2 updateLabel}}}
+ (QString value)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAO" }{}}{\fldrslt {\cs37\ul\cf2 updateLabel2}}}
+ (QString value)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAY" }{}}{\fldrslt {\cs37\ul\cf2 new_room}}}
+ ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABJ" }{}}{\fldrslt {\cs37\ul\cf2 server_EM}}}
+ (QString value)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAQ" }{}}{\fldrslt {\cs37\ul\cf2 client_EM}}}
+ (QString value)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAE" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow}}}
+ (QWidget *parent=nullptr)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAH" }{}}{\fldrslt {\cs37\ul\cf2 ~MainWindow}}}
+ ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAI" }{}}{\fldrslt {\cs37\ul\cf2 setThread}}}
+ ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAJ" }{}}{\fldrslt {\cs37\ul\cf2 Thread}}}
+ *ser)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Private Slots\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAL" }{}}{\fldrslt {\cs37\ul\cf2 on_pB_Log_clicked}}}
+ ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABC" }{}}{\fldrslt {\cs37\ul\cf2 on_pB_Test_clicked}}}
+ ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABB" }{}}{\fldrslt {\cs37\ul\cf2 on_pB_Test2_clicked}}}
+ ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABD" }{}}{\fldrslt {\cs37\ul\cf2 on_pB_Conn_clicked}}}
+ ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABE" }{}}{\fldrslt {\cs37\ul\cf2 on_pB_state_clicked}}}
+ ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABF" }{}}{\fldrslt {\cs37\ul\cf2 on_pB_CreateLS_clicked}}}
+ ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABG" }{}}{\fldrslt {\cs37\ul\cf2 on_pB_ALS_clicked}}}
+ ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABK" }{}}{\fldrslt {\cs37\ul\cf2 on_pB_StartLS_clicked}}}
+ ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABL" }{}}{\fldrslt {\cs37\ul\cf2 on_pB_EndLS_clicked}}}
+ ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABN" }{}}{\fldrslt {\cs37\ul\cf2 on_pB_DeleteLS_clicked}}}
+ ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABO" }{}}{\fldrslt {\cs37\ul\cf2 on_pB_CCS_clicked}}}
+ ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABP" }{}}{\fldrslt {\cs37\ul\cf2 on_pB_ACS_clicked}}}
+ ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABQ" }{}}{\fldrslt {\cs37\ul\cf2 on_pB_ConnCS_clicked}}}
+ ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABR" }{}}{\fldrslt {\cs37\ul\cf2 on_pB_SmCS_clicked}}}
+ ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABS" }{}}{\fldrslt {\cs37\ul\cf2 on_pB_Cstate_clicked}}}
+ ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABT" }{}}{\fldrslt {\cs37\ul\cf2 on_pB_EndCS_clicked}}}
+ ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABU" }{}}{\fldrslt {\cs37\ul\cf2 on_pB_DeleteCS_clicked}}}
+ ()\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Private Attributes\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Ui::MainWindow * {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAG" }{}}{\fldrslt {\cs37\ul\cf2 ui}}}
+\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAJ" }{}}{\fldrslt {\cs37\ul\cf2 Thread}}}
+ * {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAK" }{}}{\fldrslt {\cs37\ul\cf2 server1}}}
+ = nullptr\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAJ" }{}}{\fldrslt {\cs37\ul\cf2 Thread}}}
+ * {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAM" }{}}{\fldrslt {\cs37\ul\cf2 serverClient}}}
+ = nullptr\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABW" }{}}{\fldrslt {\cs37\ul\cf2 Current_ClientState}}}
+\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEN" }{}}{\fldrslt {\cs37\ul\cf2 30}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEE" }{}}{\fldrslt {\cs37\ul\cf2 mainwindow.h}}}
+.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v MainWindow\:MainWindow}
+{\xe \v MainWindow\:MainWindow}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+MainWindow::MainWindow (QWidget *  {\i parent} = {\f2 nullptr}){\f2 [explicit]}}}
+\par
+{\bkmkstart AAAAAAAAAE}
+{\bkmkend AAAAAAAAAE}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Includes//////////////////////Class Methods////////////////// \par
+}{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEO" }{}}{\fldrslt {\cs37\ul\cf2 12}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEP" }{}}{\fldrslt {\cs37\ul\cf2 mainwindow.cpp}}}
+.}\par
+}
+{\xe \v ~MainWindow\:MainWindow}
+{\xe \v MainWindow\:~MainWindow}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+MainWindow::~MainWindow ()}}
+\par
+{\bkmkstart AAAAAAAAAH}
+{\bkmkend AAAAAAAAAH}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEQ" }{}}{\fldrslt {\cs37\ul\cf2 16}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEP" }{}}{\fldrslt {\cs37\ul\cf2 mainwindow.cpp}}}
+.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v client_EM\:MainWindow}
+{\xe \v MainWindow\:client_EM}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void MainWindow::client_EM (QString  {\i value}){\f2 [slot]}}}
+\par
+{\bkmkstart AAAAAAAAAQ}
+{\bkmkend AAAAAAAAAQ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAER" }{}}{\fldrslt {\cs37\ul\cf2 202}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEP" }{}}{\fldrslt {\cs37\ul\cf2 mainwindow.cpp}}}
+.}\par
+}
+{\xe \v new_room\:MainWindow}
+{\xe \v MainWindow\:new_room}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void MainWindow::new_room (){\f2 [slot]}}}
+\par
+{\bkmkstart AAAAAAAAAY}
+{\bkmkend AAAAAAAAAY}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAES" }{}}{\fldrslt {\cs37\ul\cf2 188}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEP" }{}}{\fldrslt {\cs37\ul\cf2 mainwindow.cpp}}}
+.}\par
+}
+{\xe \v on_pB_ACS_clicked\:MainWindow}
+{\xe \v MainWindow\:on_pB_ACS_clicked}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void MainWindow::on_pB_ACS_clicked (){\f2 [private]}, {\f2 [slot]}}}
+\par
+{\bkmkstart AAAAAAAABP}
+{\bkmkend AAAAAAAABP}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAET" }{}}{\fldrslt {\cs37\ul\cf2 144}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEP" }{}}{\fldrslt {\cs37\ul\cf2 mainwindow.cpp}}}
+.}\par
+}
+{\xe \v on_pB_ALS_clicked\:MainWindow}
+{\xe \v MainWindow\:on_pB_ALS_clicked}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void MainWindow::on_pB_ALS_clicked (){\f2 [private]}, {\f2 [slot]}}}
+\par
+{\bkmkstart AAAAAAAABG}
+{\bkmkend AAAAAAAABG}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEU" }{}}{\fldrslt {\cs37\ul\cf2 117}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEP" }{}}{\fldrslt {\cs37\ul\cf2 mainwindow.cpp}}}
+.}\par
+}
+{\xe \v on_pB_CCS_clicked\:MainWindow}
+{\xe \v MainWindow\:on_pB_CCS_clicked}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void MainWindow::on_pB_CCS_clicked (){\f2 [private]}, {\f2 [slot]}}}
+\par
+{\bkmkstart AAAAAAAABO}
+{\bkmkend AAAAAAAABO}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEV" }{}}{\fldrslt {\cs37\ul\cf2 139}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEP" }{}}{\fldrslt {\cs37\ul\cf2 mainwindow.cpp}}}
+.}\par
+}
+{\xe \v on_pB_Conn_clicked\:MainWindow}
+{\xe \v MainWindow\:on_pB_Conn_clicked}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void MainWindow::on_pB_Conn_clicked (){\f2 [private]}, {\f2 [slot]}}}
+\par
+{\bkmkstart AAAAAAAABD}
+{\bkmkend AAAAAAAABD}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEW" }{}}{\fldrslt {\cs37\ul\cf2 93}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEP" }{}}{\fldrslt {\cs37\ul\cf2 mainwindow.cpp}}}
+.}\par
+}
+{\xe \v on_pB_ConnCS_clicked\:MainWindow}
+{\xe \v MainWindow\:on_pB_ConnCS_clicked}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void MainWindow::on_pB_ConnCS_clicked (){\f2 [private]}, {\f2 [slot]}}}
+\par
+{\bkmkstart AAAAAAAABQ}
+{\bkmkend AAAAAAAABQ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEX" }{}}{\fldrslt {\cs37\ul\cf2 148}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEP" }{}}{\fldrslt {\cs37\ul\cf2 mainwindow.cpp}}}
+.}\par
+}
+{\xe \v on_pB_CreateLS_clicked\:MainWindow}
+{\xe \v MainWindow\:on_pB_CreateLS_clicked}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void MainWindow::on_pB_CreateLS_clicked (){\f2 [private]}, {\f2 [slot]}}}
+\par
+{\bkmkstart AAAAAAAABF}
+{\bkmkend AAAAAAAABF}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+o marco una senal para marcar error o borro la implementacion anterior y desconecto cliente y servidor :C fuuuck \par
+}{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEY" }{}}{\fldrslt {\cs37\ul\cf2 102}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEP" }{}}{\fldrslt {\cs37\ul\cf2 mainwindow.cpp}}}
+.}\par
+}
+{\xe \v on_pB_Cstate_clicked\:MainWindow}
+{\xe \v MainWindow\:on_pB_Cstate_clicked}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void MainWindow::on_pB_Cstate_clicked (){\f2 [private]}, {\f2 [slot]}}}
+\par
+{\bkmkstart AAAAAAAABS}
+{\bkmkend AAAAAAAABS}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEZ" }{}}{\fldrslt {\cs37\ul\cf2 156}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEP" }{}}{\fldrslt {\cs37\ul\cf2 mainwindow.cpp}}}
+.}\par
+}
+{\xe \v on_pB_DeleteCS_clicked\:MainWindow}
+{\xe \v MainWindow\:on_pB_DeleteCS_clicked}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void MainWindow::on_pB_DeleteCS_clicked (){\f2 [private]}, {\f2 [slot]}}}
+\par
+{\bkmkstart AAAAAAAABU}
+{\bkmkend AAAAAAAABU}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFA" }{}}{\fldrslt {\cs37\ul\cf2 166}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEP" }{}}{\fldrslt {\cs37\ul\cf2 mainwindow.cpp}}}
+.}\par
+}
+{\xe \v on_pB_DeleteLS_clicked\:MainWindow}
+{\xe \v MainWindow\:on_pB_DeleteLS_clicked}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void MainWindow::on_pB_DeleteLS_clicked (){\f2 [private]}, {\f2 [slot]}}}
+\par
+{\bkmkstart AAAAAAAABN}
+{\bkmkend AAAAAAAABN}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFB" }{}}{\fldrslt {\cs37\ul\cf2 133}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEP" }{}}{\fldrslt {\cs37\ul\cf2 mainwindow.cpp}}}
+.}\par
+}
+{\xe \v on_pB_EndCS_clicked\:MainWindow}
+{\xe \v MainWindow\:on_pB_EndCS_clicked}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void MainWindow::on_pB_EndCS_clicked (){\f2 [private]}, {\f2 [slot]}}}
+\par
+{\bkmkstart AAAAAAAABT}
+{\bkmkend AAAAAAAABT}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFC" }{}}{\fldrslt {\cs37\ul\cf2 162}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEP" }{}}{\fldrslt {\cs37\ul\cf2 mainwindow.cpp}}}
+.}\par
+}
+{\xe \v on_pB_EndLS_clicked\:MainWindow}
+{\xe \v MainWindow\:on_pB_EndLS_clicked}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void MainWindow::on_pB_EndLS_clicked (){\f2 [private]}, {\f2 [slot]}}}
+\par
+{\bkmkstart AAAAAAAABL}
+{\bkmkend AAAAAAAABL}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFD" }{}}{\fldrslt {\cs37\ul\cf2 129}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEP" }{}}{\fldrslt {\cs37\ul\cf2 mainwindow.cpp}}}
+.}\par
+}
+{\xe \v on_pB_Log_clicked\:MainWindow}
+{\xe \v MainWindow\:on_pB_Log_clicked}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void MainWindow::on_pB_Log_clicked (){\f2 [private]}, {\f2 [slot]}}}
+\par
+{\bkmkstart AAAAAAAAAL}
+{\bkmkend AAAAAAAAAL}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Clicked Events////////////////// \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+client server\par
+o marco una senal para marcar error o borro la implementacion anterior y desconecto cliente y servidor :C fuuuck \par
+}{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFE" }{}}{\fldrslt {\cs37\ul\cf2 42}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEP" }{}}{\fldrslt {\cs37\ul\cf2 mainwindow.cpp}}}
+.}\par
+}
+{\xe \v on_pB_SmCS_clicked\:MainWindow}
+{\xe \v MainWindow\:on_pB_SmCS_clicked}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void MainWindow::on_pB_SmCS_clicked (){\f2 [private]}, {\f2 [slot]}}}
+\par
+{\bkmkstart AAAAAAAABR}
+{\bkmkend AAAAAAAABR}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFF" }{}}{\fldrslt {\cs37\ul\cf2 152}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEP" }{}}{\fldrslt {\cs37\ul\cf2 mainwindow.cpp}}}
+.}\par
+}
+{\xe \v on_pB_StartLS_clicked\:MainWindow}
+{\xe \v MainWindow\:on_pB_StartLS_clicked}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void MainWindow::on_pB_StartLS_clicked (){\f2 [private]}, {\f2 [slot]}}}
+\par
+{\bkmkstart AAAAAAAABK}
+{\bkmkend AAAAAAAABK}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFG" }{}}{\fldrslt {\cs37\ul\cf2 123}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEP" }{}}{\fldrslt {\cs37\ul\cf2 mainwindow.cpp}}}
+.}\par
+}
+{\xe \v on_pB_state_clicked\:MainWindow}
+{\xe \v MainWindow\:on_pB_state_clicked}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void MainWindow::on_pB_state_clicked (){\f2 [private]}, {\f2 [slot]}}}
+\par
+{\bkmkstart AAAAAAAABE}
+{\bkmkend AAAAAAAABE}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFH" }{}}{\fldrslt {\cs37\ul\cf2 97}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEP" }{}}{\fldrslt {\cs37\ul\cf2 mainwindow.cpp}}}
+.}\par
+}
+{\xe \v on_pB_Test2_clicked\:MainWindow}
+{\xe \v MainWindow\:on_pB_Test2_clicked}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void MainWindow::on_pB_Test2_clicked (){\f2 [private]}, {\f2 [slot]}}}
+\par
+{\bkmkstart AAAAAAAABB}
+{\bkmkend AAAAAAAABB}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFI" }{}}{\fldrslt {\cs37\ul\cf2 84}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEP" }{}}{\fldrslt {\cs37\ul\cf2 mainwindow.cpp}}}
+.}\par
+}
+{\xe \v on_pB_Test_clicked\:MainWindow}
+{\xe \v MainWindow\:on_pB_Test_clicked}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void MainWindow::on_pB_Test_clicked (){\f2 [private]}, {\f2 [slot]}}}
+\par
+{\bkmkstart AAAAAAAABC}
+{\bkmkend AAAAAAAABC}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFJ" }{}}{\fldrslt {\cs37\ul\cf2 89}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEP" }{}}{\fldrslt {\cs37\ul\cf2 mainwindow.cpp}}}
+.}\par
+}
+{\xe \v server_EM\:MainWindow}
+{\xe \v MainWindow\:server_EM}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void MainWindow::server_EM (QString  {\i value}){\f2 [slot]}}}
+\par
+{\bkmkstart AAAAAAAABJ}
+{\bkmkend AAAAAAAABJ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFK" }{}}{\fldrslt {\cs37\ul\cf2 196}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEP" }{}}{\fldrslt {\cs37\ul\cf2 mainwindow.cpp}}}
+.}\par
+}
+{\xe \v setThread\:MainWindow}
+{\xe \v MainWindow\:setThread}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void MainWindow::setThread ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAJ" }{}}{\fldrslt {\cs37\ul\cf2 Thread}}}
+ *  {\i ser})}}
+\par
+{\bkmkstart AAAAAAAAAI}
+{\bkmkend AAAAAAAAAI}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Private Methods//////////////////Public Methods////////////////// \par
+}{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFL" }{}}{\fldrslt {\cs37\ul\cf2 32}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEP" }{}}{\fldrslt {\cs37\ul\cf2 mainwindow.cpp}}}
+.}\par
+}
+{\xe \v updateLabel\:MainWindow}
+{\xe \v MainWindow\:updateLabel}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void MainWindow::updateLabel (QString  {\i str}){\f2 [slot]}}}
+\par
+{\bkmkstart AAAAAAAABH}
+{\bkmkend AAAAAAAABH}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Public Slots////////////////// \par
+}{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFM" }{}}{\fldrslt {\cs37\ul\cf2 177}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEP" }{}}{\fldrslt {\cs37\ul\cf2 mainwindow.cpp}}}
+.}\par
+}
+{\xe \v updateLabel2\:MainWindow}
+{\xe \v MainWindow\:updateLabel2}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void MainWindow::updateLabel2 (QString  {\i value}){\f2 [slot]}}}
+\par
+{\bkmkstart AAAAAAAAAO}
+{\bkmkend AAAAAAAAAO}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFN" }{}}{\fldrslt {\cs37\ul\cf2 183}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEP" }{}}{\fldrslt {\cs37\ul\cf2 mainwindow.cpp}}}
+.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Field Documentation\par
+\pard\plain 
+{\xe \v Current_ClientState\:MainWindow}
+{\xe \v MainWindow\:Current_ClientState}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int MainWindow::Current_ClientState{\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAABW}
+{\bkmkend AAAAAAAABW}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFO" }{}}{\fldrslt {\cs37\ul\cf2 78}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEE" }{}}{\fldrslt {\cs37\ul\cf2 mainwindow.h}}}
+.}\par
+}
+{\xe \v server1\:MainWindow}
+{\xe \v MainWindow\:server1}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAJ" }{}}{\fldrslt {\cs37\ul\cf2 Thread}}}
+* MainWindow::server1 = nullptr{\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAAAK}
+{\bkmkend AAAAAAAAAK}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFP" }{}}{\fldrslt {\cs37\ul\cf2 76}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEE" }{}}{\fldrslt {\cs37\ul\cf2 mainwindow.h}}}
+.}\par
+}
+{\xe \v serverClient\:MainWindow}
+{\xe \v MainWindow\:serverClient}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAJ" }{}}{\fldrslt {\cs37\ul\cf2 Thread}}}
+* MainWindow::serverClient = nullptr{\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAAAM}
+{\bkmkend AAAAAAAAAM}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFQ" }{}}{\fldrslt {\cs37\ul\cf2 77}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEE" }{}}{\fldrslt {\cs37\ul\cf2 mainwindow.h}}}
+.}\par
+}
+{\xe \v ui\:MainWindow}
+{\xe \v MainWindow\:ui}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Ui::MainWindow* MainWindow::ui{\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAAAG}
+{\bkmkend AAAAAAAAAG}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFR" }{}}{\fldrslt {\cs37\ul\cf2 74}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEE" }{}}{\fldrslt {\cs37\ul\cf2 mainwindow.h}}}
+.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following files:{\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAA" }{}}{\fldrslt {\cs37\ul\cf2 mainwindow.h}}}
+\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEB" }{}}{\fldrslt {\cs37\ul\cf2 mainwindow.cpp}}}
+\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Roomf_Form Class Reference\par \pard\plain 
+{\tc\tcl2 \v Roomf_Form}
+{\xe \v Roomf_Form}
+{\bkmkstart AAAAAAAAAW}
+{\bkmkend AAAAAAAAAW}
+\par
+{
+{\f2 #include <roomf_form.h>}}\par
+Inheritance diagram for Roomf_Form:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_roomf___form__inherit__graph.jpg" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+Collaboration diagram for Roomf_Form:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_roomf___form__coll__graph.jpg" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Signals\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAX" }{}}{\fldrslt {\cs37\ul\cf2 new_room}}}
+ ()\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABX" }{}}{\fldrslt {\cs37\ul\cf2 Roomf_Form}}}
+ (QWidget *parent=nullptr)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABZ" }{}}{\fldrslt {\cs37\ul\cf2 ~Roomf_Form}}}
+ ()\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Data Fields\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAJ" }{}}{\fldrslt {\cs37\ul\cf2 Thread}}}
+ * {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAZ" }{}}{\fldrslt {\cs37\ul\cf2 server1}}}
+ = nullptr\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAJ" }{}}{\fldrslt {\cs37\ul\cf2 Thread}}}
+ * {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABA" }{}}{\fldrslt {\cs37\ul\cf2 serverClient}}}
+ = nullptr\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+QString {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACF" }{}}{\fldrslt {\cs37\ul\cf2 Room}}}
+\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACH" }{}}{\fldrslt {\cs37\ul\cf2 nMessages}}}
+\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+QString {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACI" }{}}{\fldrslt {\cs37\ul\cf2 nMess}}}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Private Slots\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACA" }{}}{\fldrslt {\cs37\ul\cf2 on_pB_NCuarto_clicked}}}
+ ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACB" }{}}{\fldrslt {\cs37\ul\cf2 on_pB_Mensaje_clicked}}}
+ ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACE" }{}}{\fldrslt {\cs37\ul\cf2 on_pB_TCuarto_clicked}}}
+ ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACG" }{}}{\fldrslt {\cs37\ul\cf2 on_pB_CM_clicked}}}
+ ()\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Private Attributes\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Ui::Roomf_Form * {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABY" }{}}{\fldrslt {\cs37\ul\cf2 ui}}}
+\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFS" }{}}{\fldrslt {\cs37\ul\cf2 12}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFT" }{}}{\fldrslt {\cs37\ul\cf2 roomf_form.h}}}
+.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v Roomf_Form\:Roomf_Form}
+{\xe \v Roomf_Form\:Roomf_Form}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Roomf_Form::Roomf_Form (QWidget *  {\i parent} = {\f2 nullptr}){\f2 [explicit]}}}
+\par
+{\bkmkstart AAAAAAAABX}
+{\bkmkend AAAAAAAABX}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFU" }{}}{\fldrslt {\cs37\ul\cf2 4}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFV" }{}}{\fldrslt {\cs37\ul\cf2 roomf_form.cpp}}}
+.}\par
+}
+{\xe \v ~Roomf_Form\:Roomf_Form}
+{\xe \v Roomf_Form\:~Roomf_Form}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Roomf_Form::~Roomf_Form ()}}
+\par
+{\bkmkstart AAAAAAAABZ}
+{\bkmkend AAAAAAAABZ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFW" }{}}{\fldrslt {\cs37\ul\cf2 11}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFV" }{}}{\fldrslt {\cs37\ul\cf2 roomf_form.cpp}}}
+.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v new_room\:Roomf_Form}
+{\xe \v Roomf_Form\:new_room}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Roomf_Form::new_room (){\f2 [signal]}}}
+\par
+{\bkmkstart AAAAAAAAAX}
+{\bkmkend AAAAAAAAAX}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v on_pB_CM_clicked\:Roomf_Form}
+{\xe \v Roomf_Form\:on_pB_CM_clicked}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Roomf_Form::on_pB_CM_clicked (){\f2 [private]}, {\f2 [slot]}}}
+\par
+{\bkmkstart AAAAAAAACG}
+{\bkmkend AAAAAAAACG}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFX" }{}}{\fldrslt {\cs37\ul\cf2 46}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFV" }{}}{\fldrslt {\cs37\ul\cf2 roomf_form.cpp}}}
+.}\par
+}
+{\xe \v on_pB_Mensaje_clicked\:Roomf_Form}
+{\xe \v Roomf_Form\:on_pB_Mensaje_clicked}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Roomf_Form::on_pB_Mensaje_clicked (){\f2 [private]}, {\f2 [slot]}}}
+\par
+{\bkmkstart AAAAAAAACB}
+{\bkmkend AAAAAAAACB}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFY" }{}}{\fldrslt {\cs37\ul\cf2 21}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFV" }{}}{\fldrslt {\cs37\ul\cf2 roomf_form.cpp}}}
+.}\par
+}
+{\xe \v on_pB_NCuarto_clicked\:Roomf_Form}
+{\xe \v Roomf_Form\:on_pB_NCuarto_clicked}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Roomf_Form::on_pB_NCuarto_clicked (){\f2 [private]}, {\f2 [slot]}}}
+\par
+{\bkmkstart AAAAAAAACA}
+{\bkmkend AAAAAAAACA}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFZ" }{}}{\fldrslt {\cs37\ul\cf2 16}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFV" }{}}{\fldrslt {\cs37\ul\cf2 roomf_form.cpp}}}
+.}\par
+}
+{\xe \v on_pB_TCuarto_clicked\:Roomf_Form}
+{\xe \v Roomf_Form\:on_pB_TCuarto_clicked}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Roomf_Form::on_pB_TCuarto_clicked (){\f2 [private]}, {\f2 [slot]}}}
+\par
+{\bkmkstart AAAAAAAACE}
+{\bkmkend AAAAAAAACE}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGA" }{}}{\fldrslt {\cs37\ul\cf2 34}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFV" }{}}{\fldrslt {\cs37\ul\cf2 roomf_form.cpp}}}
+.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Field Documentation\par
+\pard\plain 
+{\xe \v nMess\:Roomf_Form}
+{\xe \v Roomf_Form\:nMess}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+QString Roomf_Form::nMess}}
+\par
+{\bkmkstart AAAAAAAACI}
+{\bkmkend AAAAAAAACI}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGB" }{}}{\fldrslt {\cs37\ul\cf2 23}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFT" }{}}{\fldrslt {\cs37\ul\cf2 roomf_form.h}}}
+.}\par
+}
+{\xe \v nMessages\:Roomf_Form}
+{\xe \v Roomf_Form\:nMessages}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int Roomf_Form::nMessages}}
+\par
+{\bkmkstart AAAAAAAACH}
+{\bkmkend AAAAAAAACH}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGC" }{}}{\fldrslt {\cs37\ul\cf2 22}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFT" }{}}{\fldrslt {\cs37\ul\cf2 roomf_form.h}}}
+.}\par
+}
+{\xe \v Room\:Roomf_Form}
+{\xe \v Roomf_Form\:Room}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+QString Roomf_Form::Room}}
+\par
+{\bkmkstart AAAAAAAACF}
+{\bkmkend AAAAAAAACF}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGD" }{}}{\fldrslt {\cs37\ul\cf2 21}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFT" }{}}{\fldrslt {\cs37\ul\cf2 roomf_form.h}}}
+.}\par
+}
+{\xe \v server1\:Roomf_Form}
+{\xe \v Roomf_Form\:server1}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAJ" }{}}{\fldrslt {\cs37\ul\cf2 Thread}}}
+* Roomf_Form::server1 = nullptr}}
+\par
+{\bkmkstart AAAAAAAAAZ}
+{\bkmkend AAAAAAAAAZ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGE" }{}}{\fldrslt {\cs37\ul\cf2 19}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFT" }{}}{\fldrslt {\cs37\ul\cf2 roomf_form.h}}}
+.}\par
+}
+{\xe \v serverClient\:Roomf_Form}
+{\xe \v Roomf_Form\:serverClient}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAJ" }{}}{\fldrslt {\cs37\ul\cf2 Thread}}}
+* Roomf_Form::serverClient = nullptr}}
+\par
+{\bkmkstart AAAAAAAABA}
+{\bkmkend AAAAAAAABA}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGF" }{}}{\fldrslt {\cs37\ul\cf2 20}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFT" }{}}{\fldrslt {\cs37\ul\cf2 roomf_form.h}}}
+.}\par
+}
+{\xe \v ui\:Roomf_Form}
+{\xe \v Roomf_Form\:ui}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Ui::Roomf_Form* Roomf_Form::ui{\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAABY}
+{\bkmkend AAAAAAAABY}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGG" }{}}{\fldrslt {\cs37\ul\cf2 39}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAFT" }{}}{\fldrslt {\cs37\ul\cf2 roomf_form.h}}}
+.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following files:{\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABV" }{}}{\fldrslt {\cs37\ul\cf2 roomf_form.h}}}
+\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEG" }{}}{\fldrslt {\cs37\ul\cf2 roomf_form.cpp}}}
+\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Thread Class Reference\par \pard\plain 
+{\tc\tcl2 \v Thread}
+{\xe \v Thread}
+{\bkmkstart AAAAAAAAAJ}
+{\bkmkend AAAAAAAAAJ}
+\par
+{
+{\f2 #include <thread.h>}}\par
+Inheritance diagram for Thread:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_thread__inherit__graph.jpg" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+Collaboration diagram for Thread:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_thread__coll__graph.jpg" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Signals\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAN" }{}}{\fldrslt {\cs37\ul\cf2 resultReady}}}
+ (QString str)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAP" }{}}{\fldrslt {\cs37\ul\cf2 commClient}}}
+ (QString str)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABI" }{}}{\fldrslt {\cs37\ul\cf2 commServer}}}
+ (QString str)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAR" }{}}{\fldrslt {\cs37\ul\cf2 StartThread}}}
+ (int x, int y)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAV" }{}}{\fldrslt {\cs37\ul\cf2 c_State}}}
+ (int a)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACD" }{}}{\fldrslt {\cs37\ul\cf2 set_Message}}}
+ (QString x)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAS" }{}}{\fldrslt {\cs37\ul\cf2 set_serverIP}}}
+ (QString z)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACC" }{}}{\fldrslt {\cs37\ul\cf2 set_Room}}}
+ (QString str)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAU" }{}}{\fldrslt {\cs37\ul\cf2 set_Poster}}}
+ (QString str)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADU" }{}}{\fldrslt {\cs37\ul\cf2 set_Sub}}}
+ (QString str)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACK" }{}}{\fldrslt {\cs37\ul\cf2 client}}}
+ (int x)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACM" }{}}{\fldrslt {\cs37\ul\cf2 server}}}
+ ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABM" }{}}{\fldrslt {\cs37\ul\cf2 cut}}}
+ ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADA" }{}}{\fldrslt {\cs37\ul\cf2 terminate}}}
+ ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAT" }{}}{\fldrslt {\cs37\ul\cf2 clientConnect}}}
+ ()\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Data Fields\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+QString {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACJ" }{}}{\fldrslt {\cs37\ul\cf2 MessageN}}}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Private Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACN" }{}}{\fldrslt {\cs37\ul\cf2 run}}}
+ ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADW" }{}}{\fldrslt {\cs37\ul\cf2 sendy}}}
+ (QString str, char *buffer)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACP" }{}}{\fldrslt {\cs37\ul\cf2 clientEx}}}
+ ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACQ" }{}}{\fldrslt {\cs37\ul\cf2 serverEx}}}
+ ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADB" }{}}{\fldrslt {\cs37\ul\cf2 State0}}}
+ ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADC" }{}}{\fldrslt {\cs37\ul\cf2 State1}}}
+ ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADD" }{}}{\fldrslt {\cs37\ul\cf2 State2}}}
+ ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADE" }{}}{\fldrslt {\cs37\ul\cf2 State3}}}
+ ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADF" }{}}{\fldrslt {\cs37\ul\cf2 State4}}}
+ ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADP" }{}}{\fldrslt {\cs37\ul\cf2 React0}}}
+ ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADQ" }{}}{\fldrslt {\cs37\ul\cf2 React1}}}
+ ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADR" }{}}{\fldrslt {\cs37\ul\cf2 React2}}}
+ (QStringList {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADO" }{}}{\fldrslt {\cs37\ul\cf2 read}}}
+)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADS" }{}}{\fldrslt {\cs37\ul\cf2 React3}}}
+ (QStringList {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADO" }{}}{\fldrslt {\cs37\ul\cf2 read}}}
+)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADT" }{}}{\fldrslt {\cs37\ul\cf2 React4}}}
+ (QStringList {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADO" }{}}{\fldrslt {\cs37\ul\cf2 read}}}
+)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADK" }{}}{\fldrslt {\cs37\ul\cf2 Aliz}}}
+ (char charArray[])\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Private Attributes\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+WSADATA {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACT" }{}}{\fldrslt {\cs37\ul\cf2 wsaData}}}
+\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+QStringList {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADO" }{}}{\fldrslt {\cs37\ul\cf2 read}}}
+\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACS" }{}}{\fldrslt {\cs37\ul\cf2 iResult}}}
+\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACR" }{}}{\fldrslt {\cs37\ul\cf2 state}}}
+ = 0\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACL" }{}}{\fldrslt {\cs37\ul\cf2 tp}}}
+ =0\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+SOCKET {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADG" }{}}{\fldrslt {\cs37\ul\cf2 ListenSocket}}}
+ = INVALID_SOCKET\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+SOCKET {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACZ" }{}}{\fldrslt {\cs37\ul\cf2 ClientSocket}}}
+ = INVALID_SOCKET\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct addrinfo * {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACX" }{}}{\fldrslt {\cs37\ul\cf2 result}}}
+ = NULL\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct addrinfo * {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACY" }{}}{\fldrslt {\cs37\ul\cf2 ptr}}}
+ = NULL\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct addrinfo {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACU" }{}}{\fldrslt {\cs37\ul\cf2 hints}}}
+\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADJ" }{}}{\fldrslt {\cs37\ul\cf2 iSendResult}}}
+\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+char {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADH" }{}}{\fldrslt {\cs37\ul\cf2 recvbuf}}}
+ [{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADX" }{}}{\fldrslt {\cs37\ul\cf2 DEFAULT_BUFLEN}}}
+]\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADI" }{}}{\fldrslt {\cs37\ul\cf2 recvbuflen}}}
+ = {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADX" }{}}{\fldrslt {\cs37\ul\cf2 DEFAULT_BUFLEN}}}
+\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+std::string {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADM" }{}}{\fldrslt {\cs37\ul\cf2 message}}}
+\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+QString {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACV" }{}}{\fldrslt {\cs37\ul\cf2 qs}}}
+\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACO" }{}}{\fldrslt {\cs37\ul\cf2 runl}}}
+ = TRUE\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+QString {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADL" }{}}{\fldrslt {\cs37\ul\cf2 Room}}}
+\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+QString {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADN" }{}}{\fldrslt {\cs37\ul\cf2 Poster}}}
+\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+QString {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADV" }{}}{\fldrslt {\cs37\ul\cf2 Sub}}}
+\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGH" }{}}{\fldrslt {\cs37\ul\cf2 20}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEK" }{}}{\fldrslt {\cs37\ul\cf2 thread.h}}}
+.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v Aliz\:Thread}
+{\xe \v Thread\:Aliz}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Thread::Aliz (char  {\i charArray}[]){\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAADK}
+{\bkmkend AAAAAAAADK}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGI" }{}}{\fldrslt {\cs37\ul\cf2 410}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGJ" }{}}{\fldrslt {\cs37\ul\cf2 thread.cpp}}}
+.}\par
+}
+{\xe \v c_State\:Thread}
+{\xe \v Thread\:c_State}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Thread::c_State (int  {\i a})}}
+\par
+{\bkmkstart AAAAAAAAAV}
+{\bkmkend AAAAAAAAAV}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGK" }{}}{\fldrslt {\cs37\ul\cf2 452}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGJ" }{}}{\fldrslt {\cs37\ul\cf2 thread.cpp}}}
+.}\par
+}
+{\xe \v client\:Thread}
+{\xe \v Thread\:client}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Thread::client (int  {\i x})}}
+\par
+{\bkmkstart AAAAAAAACK}
+{\bkmkend AAAAAAAACK}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGL" }{}}{\fldrslt {\cs37\ul\cf2 33}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGJ" }{}}{\fldrslt {\cs37\ul\cf2 thread.cpp}}}
+.}\par
+}
+{\xe \v clientConnect\:Thread}
+{\xe \v Thread\:clientConnect}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Thread::clientConnect ()}}
+\par
+{\bkmkstart AAAAAAAAAT}
+{\bkmkend AAAAAAAAAT}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGM" }{}}{\fldrslt {\cs37\ul\cf2 47}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGJ" }{}}{\fldrslt {\cs37\ul\cf2 thread.cpp}}}
+.}\par
+}
+{\xe \v clientEx\:Thread}
+{\xe \v Thread\:clientEx}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Thread::clientEx (){\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAACP}
+{\bkmkend AAAAAAAACP}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGN" }{}}{\fldrslt {\cs37\ul\cf2 100}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGJ" }{}}{\fldrslt {\cs37\ul\cf2 thread.cpp}}}
+.}\par
+}
+{\xe \v commClient\:Thread}
+{\xe \v Thread\:commClient}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Thread::commClient (QString  {\i str}){\f2 [signal]}}}
+\par
+{\bkmkstart AAAAAAAAAP}
+{\bkmkend AAAAAAAAAP}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v commServer\:Thread}
+{\xe \v Thread\:commServer}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Thread::commServer (QString  {\i str}){\f2 [signal]}}}
+\par
+{\bkmkstart AAAAAAAABI}
+{\bkmkend AAAAAAAABI}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v cut\:Thread}
+{\xe \v Thread\:cut}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Thread::cut ()}}
+\par
+{\bkmkstart AAAAAAAABM}
+{\bkmkend AAAAAAAABM}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGO" }{}}{\fldrslt {\cs37\ul\cf2 243}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGJ" }{}}{\fldrslt {\cs37\ul\cf2 thread.cpp}}}
+.}\par
+}
+{\xe \v React0\:Thread}
+{\xe \v Thread\:React0}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Thread::React0 (){\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAADP}
+{\bkmkend AAAAAAAADP}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGP" }{}}{\fldrslt {\cs37\ul\cf2 431}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGJ" }{}}{\fldrslt {\cs37\ul\cf2 thread.cpp}}}
+.}\par
+}
+{\xe \v React1\:Thread}
+{\xe \v Thread\:React1}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Thread::React1 (){\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAADQ}
+{\bkmkend AAAAAAAADQ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGQ" }{}}{\fldrslt {\cs37\ul\cf2 435}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGJ" }{}}{\fldrslt {\cs37\ul\cf2 thread.cpp}}}
+.}\par
+}
+{\xe \v React2\:Thread}
+{\xe \v Thread\:React2}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Thread::React2 (QStringList  {\i read}){\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAADR}
+{\bkmkend AAAAAAAADR}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGR" }{}}{\fldrslt {\cs37\ul\cf2 439}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGJ" }{}}{\fldrslt {\cs37\ul\cf2 thread.cpp}}}
+.}\par
+}
+{\xe \v React3\:Thread}
+{\xe \v Thread\:React3}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Thread::React3 (QStringList  {\i read}){\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAADS}
+{\bkmkend AAAAAAAADS}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGS" }{}}{\fldrslt {\cs37\ul\cf2 443}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGJ" }{}}{\fldrslt {\cs37\ul\cf2 thread.cpp}}}
+.}\par
+}
+{\xe \v React4\:Thread}
+{\xe \v Thread\:React4}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Thread::React4 (QStringList  {\i read}){\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAADT}
+{\bkmkend AAAAAAAADT}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGT" }{}}{\fldrslt {\cs37\ul\cf2 447}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGJ" }{}}{\fldrslt {\cs37\ul\cf2 thread.cpp}}}
+.}\par
+}
+{\xe \v resultReady\:Thread}
+{\xe \v Thread\:resultReady}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Thread::resultReady (QString  {\i str}){\f2 [signal]}}}
+\par
+{\bkmkstart AAAAAAAAAN}
+{\bkmkend AAAAAAAAAN}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v run\:Thread}
+{\xe \v Thread\:run}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Thread::run (){\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAACN}
+{\bkmkend AAAAAAAACN}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGU" }{}}{\fldrslt {\cs37\ul\cf2 17}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGJ" }{}}{\fldrslt {\cs37\ul\cf2 thread.cpp}}}
+.}\par
+}
+{\xe \v sendy\:Thread}
+{\xe \v Thread\:sendy}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Thread::sendy (QString  {\i str}, char *  {\i buffer}){\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAADW}
+{\bkmkend AAAAAAAADW}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v server\:Thread}
+{\xe \v Thread\:server}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Thread::server ()}}
+\par
+{\bkmkstart AAAAAAAACM}
+{\bkmkend AAAAAAAACM}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGV" }{}}{\fldrslt {\cs37\ul\cf2 120}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGJ" }{}}{\fldrslt {\cs37\ul\cf2 thread.cpp}}}
+.}\par
+}
+{\xe \v serverEx\:Thread}
+{\xe \v Thread\:serverEx}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Thread::serverEx (){\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAACQ}
+{\bkmkend AAAAAAAACQ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGW" }{}}{\fldrslt {\cs37\ul\cf2 185}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGJ" }{}}{\fldrslt {\cs37\ul\cf2 thread.cpp}}}
+.}\par
+}
+{\xe \v set_Message\:Thread}
+{\xe \v Thread\:set_Message}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Thread::set_Message (QString  {\i x})}}
+\par
+{\bkmkstart AAAAAAAACD}
+{\bkmkend AAAAAAAACD}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGX" }{}}{\fldrslt {\cs37\ul\cf2 456}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGJ" }{}}{\fldrslt {\cs37\ul\cf2 thread.cpp}}}
+.}\par
+}
+{\xe \v set_Poster\:Thread}
+{\xe \v Thread\:set_Poster}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Thread::set_Poster (QString  {\i str})}}
+\par
+{\bkmkstart AAAAAAAAAU}
+{\bkmkend AAAAAAAAAU}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGY" }{}}{\fldrslt {\cs37\ul\cf2 468}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGJ" }{}}{\fldrslt {\cs37\ul\cf2 thread.cpp}}}
+.}\par
+}
+{\xe \v set_Room\:Thread}
+{\xe \v Thread\:set_Room}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Thread::set_Room (QString  {\i str})}}
+\par
+{\bkmkstart AAAAAAAACC}
+{\bkmkend AAAAAAAACC}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGZ" }{}}{\fldrslt {\cs37\ul\cf2 464}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGJ" }{}}{\fldrslt {\cs37\ul\cf2 thread.cpp}}}
+.}\par
+}
+{\xe \v set_serverIP\:Thread}
+{\xe \v Thread\:set_serverIP}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Thread::set_serverIP (QString  {\i z})}}
+\par
+{\bkmkstart AAAAAAAAAS}
+{\bkmkend AAAAAAAAAS}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHA" }{}}{\fldrslt {\cs37\ul\cf2 460}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGJ" }{}}{\fldrslt {\cs37\ul\cf2 thread.cpp}}}
+.}\par
+}
+{\xe \v set_Sub\:Thread}
+{\xe \v Thread\:set_Sub}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Thread::set_Sub (QString  {\i str})}}
+\par
+{\bkmkstart AAAAAAAADU}
+{\bkmkend AAAAAAAADU}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHB" }{}}{\fldrslt {\cs37\ul\cf2 472}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGJ" }{}}{\fldrslt {\cs37\ul\cf2 thread.cpp}}}
+.}\par
+}
+{\xe \v StartThread\:Thread}
+{\xe \v Thread\:StartThread}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Thread::StartThread (int  {\i x}, int  {\i y})}}
+\par
+{\bkmkstart AAAAAAAAAR}
+{\bkmkend AAAAAAAAAR}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHC" }{}}{\fldrslt {\cs37\ul\cf2 4}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGJ" }{}}{\fldrslt {\cs37\ul\cf2 thread.cpp}}}
+.}\par
+}
+{\xe \v State0\:Thread}
+{\xe \v Thread\:State0}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Thread::State0 (){\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAADB}
+{\bkmkend AAAAAAAADB}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+aqui tengo que utilzar el select y si no sale el timout entonces buelbo ha preguntar \par
+}{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHD" }{}}{\fldrslt {\cs37\ul\cf2 280}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGJ" }{}}{\fldrslt {\cs37\ul\cf2 thread.cpp}}}
+.}\par
+}
+{\xe \v State1\:Thread}
+{\xe \v Thread\:State1}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Thread::State1 (){\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAADC}
+{\bkmkend AAAAAAAADC}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHE" }{}}{\fldrslt {\cs37\ul\cf2 314}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGJ" }{}}{\fldrslt {\cs37\ul\cf2 thread.cpp}}}
+.}\par
+}
+{\xe \v State2\:Thread}
+{\xe \v Thread\:State2}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Thread::State2 (){\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAADD}
+{\bkmkend AAAAAAAADD}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHF" }{}}{\fldrslt {\cs37\ul\cf2 339}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGJ" }{}}{\fldrslt {\cs37\ul\cf2 thread.cpp}}}
+.}\par
+}
+{\xe \v State3\:Thread}
+{\xe \v Thread\:State3}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Thread::State3 (){\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAADE}
+{\bkmkend AAAAAAAADE}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+pos\par
+nmemb \par
+}{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHG" }{}}{\fldrslt {\cs37\ul\cf2 361}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGJ" }{}}{\fldrslt {\cs37\ul\cf2 thread.cpp}}}
+.}\par
+}
+{\xe \v State4\:Thread}
+{\xe \v Thread\:State4}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Thread::State4 (){\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAADF}
+{\bkmkend AAAAAAAADF}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHH" }{}}{\fldrslt {\cs37\ul\cf2 387}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGJ" }{}}{\fldrslt {\cs37\ul\cf2 thread.cpp}}}
+.}\par
+}
+{\xe \v terminate\:Thread}
+{\xe \v Thread\:terminate}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Thread::terminate ()}}
+\par
+{\bkmkstart AAAAAAAADA}
+{\bkmkend AAAAAAAADA}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHI" }{}}{\fldrslt {\cs37\ul\cf2 274}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAGJ" }{}}{\fldrslt {\cs37\ul\cf2 thread.cpp}}}
+.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Field Documentation\par
+\pard\plain 
+{\xe \v ClientSocket\:Thread}
+{\xe \v Thread\:ClientSocket}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+SOCKET Thread::ClientSocket = INVALID_SOCKET{\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAACZ}
+{\bkmkend AAAAAAAACZ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHJ" }{}}{\fldrslt {\cs37\ul\cf2 67}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEK" }{}}{\fldrslt {\cs37\ul\cf2 thread.h}}}
+.}\par
+}
+{\xe \v hints\:Thread}
+{\xe \v Thread\:hints}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+struct addrinfo Thread::hints{\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAACU}
+{\bkmkend AAAAAAAACU}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHK" }{}}{\fldrslt {\cs37\ul\cf2 69}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEK" }{}}{\fldrslt {\cs37\ul\cf2 thread.h}}}
+.}\par
+}
+{\xe \v iResult\:Thread}
+{\xe \v Thread\:iResult}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int Thread::iResult{\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAACS}
+{\bkmkend AAAAAAAACS}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHL" }{}}{\fldrslt {\cs37\ul\cf2 63}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEK" }{}}{\fldrslt {\cs37\ul\cf2 thread.h}}}
+.}\par
+}
+{\xe \v iSendResult\:Thread}
+{\xe \v Thread\:iSendResult}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int Thread::iSendResult{\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAADJ}
+{\bkmkend AAAAAAAADJ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHM" }{}}{\fldrslt {\cs37\ul\cf2 70}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEK" }{}}{\fldrslt {\cs37\ul\cf2 thread.h}}}
+.}\par
+}
+{\xe \v ListenSocket\:Thread}
+{\xe \v Thread\:ListenSocket}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+SOCKET Thread::ListenSocket = INVALID_SOCKET{\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAADG}
+{\bkmkend AAAAAAAADG}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHN" }{}}{\fldrslt {\cs37\ul\cf2 66}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEK" }{}}{\fldrslt {\cs37\ul\cf2 thread.h}}}
+.}\par
+}
+{\xe \v message\:Thread}
+{\xe \v Thread\:message}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+std::string Thread::message{\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAADM}
+{\bkmkend AAAAAAAADM}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHO" }{}}{\fldrslt {\cs37\ul\cf2 73}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEK" }{}}{\fldrslt {\cs37\ul\cf2 thread.h}}}
+.}\par
+}
+{\xe \v MessageN\:Thread}
+{\xe \v Thread\:MessageN}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+QString Thread::MessageN}}
+\par
+{\bkmkstart AAAAAAAACJ}
+{\bkmkend AAAAAAAACJ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHP" }{}}{\fldrslt {\cs37\ul\cf2 35}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEK" }{}}{\fldrslt {\cs37\ul\cf2 thread.h}}}
+.}\par
+}
+{\xe \v Poster\:Thread}
+{\xe \v Thread\:Poster}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+QString Thread::Poster{\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAADN}
+{\bkmkend AAAAAAAADN}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHQ" }{}}{\fldrslt {\cs37\ul\cf2 77}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEK" }{}}{\fldrslt {\cs37\ul\cf2 thread.h}}}
+.}\par
+}
+{\xe \v ptr\:Thread}
+{\xe \v Thread\:ptr}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+struct addrinfo * Thread::ptr = NULL{\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAACY}
+{\bkmkend AAAAAAAACY}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHR" }{}}{\fldrslt {\cs37\ul\cf2 68}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEK" }{}}{\fldrslt {\cs37\ul\cf2 thread.h}}}
+.}\par
+}
+{\xe \v qs\:Thread}
+{\xe \v Thread\:qs}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+QString Thread::qs{\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAACV}
+{\bkmkend AAAAAAAACV}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHS" }{}}{\fldrslt {\cs37\ul\cf2 74}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEK" }{}}{\fldrslt {\cs37\ul\cf2 thread.h}}}
+.}\par
+}
+{\xe \v read\:Thread}
+{\xe \v Thread\:read}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+QStringList Thread::read{\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAADO}
+{\bkmkend AAAAAAAADO}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHT" }{}}{\fldrslt {\cs37\ul\cf2 62}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEK" }{}}{\fldrslt {\cs37\ul\cf2 thread.h}}}
+.}\par
+}
+{\xe \v recvbuf\:Thread}
+{\xe \v Thread\:recvbuf}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+char Thread::recvbuf[{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADX" }{}}{\fldrslt {\cs37\ul\cf2 DEFAULT_BUFLEN}}}
+]{\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAADH}
+{\bkmkend AAAAAAAADH}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHU" }{}}{\fldrslt {\cs37\ul\cf2 71}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEK" }{}}{\fldrslt {\cs37\ul\cf2 thread.h}}}
+.}\par
+}
+{\xe \v recvbuflen\:Thread}
+{\xe \v Thread\:recvbuflen}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int Thread::recvbuflen = {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADX" }{}}{\fldrslt {\cs37\ul\cf2 DEFAULT_BUFLEN}}}
+{\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAADI}
+{\bkmkend AAAAAAAADI}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHV" }{}}{\fldrslt {\cs37\ul\cf2 72}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEK" }{}}{\fldrslt {\cs37\ul\cf2 thread.h}}}
+.}\par
+}
+{\xe \v result\:Thread}
+{\xe \v Thread\:result}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+struct addrinfo* Thread::result = NULL{\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAACX}
+{\bkmkend AAAAAAAACX}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHR" }{}}{\fldrslt {\cs37\ul\cf2 68}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEK" }{}}{\fldrslt {\cs37\ul\cf2 thread.h}}}
+.}\par
+}
+{\xe \v Room\:Thread}
+{\xe \v Thread\:Room}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+QString Thread::Room{\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAADL}
+{\bkmkend AAAAAAAADL}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHW" }{}}{\fldrslt {\cs37\ul\cf2 76}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEK" }{}}{\fldrslt {\cs37\ul\cf2 thread.h}}}
+.}\par
+}
+{\xe \v runl\:Thread}
+{\xe \v Thread\:runl}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool Thread::runl = TRUE{\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAACO}
+{\bkmkend AAAAAAAACO}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHX" }{}}{\fldrslt {\cs37\ul\cf2 75}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEK" }{}}{\fldrslt {\cs37\ul\cf2 thread.h}}}
+.}\par
+}
+{\xe \v state\:Thread}
+{\xe \v Thread\:state}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int Thread::state = 0{\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAACR}
+{\bkmkend AAAAAAAACR}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHY" }{}}{\fldrslt {\cs37\ul\cf2 64}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEK" }{}}{\fldrslt {\cs37\ul\cf2 thread.h}}}
+.}\par
+}
+{\xe \v Sub\:Thread}
+{\xe \v Thread\:Sub}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+QString Thread::Sub{\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAADV}
+{\bkmkend AAAAAAAADV}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAHZ" }{}}{\fldrslt {\cs37\ul\cf2 78}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEK" }{}}{\fldrslt {\cs37\ul\cf2 thread.h}}}
+.}\par
+}
+{\xe \v tp\:Thread}
+{\xe \v Thread\:tp}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int Thread::tp =0{\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAACL}
+{\bkmkend AAAAAAAACL}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIA" }{}}{\fldrslt {\cs37\ul\cf2 65}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEK" }{}}{\fldrslt {\cs37\ul\cf2 thread.h}}}
+.}\par
+}
+{\xe \v wsaData\:Thread}
+{\xe \v Thread\:wsaData}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+WSADATA Thread::wsaData{\f2 [private]}}}
+\par
+{\bkmkstart AAAAAAAACT}
+{\bkmkend AAAAAAAACT}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAIB" }{}}{\fldrslt {\cs37\ul\cf2 61}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEK" }{}}{\fldrslt {\cs37\ul\cf2 thread.h}}}
+.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following files:{\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAB" }{}}{\fldrslt {\cs37\ul\cf2 thread.h}}}
+\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEH" }{}}{\fldrslt {\cs37\ul\cf2 thread.cpp}}}
+\par
+}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+File Documentation{\tc \v File Documentation}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+main.cpp File Reference\par \pard\plain 
+{\tc\tcl2 \v main.cpp}
+{\xe \v main.cpp}
+{\bkmkstart AAAAAAAADY}
+{\bkmkend AAAAAAAADY}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "mainwindow.h"}\par
+{\f2 #include <QApplication>}\par
+{\f2 #include <QtCore>}\par
+{\f2 #include <thread.h>}\par
+}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Include dependency graph for main.cpp:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "main_8cpp__incl.jpg" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAC" }{}}{\fldrslt {\cs37\ul\cf2 main}}}
+ (int argc, char *argv[])\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v main\:main.cpp}
+{\xe \v main.cpp\:main}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int main (int  {\i argc}, char *  {\i argv}[])}}
+\par
+{\bkmkstart AAAAAAAAAC}
+{\bkmkend AAAAAAAAAC}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADZ" }{}}{\fldrslt {\cs37\ul\cf2 7}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEA" }{}}{\fldrslt {\cs37\ul\cf2 main.cpp}}}
+.}\par
+}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+main.cpp\par \pard\plain 
+{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     1 #include "{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAA" }{}}{\fldrslt {\cs37\ul\cf2 mainwindow.h}}}
+"\par
+    2 #include <QApplication>\par
+    3 \par
+    4 #include<QtCore>\par
+    5 #include<{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAB" }{}}{\fldrslt {\cs37\ul\cf2 thread.h}}}
+>\par
+    6 \par
+    7 int {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAC" }{}}{\fldrslt {\cs37\ul\cf2 main}}}
+(int argc, char *argv[])\par
+    8 \{\par
+    9     QApplication* a = new QApplication(argc, argv);\par
+   10     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAD" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow}}}
+* w = new {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAD" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow}}}
+();\par
+   11     w->show();\par
+   12     return a->exec();\par
+   13 \}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+mainwindow.cpp File Reference\par \pard\plain 
+{\tc\tcl2 \v mainwindow.cpp}
+{\xe \v mainwindow.cpp}
+{\bkmkstart AAAAAAAAEB}
+{\bkmkend AAAAAAAAEB}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "mainwindow.h"}\par
+{\f2 #include "ui_mainwindow.h"}\par
+}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Include dependency graph for mainwindow.cpp:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "mainwindow_8cpp__incl.jpg" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+mainwindow.cpp\par \pard\plain 
+{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     1 \par
+    4     #include "{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAA" }{}}{\fldrslt {\cs37\ul\cf2 mainwindow.h}}}
+"\par
+    5     #include "ui_mainwindow.h"\par
+    6 \par
+    8 \par
+   11 \par
+   12     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAE" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow::MainWindow}}}
+(QWidget *parent):QMainWindow(parent),ui(new {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAF" }{}}{\fldrslt {\cs37\ul\cf2 Ui}}}
+::{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAD" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow}}}
+)\{\par
+   13         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAG" }{}}{\fldrslt {\cs37\ul\cf2 ui}}}
+->setupUi(this);\par
+   14     \}\par
+   15 \par
+   16     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAH" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow::~MainWindow}}}
+()\{\par
+   17         delete {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAG" }{}}{\fldrslt {\cs37\ul\cf2 ui}}}
+;\par
+   18     \}\par
+   19 \par
+   21 \par
+   24 \par
+   25 \par
+   26 \par
+   28 \par
+   31 \par
+   32     void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAI" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow::setThread}}}
+({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAJ" }{}}{\fldrslt {\cs37\ul\cf2 Thread}}}
+* ser)\{\par
+   33             this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAK" }{}}{\fldrslt {\cs37\ul\cf2 server1}}}
+ = ser;\par
+   34     \}\par
+   35 \par
+   37 \par
+   38 \par
+   41 \par
+   42     void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAL" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow::on_pB_Log_clicked}}}
+()\{\par
+   44         if(this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAM" }{}}{\fldrslt {\cs37\ul\cf2 serverClient}}}
+!=nullptr)\{\par
+   49         \}else\{\par
+   50             {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAJ" }{}}{\fldrslt {\cs37\ul\cf2 Thread}}}
+* Cservice;\par
+   51             Cservice = new {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAJ" }{}}{\fldrslt {\cs37\ul\cf2 Thread}}}
+();\par
+   52             this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAM" }{}}{\fldrslt {\cs37\ul\cf2 serverClient}}}
+ = Cservice;\par
+   53         \}\par
+   54 \par
+   55         QObject::connect({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAM" }{}}{\fldrslt {\cs37\ul\cf2 serverClient}}}
+,&{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAN" }{}}{\fldrslt {\cs37\ul\cf2 Thread::resultReady}}}
+,this,&{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAO" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow::updateLabel2}}}
+);\par
+   56         QObject::connect({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAM" }{}}{\fldrslt {\cs37\ul\cf2 serverClient}}}
+,&{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAP" }{}}{\fldrslt {\cs37\ul\cf2 Thread::commClient}}}
+,this,&{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAQ" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow::client_EM}}}
+);\par
+   57 \par
+   58         QString a = "poi.coffee";\par
+   59 \par
+   60         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAM" }{}}{\fldrslt {\cs37\ul\cf2 serverClient}}}
+->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAR" }{}}{\fldrslt {\cs37\ul\cf2 StartThread}}}
+(0,0);\par
+   61         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAM" }{}}{\fldrslt {\cs37\ul\cf2 serverClient}}}
+->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAS" }{}}{\fldrslt {\cs37\ul\cf2 set_serverIP}}}
+(a);\par
+   62         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAM" }{}}{\fldrslt {\cs37\ul\cf2 serverClient}}}
+->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAT" }{}}{\fldrslt {\cs37\ul\cf2 clientConnect}}}
+();\par
+   63         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAM" }{}}{\fldrslt {\cs37\ul\cf2 serverClient}}}
+->start();\par
+   64 \par
+   65         a = this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAG" }{}}{\fldrslt {\cs37\ul\cf2 ui}}}
+->le_User->text();\par
+   66 \par
+   67         this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAM" }{}}{\fldrslt {\cs37\ul\cf2 serverClient}}}
+->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAU" }{}}{\fldrslt {\cs37\ul\cf2 set_Poster}}}
+(a);\par
+   68         this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAM" }{}}{\fldrslt {\cs37\ul\cf2 serverClient}}}
+->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAV" }{}}{\fldrslt {\cs37\ul\cf2 c_State}}}
+(4);\par
+   69 \par
+   70 \par
+   72         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAW" }{}}{\fldrslt {\cs37\ul\cf2 Roomf_Form}}}
+ *al;\par
+   73         al = new {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAW" }{}}{\fldrslt {\cs37\ul\cf2 Roomf_Form}}}
+();\par
+   74         connect(al,&{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAX" }{}}{\fldrslt {\cs37\ul\cf2 Roomf_Form::new_room}}}
+,this,&{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAY" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow::new_room}}}
+);\par
+   75         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAG" }{}}{\fldrslt {\cs37\ul\cf2 ui}}}
+->tabWidget->setTabsClosable(true);\par
+   76         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAG" }{}}{\fldrslt {\cs37\ul\cf2 ui}}}
+->tabWidget->addTab(al,"cuarto1");\par
+   77         al->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAZ" }{}}{\fldrslt {\cs37\ul\cf2 server1}}}
+ = this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAK" }{}}{\fldrslt {\cs37\ul\cf2 server1}}}
+;\par
+   78         al->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABA" }{}}{\fldrslt {\cs37\ul\cf2 serverClient}}}
+ = this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAM" }{}}{\fldrslt {\cs37\ul\cf2 serverClient}}}
+;\par
+   79        // ui->tabWidget->setCurrentIndex(2);\par
+   80        // ui->tabWidget->removeTab(0);\par
+   81         //ui->tabWidget->removeTab(0);\par
+   82     \}\par
+   83 \par
+   84     void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABB" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow::on_pB_Test2_clicked}}}
+()\{\par
+   85        // server1->StartThread();\par
+   86         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAK" }{}}{\fldrslt {\cs37\ul\cf2 server1}}}
+->start();\par
+   87     \}\par
+   88 \par
+   89     void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABC" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow::on_pB_Test_clicked}}}
+()\{\par
+   90 \par
+   91     \}\par
+   92 \par
+   93     void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABD" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow::on_pB_Conn_clicked}}}
+()\{\par
+   94 \par
+   95     \}\par
+   96 \par
+   97     void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABE" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow::on_pB_state_clicked}}}
+()\{\par
+   98         int x =1;\par
+   99         this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAK" }{}}{\fldrslt {\cs37\ul\cf2 server1}}}
+->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAV" }{}}{\fldrslt {\cs37\ul\cf2 c_State}}}
+(x);\par
+  100     \}\par
+  101 \par
+  102     void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABF" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow::on_pB_CreateLS_clicked}}}
+()\{\par
+  103         if(this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAK" }{}}{\fldrslt {\cs37\ul\cf2 server1}}}
+!=nullptr)\{\par
+  110         \}else\{\par
+  111             {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAJ" }{}}{\fldrslt {\cs37\ul\cf2 Thread}}}
+* localServer;\par
+  112             localServer=  new {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAJ" }{}}{\fldrslt {\cs37\ul\cf2 Thread}}}
+();\par
+  113             this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAI" }{}}{\fldrslt {\cs37\ul\cf2 setThread}}}
+(localServer);\par
+  114         \}\par
+  115     \}\par
+  116 \par
+  117     void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABG" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow::on_pB_ALS_clicked}}}
+()\{\par
+  118         QObject::connect({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAK" }{}}{\fldrslt {\cs37\ul\cf2 server1}}}
+,&{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAN" }{}}{\fldrslt {\cs37\ul\cf2 Thread::resultReady}}}
+,this,&{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABH" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow::updateLabel}}}
+);\par
+  119         QObject::connect({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAK" }{}}{\fldrslt {\cs37\ul\cf2 server1}}}
+,&{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABI" }{}}{\fldrslt {\cs37\ul\cf2 Thread::commServer}}}
+,this,&{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABJ" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow::server_EM}}}
+);\par
+  120 \par
+  121     \}\par
+  122 \par
+  123     void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABK" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow::on_pB_StartLS_clicked}}}
+()\{\par
+  124         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAK" }{}}{\fldrslt {\cs37\ul\cf2 server1}}}
+->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAR" }{}}{\fldrslt {\cs37\ul\cf2 StartThread}}}
+(0,1);\par
+  125         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAK" }{}}{\fldrslt {\cs37\ul\cf2 server1}}}
+->start();\par
+  126 \par
+  127     \}\par
+  128 \par
+  129     void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABL" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow::on_pB_EndLS_clicked}}}
+()\{\par
+  130        {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAK" }{}}{\fldrslt {\cs37\ul\cf2 server1}}}
+->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABM" }{}}{\fldrslt {\cs37\ul\cf2 cut}}}
+();\par
+  131     \}\par
+  132 \par
+  133     void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABN" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow::on_pB_DeleteLS_clicked}}}
+()\{\par
+  134       //  QObject::disconnect(server1,&Thread::resultReady,this,&MainWindow::updateLabel);\par
+  135         //QObject::disconnect(server1,&Thread::commServer,this,&MainWindow::server_EM);\par
+  136         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAK" }{}}{\fldrslt {\cs37\ul\cf2 server1}}}
+= nullptr;\par
+  137     \}\par
+  138 \par
+  139     void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABO" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow::on_pB_CCS_clicked}}}
+()\{\par
+  140 \par
+  141         //Connect signal and\par
+  142     \}\par
+  143 \par
+  144     void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABP" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow::on_pB_ACS_clicked}}}
+()\{\par
+  145 \par
+  146     \}\par
+  147 \par
+  148     void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABQ" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow::on_pB_ConnCS_clicked}}}
+()\{\par
+  149 \par
+  150     \}\par
+  151 \par
+  152     void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABR" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow::on_pB_SmCS_clicked}}}
+()\{\par
+  153 \par
+  154     \}\par
+  155 \par
+  156     void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABS" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow::on_pB_Cstate_clicked}}}
+()\{\par
+  157         QString a= {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAG" }{}}{\fldrslt {\cs37\ul\cf2 ui}}}
+->le_Message->text();\par
+  158         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAM" }{}}{\fldrslt {\cs37\ul\cf2 serverClient}}}
+->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAV" }{}}{\fldrslt {\cs37\ul\cf2 c_State}}}
+(a.toInt());\par
+  159 \par
+  160     \}\par
+  161 \par
+  162     void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABT" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow::on_pB_EndCS_clicked}}}
+()\{\par
+  163         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAM" }{}}{\fldrslt {\cs37\ul\cf2 serverClient}}}
+->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABM" }{}}{\fldrslt {\cs37\ul\cf2 cut}}}
+();\par
+  164     \}\par
+  165 \par
+  166     void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABU" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow::on_pB_DeleteCS_clicked}}}
+()\{\par
+  167        // QObject::disconnect(serverClient,&Thread::resultReady,this,&MainWindow::updateLabel2);\par
+  168         //QObject::disconnect(serverClient,&Thread::commClient,this,&MainWindow::client_EM);\par
+  169         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAM" }{}}{\fldrslt {\cs37\ul\cf2 serverClient}}}
+= nullptr;\par
+  170     \}\par
+  171 \par
+  173 \par
+  176 \par
+  177     void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABH" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow::updateLabel}}}
+( QString str )\{\par
+  178         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAG" }{}}{\fldrslt {\cs37\ul\cf2 ui}}}
+->l_Recived->setText(str);\par
+  179         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAG" }{}}{\fldrslt {\cs37\ul\cf2 ui}}}
+->l_Recived->adjustSize();\par
+  180     \}\par
+  181 \par
+  182 \par
+  183     void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAO" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow::updateLabel2}}}
+( QString str )\{\par
+  184         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAG" }{}}{\fldrslt {\cs37\ul\cf2 ui}}}
+->lBcStatus->setText(str);\par
+  185         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAG" }{}}{\fldrslt {\cs37\ul\cf2 ui}}}
+->lBcStatus->adjustSize();\par
+  186     \}\par
+  187 \par
+  188     void  {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAY" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow::new_room}}}
+()\{\par
+  189         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAW" }{}}{\fldrslt {\cs37\ul\cf2 Roomf_Form}}}
+ *al;\par
+  190         al = new {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAW" }{}}{\fldrslt {\cs37\ul\cf2 Roomf_Form}}}
+();\par
+  191        connect(al,&{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAX" }{}}{\fldrslt {\cs37\ul\cf2 Roomf_Form::new_room}}}
+,this,&{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAY" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow::new_room}}}
+);\par
+  192          {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAG" }{}}{\fldrslt {\cs37\ul\cf2 ui}}}
+->tabWidget->setTabsClosable(true);\par
+  193         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAG" }{}}{\fldrslt {\cs37\ul\cf2 ui}}}
+->tabWidget->addTab(al,"cuarto2");\par
+  194     \}\par
+  195 \par
+  196     void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABJ" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow::server_EM}}}
+(QString value)\{\par
+  197         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAG" }{}}{\fldrslt {\cs37\ul\cf2 ui}}}
+->l_Recived->setText(value);\par
+  198         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAG" }{}}{\fldrslt {\cs37\ul\cf2 ui}}}
+->l_Recived->adjustSize();\par
+  199         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAG" }{}}{\fldrslt {\cs37\ul\cf2 ui}}}
+->tE_textLS->append(value);\par
+  200     \}\par
+  201 \par
+  202     void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAQ" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow::client_EM}}}
+(QString value)\{\par
+  203         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAG" }{}}{\fldrslt {\cs37\ul\cf2 ui}}}
+->lBcStatus->setText(value);\par
+  204         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAG" }{}}{\fldrslt {\cs37\ul\cf2 ui}}}
+->lBcStatus->adjustSize();\par
+  205         //ui->tE_test->append(value);\par
+  206         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAG" }{}}{\fldrslt {\cs37\ul\cf2 ui}}}
+->tE_textCS->append(value);\par
+  207 \par
+  208     \}\par
+  209 \par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+mainwindow.h File Reference\par \pard\plain 
+{\tc\tcl2 \v mainwindow.h}
+{\xe \v mainwindow.h}
+{\bkmkstart AAAAAAAAAA}
+{\bkmkend AAAAAAAAAA}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <Windows.h>}\par
+{\f2 #include <WinSock2.h>}\par
+{\f2 #include <WS2tcpip.h>}\par
+{\f2 #include <stdlib.h>}\par
+{\f2 #include <stdio.h>}\par
+{\f2 #include <QMainWindow>}\par
+{\f2 #include <QPushButton>}\par
+{\f2 #include <QString>}\par
+{\f2 #include <thread.h>}\par
+{\f2 #include <roomf_form.h>}\par
+}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Include dependency graph for mainwindow.h:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "mainwindow_8h__incl.jpg" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid This graph shows which files directly or indirectly include this file:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "mainwindow_8h__dep__incl.jpg" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Data Structures\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAD" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow}}}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Namespaces\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAF" }{}}{\fldrslt {\cs37\ul\cf2 Ui}}}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Macros\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEC" }{}}{\fldrslt {\cs37\ul\cf2 WIN32_LEAN_AND_MEAN}}}
+\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Macro Definition Documentation\par
+\pard\plain 
+{\xe \v WIN32_LEAN_AND_MEAN\:mainwindow.h}
+{\xe \v mainwindow.h\:WIN32_LEAN_AND_MEAN}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define WIN32_LEAN_AND_MEAN}}
+\par
+{\bkmkstart AAAAAAAAEC}
+{\bkmkend AAAAAAAAEC}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAED" }{}}{\fldrslt {\cs37\ul\cf2 4}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEE" }{}}{\fldrslt {\cs37\ul\cf2 mainwindow.h}}}
+.}\par
+}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+mainwindow.h\par \pard\plain 
+{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     1     #ifndef MAINWINDOW_H\par
+    2     #define MAINWINDOW_H\par
+    3 \par
+    4     #define WIN32_LEAN_AND_MEAN\par
+    5 \par
+    6 \par
+    7     #include <Windows.h>\par
+    8     #include <WinSock2.h>\par
+    9     #include <WS2tcpip.h>\par
+   10     #include <stdlib.h>\par
+   11     #include <stdio.h>\par
+   12 \par
+   13 \par
+   14     // Need to link with Ws2_32.lib, Mswsock.lib, and Advapi32.lib\par
+   15     #pragma comment (lib, "Ws2_32.lib")\par
+   16     #pragma comment (lib, "Mswsock.lib")\par
+   17     #pragma comment (lib, "AdvApi32.lib")\par
+   18 \par
+   19 \par
+   20     #include <QMainWindow>\par
+   21     #include <QPushButton>\par
+   22     #include <QString>\par
+   23     #include <{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAB" }{}}{\fldrslt {\cs37\ul\cf2 thread.h}}}
+>\par
+   24     #include <{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABV" }{}}{\fldrslt {\cs37\ul\cf2 roomf_form.h}}}
+>\par
+   25 \par
+   26     namespace {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAF" }{}}{\fldrslt {\cs37\ul\cf2 Ui}}}
+ \{\par
+   27     class {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAD" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow}}}
+;\par
+   28     \}\par
+   29 \par
+   30     class {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAD" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow}}}
+ : public QMainWindow\par
+   31     \{\par
+   32         Q_OBJECT\par
+   33         public:\par
+   34             explicit {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAE" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow}}}
+(QWidget *parent = nullptr);\par
+   35             {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAH" }{}}{\fldrslt {\cs37\ul\cf2 ~MainWindow}}}
+();\par
+   36            void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAI" }{}}{\fldrslt {\cs37\ul\cf2 setThread}}}
+({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAJ" }{}}{\fldrslt {\cs37\ul\cf2 Thread}}}
+* ser);\par
+   37 \par
+   38         private slots:\par
+   39             void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAL" }{}}{\fldrslt {\cs37\ul\cf2 on_pB_Log_clicked}}}
+();\par
+   40 \par
+   41             void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABC" }{}}{\fldrslt {\cs37\ul\cf2 on_pB_Test_clicked}}}
+();\par
+   42 \par
+   43             void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABB" }{}}{\fldrslt {\cs37\ul\cf2 on_pB_Test2_clicked}}}
+();\par
+   44 \par
+   45             void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABD" }{}}{\fldrslt {\cs37\ul\cf2 on_pB_Conn_clicked}}}
+();\par
+   46 \par
+   47             void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABE" }{}}{\fldrslt {\cs37\ul\cf2 on_pB_state_clicked}}}
+();\par
+   48 \par
+   49             void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABF" }{}}{\fldrslt {\cs37\ul\cf2 on_pB_CreateLS_clicked}}}
+();\par
+   50 \par
+   51             void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABG" }{}}{\fldrslt {\cs37\ul\cf2 on_pB_ALS_clicked}}}
+();\par
+   52 \par
+   53             void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABK" }{}}{\fldrslt {\cs37\ul\cf2 on_pB_StartLS_clicked}}}
+();\par
+   54 \par
+   55             void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABL" }{}}{\fldrslt {\cs37\ul\cf2 on_pB_EndLS_clicked}}}
+();\par
+   56 \par
+   57             void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABN" }{}}{\fldrslt {\cs37\ul\cf2 on_pB_DeleteLS_clicked}}}
+();\par
+   58 \par
+   59             void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABO" }{}}{\fldrslt {\cs37\ul\cf2 on_pB_CCS_clicked}}}
+();\par
+   60 \par
+   61             void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABP" }{}}{\fldrslt {\cs37\ul\cf2 on_pB_ACS_clicked}}}
+();\par
+   62 \par
+   63             void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABQ" }{}}{\fldrslt {\cs37\ul\cf2 on_pB_ConnCS_clicked}}}
+();\par
+   64 \par
+   65             void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABR" }{}}{\fldrslt {\cs37\ul\cf2 on_pB_SmCS_clicked}}}
+();\par
+   66 \par
+   67             void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABS" }{}}{\fldrslt {\cs37\ul\cf2 on_pB_Cstate_clicked}}}
+();\par
+   68 \par
+   69             void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABT" }{}}{\fldrslt {\cs37\ul\cf2 on_pB_EndCS_clicked}}}
+();\par
+   70 \par
+   71             void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABU" }{}}{\fldrslt {\cs37\ul\cf2 on_pB_DeleteCS_clicked}}}
+();\par
+   72 \par
+   73     private:\par
+   74             Ui::MainWindow *{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAG" }{}}{\fldrslt {\cs37\ul\cf2 ui}}}
+;\par
+   76             {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAJ" }{}}{\fldrslt {\cs37\ul\cf2 Thread}}}
+* {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAK" }{}}{\fldrslt {\cs37\ul\cf2 server1}}}
+ = nullptr;//Local Server\par
+   77             {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAJ" }{}}{\fldrslt {\cs37\ul\cf2 Thread}}}
+* {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAM" }{}}{\fldrslt {\cs37\ul\cf2 serverClient}}}
+= nullptr;// Server for Client listening\par
+   78             int {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABW" }{}}{\fldrslt {\cs37\ul\cf2 Current_ClientState}}}
+;\par
+   79 \par
+   80     public slots:\par
+   81         void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABH" }{}}{\fldrslt {\cs37\ul\cf2 updateLabel}}}
+(QString value);\par
+   82         void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAO" }{}}{\fldrslt {\cs37\ul\cf2 updateLabel2}}}
+(QString value);\par
+   83         void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAY" }{}}{\fldrslt {\cs37\ul\cf2 new_room}}}
+();\par
+   84         void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABJ" }{}}{\fldrslt {\cs37\ul\cf2 server_EM}}}
+(QString value);\par
+   85         void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAQ" }{}}{\fldrslt {\cs37\ul\cf2 client_EM}}}
+(QString value);\par
+   86 \par
+   87     \};\par
+   88 \par
+   89     #endif // MAINWINDOW_H\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+README.md File Reference\par \pard\plain 
+{\tc\tcl2 \v README.md}
+{\xe \v README.md}
+{\bkmkstart AAAAAAAAEF}
+{\bkmkend AAAAAAAAEF}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+README.md\par \pard\plain 
+{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     1 "# QT_GUI_CHEANG" \par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+roomf_form.cpp File Reference\par \pard\plain 
+{\tc\tcl2 \v roomf_form.cpp}
+{\xe \v roomf_form.cpp}
+{\bkmkstart AAAAAAAAEG}
+{\bkmkend AAAAAAAAEG}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "roomf_form.h"}\par
+{\f2 #include "ui_roomf_form.h"}\par
+}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Include dependency graph for roomf_form.cpp:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "roomf__form_8cpp__incl.jpg" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+roomf_form.cpp\par \pard\plain 
+{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     1 #include "{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABV" }{}}{\fldrslt {\cs37\ul\cf2 roomf_form.h}}}
+"\par
+    2 #include "ui_roomf_form.h"\par
+    3 \par
+    4 {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABX" }{}}{\fldrslt {\cs37\ul\cf2 Roomf_Form::Roomf_Form}}}
+(QWidget *parent) :\par
+    5     QWidget(parent),\par
+    6     ui(new {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAF" }{}}{\fldrslt {\cs37\ul\cf2 Ui}}}
+::{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAW" }{}}{\fldrslt {\cs37\ul\cf2 Roomf_Form}}}
+)\par
+    7 \{\par
+    8     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABY" }{}}{\fldrslt {\cs37\ul\cf2 ui}}}
+->setupUi(this);\par
+    9 \}\par
+   10 \par
+   11 {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABZ" }{}}{\fldrslt {\cs37\ul\cf2 Roomf_Form::~Roomf_Form}}}
+()\par
+   12 \{\par
+   13     delete {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABY" }{}}{\fldrslt {\cs37\ul\cf2 ui}}}
+;\par
+   14 \}\par
+   15 \par
+   16 void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACA" }{}}{\fldrslt {\cs37\ul\cf2 Roomf_Form::on_pB_NCuarto_clicked}}}
+()\par
+   17 \{\par
+   18     emit {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAX" }{}}{\fldrslt {\cs37\ul\cf2 new_room}}}
+();\par
+   19 \}\par
+   20 \par
+   21 void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACB" }{}}{\fldrslt {\cs37\ul\cf2 Roomf_Form::on_pB_Mensaje_clicked}}}
+()\par
+   22 \{\par
+   23     if(this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABY" }{}}{\fldrslt {\cs37\ul\cf2 ui}}}
+->lE_Cuarto->text()=="")\{\par
+   24         QString x = "Todavia no te has Suscrito a un room";\par
+   25             this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABY" }{}}{\fldrslt {\cs37\ul\cf2 ui}}}
+->lE_Mensaje->setText(x);\par
+   26     \}else\{\par
+   27         QString a =this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABY" }{}}{\fldrslt {\cs37\ul\cf2 ui}}}
+->lE_Mensaje->text();\par
+   28         this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABA" }{}}{\fldrslt {\cs37\ul\cf2 serverClient}}}
+->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACC" }{}}{\fldrslt {\cs37\ul\cf2 set_Room}}}
+(this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABY" }{}}{\fldrslt {\cs37\ul\cf2 ui}}}
+->lE_Cuarto->text());\par
+   29         this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABA" }{}}{\fldrslt {\cs37\ul\cf2 serverClient}}}
+->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACD" }{}}{\fldrslt {\cs37\ul\cf2 set_Message}}}
+(a);\par
+   30         this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABA" }{}}{\fldrslt {\cs37\ul\cf2 serverClient}}}
+->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAV" }{}}{\fldrslt {\cs37\ul\cf2 c_State}}}
+(1);\par
+   31     \}\par
+   32 \}\par
+   33 \par
+   34 void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACE" }{}}{\fldrslt {\cs37\ul\cf2 Roomf_Form::on_pB_TCuarto_clicked}}}
+()\par
+   35 \{\par
+   36     if(this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABY" }{}}{\fldrslt {\cs37\ul\cf2 ui}}}
+->lE_Cuarto->text()=="" || this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABY" }{}}{\fldrslt {\cs37\ul\cf2 ui}}}
+->lE_Cuarto->text() == " ")\{\par
+   37         QString x = "El Cuerto no puede estar vacio o con empezando con espacio";\par
+   38             this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABY" }{}}{\fldrslt {\cs37\ul\cf2 ui}}}
+->lE_Mensaje->setText(x);\par
+   39     \}else\{\par
+   40         this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACF" }{}}{\fldrslt {\cs37\ul\cf2 Room}}}
+=  this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABY" }{}}{\fldrslt {\cs37\ul\cf2 ui}}}
+->lE_Cuarto->text();\par
+   41         this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABA" }{}}{\fldrslt {\cs37\ul\cf2 serverClient}}}
+->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACC" }{}}{\fldrslt {\cs37\ul\cf2 set_Room}}}
+(this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABY" }{}}{\fldrslt {\cs37\ul\cf2 ui}}}
+->lE_Cuarto->text());\par
+   42         this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABA" }{}}{\fldrslt {\cs37\ul\cf2 serverClient}}}
+->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAV" }{}}{\fldrslt {\cs37\ul\cf2 c_State}}}
+(2);\par
+   43     \}\par
+   44 \}\par
+   45 \par
+   46 void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACG" }{}}{\fldrslt {\cs37\ul\cf2 Roomf_Form::on_pB_CM_clicked}}}
+()\par
+   47 \{\par
+   48     //pB_CM\par
+   49     if(this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACF" }{}}{\fldrslt {\cs37\ul\cf2 Room}}}
+== "")\{\par
+   50     \}else\{\par
+   51         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACH" }{}}{\fldrslt {\cs37\ul\cf2 nMessages}}}
+ = 10;\par
+   52         this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABA" }{}}{\fldrslt {\cs37\ul\cf2 serverClient}}}
+->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACC" }{}}{\fldrslt {\cs37\ul\cf2 set_Room}}}
+(this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABY" }{}}{\fldrslt {\cs37\ul\cf2 ui}}}
+->lE_Cuarto->text());\par
+   53         this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACI" }{}}{\fldrslt {\cs37\ul\cf2 nMess}}}
+ =  QString::number({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACH" }{}}{\fldrslt {\cs37\ul\cf2 nMessages}}}
+); ;\par
+   54         this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABA" }{}}{\fldrslt {\cs37\ul\cf2 serverClient}}}
+->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACJ" }{}}{\fldrslt {\cs37\ul\cf2 MessageN}}}
+ = this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACI" }{}}{\fldrslt {\cs37\ul\cf2 nMess}}}
+;\par
+   55         this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABA" }{}}{\fldrslt {\cs37\ul\cf2 serverClient}}}
+->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAV" }{}}{\fldrslt {\cs37\ul\cf2 c_State}}}
+(3);\par
+   56     \}\par
+   57 \}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+roomf_form.h File Reference\par \pard\plain 
+{\tc\tcl2 \v roomf_form.h}
+{\xe \v roomf_form.h}
+{\bkmkstart AAAAAAAABV}
+{\bkmkend AAAAAAAABV}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <QWidget>}\par
+{\f2 #include <thread.h>}\par
+{\f2 #include <QString>}\par
+}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Include dependency graph for roomf_form.h:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "roomf__form_8h__incl.jpg" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid This graph shows which files directly or indirectly include this file:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "roomf__form_8h__dep__incl.jpg" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Data Structures\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAW" }{}}{\fldrslt {\cs37\ul\cf2 Roomf_Form}}}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Namespaces\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAF" }{}}{\fldrslt {\cs37\ul\cf2 Ui}}}
+\par
+}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+roomf_form.h\par \pard\plain 
+{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     1 #ifndef ROOMF_FORM_H\par
+    2 #define ROOMF_FORM_H\par
+    3 \par
+    4 #include <QWidget>\par
+    5 #include <{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAB" }{}}{\fldrslt {\cs37\ul\cf2 thread.h}}}
+>\par
+    6 #include <QString>\par
+    7 \par
+    8 namespace {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAF" }{}}{\fldrslt {\cs37\ul\cf2 Ui}}}
+ \{\par
+    9 class {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAW" }{}}{\fldrslt {\cs37\ul\cf2 Roomf_Form}}}
+;\par
+   10 \}\par
+   11 \par
+   12 class {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAW" }{}}{\fldrslt {\cs37\ul\cf2 Roomf_Form}}}
+ : public QWidget\par
+   13 \{\par
+   14     Q_OBJECT\par
+   15 \par
+   16 public:\par
+   17     explicit {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABX" }{}}{\fldrslt {\cs37\ul\cf2 Roomf_Form}}}
+(QWidget *parent = nullptr);\par
+   18     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABZ" }{}}{\fldrslt {\cs37\ul\cf2 ~Roomf_Form}}}
+();\par
+   19     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAJ" }{}}{\fldrslt {\cs37\ul\cf2 Thread}}}
+* {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAZ" }{}}{\fldrslt {\cs37\ul\cf2 server1}}}
+ = nullptr;//Local Server\par
+   20     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAJ" }{}}{\fldrslt {\cs37\ul\cf2 Thread}}}
+* {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABA" }{}}{\fldrslt {\cs37\ul\cf2 serverClient}}}
+= nullptr;// Server for Client listening\par
+   21     QString {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACF" }{}}{\fldrslt {\cs37\ul\cf2 Room}}}
+;\par
+   22     int {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACH" }{}}{\fldrslt {\cs37\ul\cf2 nMessages}}}
+;\par
+   23     QString {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACI" }{}}{\fldrslt {\cs37\ul\cf2 nMess}}}
+;\par
+   24      signals:\par
+   25     void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAX" }{}}{\fldrslt {\cs37\ul\cf2 new_room}}}
+();\par
+   26 \par
+   27 \par
+   28 private slots:\par
+   29     void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACA" }{}}{\fldrslt {\cs37\ul\cf2 on_pB_NCuarto_clicked}}}
+();\par
+   30 \par
+   31 \par
+   32     void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACB" }{}}{\fldrslt {\cs37\ul\cf2 on_pB_Mensaje_clicked}}}
+();\par
+   33 \par
+   34     void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACE" }{}}{\fldrslt {\cs37\ul\cf2 on_pB_TCuarto_clicked}}}
+();\par
+   35 \par
+   36     void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACG" }{}}{\fldrslt {\cs37\ul\cf2 on_pB_CM_clicked}}}
+();\par
+   37 \par
+   38 private:\par
+   39     Ui::Roomf_Form *{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABY" }{}}{\fldrslt {\cs37\ul\cf2 ui}}}
+;\par
+   40 \};\par
+   41 \par
+   42 #endif // ROOMF_FORM_H\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+thread.cpp File Reference\par \pard\plain 
+{\tc\tcl2 \v thread.cpp}
+{\xe \v thread.cpp}
+{\bkmkstart AAAAAAAAEH}
+{\bkmkend AAAAAAAAEH}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "thread.h"}\par
+{\f2 #include <QDebug>}\par
+}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Include dependency graph for thread.cpp:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "thread_8cpp__incl.jpg" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+thread.cpp\par \pard\plain 
+{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     1 #include "{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAB" }{}}{\fldrslt {\cs37\ul\cf2 thread.h}}}
+"\par
+    2 #include <QDebug>\par
+    4 void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAR" }{}}{\fldrslt {\cs37\ul\cf2 Thread::StartThread}}}
+(int state,int tap)\{\par
+    5     switch (tap) \{\par
+    6         case 0:// case 0 =  client  Initialize\par
+    7             this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACK" }{}}{\fldrslt {\cs37\ul\cf2 client}}}
+(state);\par
+    8             this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACL" }{}}{\fldrslt {\cs37\ul\cf2 tp}}}
+ = tap;\par
+    9         break;\par
+   10         case 1:// case 1 = server Initialize\par
+   11             this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACM" }{}}{\fldrslt {\cs37\ul\cf2 server}}}
+();\par
+   12             this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACL" }{}}{\fldrslt {\cs37\ul\cf2 tp}}}
+ = tap;\par
+   13         break;\par
+   14     \}\par
+   15 \}\par
+   17 void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACN" }{}}{\fldrslt {\cs37\ul\cf2 Thread::run}}}
+()\{\par
+   18     QString a;\par
+   19     // swith for case for running  cycle for client or server\par
+   20     while({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACO" }{}}{\fldrslt {\cs37\ul\cf2 runl}}}
+)\{\par
+   21         switch (this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACL" }{}}{\fldrslt {\cs37\ul\cf2 tp}}}
+) \{\par
+   22             case 0:\{\par
+   23                     // case 0 =  client  Initialize\par
+   24                     this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACP" }{}}{\fldrslt {\cs37\ul\cf2 clientEx}}}
+();\par
+   25                    \}\par
+   26                 break;\par
+   27             case 1:// case 1 = server Initialize\par
+   28                 this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACQ" }{}}{\fldrslt {\cs37\ul\cf2 serverEx}}}
+();\par
+   29         \}\par
+   30     \}\par
+   31 \}\par
+   32 \par
+   33 void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACK" }{}}{\fldrslt {\cs37\ul\cf2 Thread::client}}}
+(int state)\{\par
+   34     this->state = {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACR" }{}}{\fldrslt {\cs37\ul\cf2 state}}}
+;\par
+   35     QString a;\par
+   36     // Initialize Winsock\par
+   37     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACS" }{}}{\fldrslt {\cs37\ul\cf2 iResult}}}
+ = WSAStartup(MAKEWORD(2,2), &{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACT" }{}}{\fldrslt {\cs37\ul\cf2 wsaData}}}
+);\par
+   38     if ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACS" }{}}{\fldrslt {\cs37\ul\cf2 iResult}}}
+ != 0) \{\par
+   39         a ="WSAStartup failed with error: ";\par
+   40         char aChar = '0' + {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACS" }{}}{\fldrslt {\cs37\ul\cf2 iResult}}}
+;\par
+   41          a = a + aChar;\par
+   42          emit {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAP" }{}}{\fldrslt {\cs37\ul\cf2 commClient}}}
+(a);\par
+   43         // send emmit for soket to change text\par
+   44     \}\par
+   45 \}\par
+   46 \par
+   47 void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAT" }{}}{\fldrslt {\cs37\ul\cf2 Thread::clientConnect}}}
+()\{\par
+   48     QString a;\par
+   49     ZeroMemory( &{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACU" }{}}{\fldrslt {\cs37\ul\cf2 hints}}}
+, sizeof({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACU" }{}}{\fldrslt {\cs37\ul\cf2 hints}}}
+) );\par
+   50     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACU" }{}}{\fldrslt {\cs37\ul\cf2 hints}}}
+.ai_family = AF_INET;\par
+   51     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACU" }{}}{\fldrslt {\cs37\ul\cf2 hints}}}
+.ai_socktype = SOCK_STREAM;\par
+   52     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACU" }{}}{\fldrslt {\cs37\ul\cf2 hints}}}
+.ai_protocol = IPPROTO_TCP;\par
+   53     // Resolve the server address and port\par
+   54     // socket to get ip adress\par
+   55     std::string current_locale_text = {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACV" }{}}{\fldrslt {\cs37\ul\cf2 qs}}}
+.toLocal8Bit().constData();\par
+   56     const char *cstr = current_locale_text.c_str();\par
+   57     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACS" }{}}{\fldrslt {\cs37\ul\cf2 iResult}}}
+ = getaddrinfo(cstr, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACW" }{}}{\fldrslt {\cs37\ul\cf2 DEFAULT_PORT}}}
+, &{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACU" }{}}{\fldrslt {\cs37\ul\cf2 hints}}}
+, &{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACX" }{}}{\fldrslt {\cs37\ul\cf2 result}}}
+);\par
+   58     if ( {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACS" }{}}{\fldrslt {\cs37\ul\cf2 iResult}}}
+ != 0 ) \{\par
+   59         a="getaddrinfo failed with error: ";\par
+   60         char aChar = '0' + {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACS" }{}}{\fldrslt {\cs37\ul\cf2 iResult}}}
+;\par
+   61         a = a + aChar;\par
+   62         emit {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAP" }{}}{\fldrslt {\cs37\ul\cf2 commClient}}}
+(a);\par
+   63         WSACleanup();\par
+   64     \}\par
+   65 \par
+   66     // Attempt to connect to an address until one succeeds\par
+   67     for({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACY" }{}}{\fldrslt {\cs37\ul\cf2 ptr}}}
+={\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACX" }{}}{\fldrslt {\cs37\ul\cf2 result}}}
+; {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACY" }{}}{\fldrslt {\cs37\ul\cf2 ptr}}}
+ != NULL ;{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACY" }{}}{\fldrslt {\cs37\ul\cf2 ptr}}}
+={\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACY" }{}}{\fldrslt {\cs37\ul\cf2 ptr}}}
+->ai_next) \{\par
+   68         // Create a SOCKET for connecting to server\par
+   69         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACZ" }{}}{\fldrslt {\cs37\ul\cf2 ClientSocket}}}
+ = socket({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACY" }{}}{\fldrslt {\cs37\ul\cf2 ptr}}}
+->ai_family, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACY" }{}}{\fldrslt {\cs37\ul\cf2 ptr}}}
+->ai_socktype,\par
+   70         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACY" }{}}{\fldrslt {\cs37\ul\cf2 ptr}}}
+->ai_protocol);\par
+   71         if ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACZ" }{}}{\fldrslt {\cs37\ul\cf2 ClientSocket}}}
+ == INVALID_SOCKET) \{\par
+   72             a="socket failed with error: \\n" ;\par
+   73             char aChar = '0' + WSAGetLastError();\par
+   74             a = a + aChar;\par
+   75             emit {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAP" }{}}{\fldrslt {\cs37\ul\cf2 commClient}}}
+(a);\par
+   76             WSACleanup();\par
+   77         \}\par
+   78         // Connect to server.\par
+   79         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACS" }{}}{\fldrslt {\cs37\ul\cf2 iResult}}}
+ = ::connect( {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACZ" }{}}{\fldrslt {\cs37\ul\cf2 ClientSocket}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACY" }{}}{\fldrslt {\cs37\ul\cf2 ptr}}}
+->ai_addr, (int){\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACY" }{}}{\fldrslt {\cs37\ul\cf2 ptr}}}
+->ai_addrlen);\par
+   80         if ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACS" }{}}{\fldrslt {\cs37\ul\cf2 iResult}}}
+ == SOCKET_ERROR) \{\par
+   81             closesocket({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACZ" }{}}{\fldrslt {\cs37\ul\cf2 ClientSocket}}}
+);\par
+   82             {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACZ" }{}}{\fldrslt {\cs37\ul\cf2 ClientSocket}}}
+ = INVALID_SOCKET;\par
+   83             continue;\par
+   84         \}\par
+   85         break;\par
+   86     \}\par
+   87     freeaddrinfo({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACX" }{}}{\fldrslt {\cs37\ul\cf2 result}}}
+);\par
+   88     if ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACZ" }{}}{\fldrslt {\cs37\ul\cf2 ClientSocket}}}
+ == INVALID_SOCKET) \{\par
+   89         a="Unable to connect to server!";\par
+   90         emit {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAP" }{}}{\fldrslt {\cs37\ul\cf2 commClient}}}
+(a);\par
+   91         WSACleanup();\par
+   92         this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADA" }{}}{\fldrslt {\cs37\ul\cf2 terminate}}}
+();\par
+   93     \}else\{\par
+   94         a="Connectes Succesfully at server";\par
+   95         emit {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAP" }{}}{\fldrslt {\cs37\ul\cf2 commClient}}}
+(a);\par
+   96     \}\par
+   97 \par
+   98 \}\par
+   99 \par
+  100 void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACP" }{}}{\fldrslt {\cs37\ul\cf2 Thread::clientEx}}}
+()\{\par
+  101     switch (this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACR" }{}}{\fldrslt {\cs37\ul\cf2 state}}}
+) \{\par
+  102         case 0:// case 0 =  client listens\par
+  103             this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADB" }{}}{\fldrslt {\cs37\ul\cf2 State0}}}
+();\par
+  104         break;\par
+  105         case 1:// case 1 = client sends message to server;\par
+  106             this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADC" }{}}{\fldrslt {\cs37\ul\cf2 State1}}}
+();\par
+  107         break;\par
+  108         case 2: //case 2 = Subribe to a room\par
+  109             this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADD" }{}}{\fldrslt {\cs37\ul\cf2 State2}}}
+();\par
+  110         break;\par
+  111         case 3: //case 3 = Query older messages\par
+  112             this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADE" }{}}{\fldrslt {\cs37\ul\cf2 State3}}}
+();\par
+  113         break;\par
+  114         case 4: //case 4 = Query older messages\par
+  115             this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADF" }{}}{\fldrslt {\cs37\ul\cf2 State4}}}
+();\par
+  116         break;\par
+  117     \}\par
+  118 \}\par
+  119 \par
+  120 void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACM" }{}}{\fldrslt {\cs37\ul\cf2 Thread::server}}}
+()\{\par
+  121     QString a;\par
+  122     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACR" }{}}{\fldrslt {\cs37\ul\cf2 state}}}
+= 0;\par
+  123     // Initialize Winsock\par
+  124     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACS" }{}}{\fldrslt {\cs37\ul\cf2 iResult}}}
+ = WSAStartup(MAKEWORD(2,2), &{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACT" }{}}{\fldrslt {\cs37\ul\cf2 wsaData}}}
+);\par
+  125     if ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACS" }{}}{\fldrslt {\cs37\ul\cf2 iResult}}}
+ != 0) \{\par
+  126         a="WSAStartup failed with error: \\n";\par
+  127         char aChar = '0' + {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACS" }{}}{\fldrslt {\cs37\ul\cf2 iResult}}}
+;\par
+  128          a = a + aChar;\par
+  129          emit {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAN" }{}}{\fldrslt {\cs37\ul\cf2 resultReady}}}
+(a);\par
+  130     \}\par
+  131     ZeroMemory(&{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACU" }{}}{\fldrslt {\cs37\ul\cf2 hints}}}
+, sizeof({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACU" }{}}{\fldrslt {\cs37\ul\cf2 hints}}}
+));\par
+  132     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACU" }{}}{\fldrslt {\cs37\ul\cf2 hints}}}
+.ai_family = AF_INET;\par
+  133     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACU" }{}}{\fldrslt {\cs37\ul\cf2 hints}}}
+.ai_socktype = SOCK_STREAM;\par
+  134     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACU" }{}}{\fldrslt {\cs37\ul\cf2 hints}}}
+.ai_protocol = IPPROTO_TCP;\par
+  135     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACU" }{}}{\fldrslt {\cs37\ul\cf2 hints}}}
+.ai_flags = AI_PASSIVE;\par
+  136     // Resolve the server address and port\par
+  137     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACS" }{}}{\fldrslt {\cs37\ul\cf2 iResult}}}
+ = getaddrinfo(NULL, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACW" }{}}{\fldrslt {\cs37\ul\cf2 DEFAULT_PORT}}}
+, &{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACU" }{}}{\fldrslt {\cs37\ul\cf2 hints}}}
+, &{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACX" }{}}{\fldrslt {\cs37\ul\cf2 result}}}
+);\par
+  138     if ( {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACS" }{}}{\fldrslt {\cs37\ul\cf2 iResult}}}
+ != 0 ) \{\par
+  139         a="getaddrinfo failed with error: \\n";\par
+  140         char aChar = '0' + {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACS" }{}}{\fldrslt {\cs37\ul\cf2 iResult}}}
+;\par
+  141          a = a + aChar;\par
+  142         WSACleanup();\par
+  143         emit {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAN" }{}}{\fldrslt {\cs37\ul\cf2 resultReady}}}
+(a);\par
+  144         emit {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABI" }{}}{\fldrslt {\cs37\ul\cf2 commServer}}}
+(a);\par
+  145     \}\par
+  146     // Create a SOCKET for connecting to server\par
+  147     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADG" }{}}{\fldrslt {\cs37\ul\cf2 ListenSocket}}}
+ = socket({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACX" }{}}{\fldrslt {\cs37\ul\cf2 result}}}
+->ai_family, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACX" }{}}{\fldrslt {\cs37\ul\cf2 result}}}
+->ai_socktype, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACX" }{}}{\fldrslt {\cs37\ul\cf2 result}}}
+->ai_protocol);\par
+  148     if ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADG" }{}}{\fldrslt {\cs37\ul\cf2 ListenSocket}}}
+ == INVALID_SOCKET) \{\par
+  149         a="socket failed with error: \\n";\par
+  150         char aChar = '0' + WSAGetLastError();\par
+  151          a = a + aChar;\par
+  152         freeaddrinfo({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACX" }{}}{\fldrslt {\cs37\ul\cf2 result}}}
+);\par
+  153         WSACleanup();\par
+  154            emit {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAN" }{}}{\fldrslt {\cs37\ul\cf2 resultReady}}}
+(a);\par
+  155         emit {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABI" }{}}{\fldrslt {\cs37\ul\cf2 commServer}}}
+(a);\par
+  156     \}\par
+  157     // Setup the TCP listening socket\par
+  158     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACS" }{}}{\fldrslt {\cs37\ul\cf2 iResult}}}
+ = bind( {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADG" }{}}{\fldrslt {\cs37\ul\cf2 ListenSocket}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACX" }{}}{\fldrslt {\cs37\ul\cf2 result}}}
+->ai_addr, (int){\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACX" }{}}{\fldrslt {\cs37\ul\cf2 result}}}
+->ai_addrlen);\par
+  159     if ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACS" }{}}{\fldrslt {\cs37\ul\cf2 iResult}}}
+ == SOCKET_ERROR) \{\par
+  160         a="bind failed with error: \\n";\par
+  161         char aChar = '0' + WSAGetLastError();\par
+  162          a = a + aChar;\par
+  163         freeaddrinfo({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACX" }{}}{\fldrslt {\cs37\ul\cf2 result}}}
+);\par
+  164         closesocket({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADG" }{}}{\fldrslt {\cs37\ul\cf2 ListenSocket}}}
+);\par
+  165         WSACleanup();\par
+  166            emit {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAN" }{}}{\fldrslt {\cs37\ul\cf2 resultReady}}}
+(a);\par
+  167         emit {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABI" }{}}{\fldrslt {\cs37\ul\cf2 commServer}}}
+(a);\par
+  168     \}\par
+  169     freeaddrinfo({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACX" }{}}{\fldrslt {\cs37\ul\cf2 result}}}
+);\par
+  170     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACS" }{}}{\fldrslt {\cs37\ul\cf2 iResult}}}
+ = listen({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADG" }{}}{\fldrslt {\cs37\ul\cf2 ListenSocket}}}
+, SOMAXCONN);\par
+  171     if ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACS" }{}}{\fldrslt {\cs37\ul\cf2 iResult}}}
+ == SOCKET_ERROR) \{\par
+  172         a="listen failed with error: \\n";\par
+  173         char aChar = '0' + WSAGetLastError();\par
+  174          a = a + aChar;\par
+  175         closesocket({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADG" }{}}{\fldrslt {\cs37\ul\cf2 ListenSocket}}}
+);\par
+  176         WSACleanup();\par
+  177         emit {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAN" }{}}{\fldrslt {\cs37\ul\cf2 resultReady}}}
+(a);\par
+  178         emit {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABI" }{}}{\fldrslt {\cs37\ul\cf2 commServer}}}
+(a);\par
+  179     \}\par
+  180     a = "started server correctly";\par
+  181     emit {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAN" }{}}{\fldrslt {\cs37\ul\cf2 resultReady}}}
+(a);\par
+  182     emit {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABI" }{}}{\fldrslt {\cs37\ul\cf2 commServer}}}
+(a);\par
+  183 \}\par
+  184 \par
+  185 void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACQ" }{}}{\fldrslt {\cs37\ul\cf2 Thread::serverEx}}}
+()\{\par
+  186     QString a;\par
+  187     // Accept a client socket\par
+  188     if({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACZ" }{}}{\fldrslt {\cs37\ul\cf2 ClientSocket}}}
+ ==INVALID_SOCKET)\{\par
+  189         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACZ" }{}}{\fldrslt {\cs37\ul\cf2 ClientSocket}}}
+ = accept({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADG" }{}}{\fldrslt {\cs37\ul\cf2 ListenSocket}}}
+, NULL, NULL);\par
+  190         if ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACZ" }{}}{\fldrslt {\cs37\ul\cf2 ClientSocket}}}
+ == INVALID_SOCKET) \{\par
+  191             a="accept failed with error: \\n";\par
+  192             char aChar = '0' + WSAGetLastError();\par
+  193             a = a + aChar;\par
+  194             closesocket({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADG" }{}}{\fldrslt {\cs37\ul\cf2 ListenSocket}}}
+);\par
+  195             WSACleanup();\par
+  196             emit {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABI" }{}}{\fldrslt {\cs37\ul\cf2 commServer}}}
+(a);\par
+  197         \}\par
+  198     \}\par
+  199     // No longer need server socket\par
+  200     closesocket({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADG" }{}}{\fldrslt {\cs37\ul\cf2 ListenSocket}}}
+);\par
+  201     // Receive until the peer shuts down the connection\par
+  202     do \{\par
+  203         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACS" }{}}{\fldrslt {\cs37\ul\cf2 iResult}}}
+ = recv({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACZ" }{}}{\fldrslt {\cs37\ul\cf2 ClientSocket}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADH" }{}}{\fldrslt {\cs37\ul\cf2 recvbuf}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADI" }{}}{\fldrslt {\cs37\ul\cf2 recvbuflen}}}
+, 0);\par
+  204         if ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACS" }{}}{\fldrslt {\cs37\ul\cf2 iResult}}}
+ > 0) \{\par
+  205             if({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACR" }{}}{\fldrslt {\cs37\ul\cf2 state}}}
+==0)\{\par
+  206                 a="Bytes received: server \\n";\par
+  207                 a= a+ " : "+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADH" }{}}{\fldrslt {\cs37\ul\cf2 recvbuf}}}
+;\par
+  208                 emit {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABI" }{}}{\fldrslt {\cs37\ul\cf2 commServer}}}
+(a);\par
+  209             \}\par
+  210             else\{\par
+  211                 a="Bytes received: server \\n";\par
+  212                 a= a+ " : "+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADH" }{}}{\fldrslt {\cs37\ul\cf2 recvbuf}}}
+ +"state change :"+ {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACR" }{}}{\fldrslt {\cs37\ul\cf2 state}}}
+;\par
+  213                 emit {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABI" }{}}{\fldrslt {\cs37\ul\cf2 commServer}}}
+(a);\par
+  214             \}\par
+  215             {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADJ" }{}}{\fldrslt {\cs37\ul\cf2 iSendResult}}}
+ = send( {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACZ" }{}}{\fldrslt {\cs37\ul\cf2 ClientSocket}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADH" }{}}{\fldrslt {\cs37\ul\cf2 recvbuf}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADI" }{}}{\fldrslt {\cs37\ul\cf2 recvbuflen}}}
+, 0 );\par
+  216             if ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADJ" }{}}{\fldrslt {\cs37\ul\cf2 iSendResult}}}
+ == SOCKET_ERROR) \{\par
+  217                 a="send failed with error: %d\\n";\par
+  218                 char aChar = '0' + WSAGetLastError();\par
+  219                 a = a + aChar;\par
+  220                 closesocket({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACZ" }{}}{\fldrslt {\cs37\ul\cf2 ClientSocket}}}
+);\par
+  221                 WSACleanup();\par
+  222                 emit {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABI" }{}}{\fldrslt {\cs37\ul\cf2 commServer}}}
+(a);\par
+  223             \}\par
+  224             a="Bytes sent: server\\n";\par
+  225             a= a +{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADH" }{}}{\fldrslt {\cs37\ul\cf2 recvbuf}}}
+;\par
+  226             emit {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABI" }{}}{\fldrslt {\cs37\ul\cf2 commServer}}}
+(a);\par
+  227         \}\par
+  228         else if ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACS" }{}}{\fldrslt {\cs37\ul\cf2 iResult}}}
+ == 0)\{\par
+  229             a="Connection closing...\\n";\par
+  230             emit {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABI" }{}}{\fldrslt {\cs37\ul\cf2 commServer}}}
+(a);\par
+  231         \}\par
+  232         else\{\par
+  233             a="recv failed with error: \\n";\par
+  234             char aChar = '0' + WSAGetLastError();\par
+  235             a = a + aChar;\par
+  236             closesocket({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACZ" }{}}{\fldrslt {\cs37\ul\cf2 ClientSocket}}}
+);\par
+  237             WSACleanup();\par
+  238             emit {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABI" }{}}{\fldrslt {\cs37\ul\cf2 commServer}}}
+(a);\par
+  239         \}\par
+  240     \} while ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACS" }{}}{\fldrslt {\cs37\ul\cf2 iResult}}}
+ > 0);\par
+  241 \}\par
+  242 \par
+  243 void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABM" }{}}{\fldrslt {\cs37\ul\cf2 Thread::cut}}}
+()\{\par
+  244     QString a;\par
+  245     // depending on the TP  we neeed to close the loop and conection a clean up the socket\par
+  246     if(this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACL" }{}}{\fldrslt {\cs37\ul\cf2 tp}}}
+ ==0)\{\par
+  247         // shutdown the connection since no more data will be sent\par
+  248         closesocket({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACZ" }{}}{\fldrslt {\cs37\ul\cf2 ClientSocket}}}
+);\par
+  249         WSACleanup();\par
+  250         a= "client cut";\par
+  251         emit {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAP" }{}}{\fldrslt {\cs37\ul\cf2 commClient}}}
+(a);\par
+  252         this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADA" }{}}{\fldrslt {\cs37\ul\cf2 terminate}}}
+();\par
+  253     \}else\{\par
+  254         // shutdown the connection since we're done\par
+  255         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACS" }{}}{\fldrslt {\cs37\ul\cf2 iResult}}}
+ = shutdown({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACZ" }{}}{\fldrslt {\cs37\ul\cf2 ClientSocket}}}
+, SD_SEND);\par
+  256         if ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACS" }{}}{\fldrslt {\cs37\ul\cf2 iResult}}}
+ == SOCKET_ERROR) \{\par
+  257             a="shutdown failed with error: \\n";\par
+  258             char aChar = '0' + WSAGetLastError();\par
+  259             a = a + aChar;\par
+  260             closesocket({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACZ" }{}}{\fldrslt {\cs37\ul\cf2 ClientSocket}}}
+);\par
+  261             WSACleanup();\par
+  262             emit {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABI" }{}}{\fldrslt {\cs37\ul\cf2 commServer}}}
+(a);\par
+  263         \}\par
+  264        // cleanup\par
+  265        closesocket({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACZ" }{}}{\fldrslt {\cs37\ul\cf2 ClientSocket}}}
+);\par
+  266        WSACleanup();\par
+  267        a= "server cut";\par
+  268        emit {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABI" }{}}{\fldrslt {\cs37\ul\cf2 commServer}}}
+(a);\par
+  269         this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADA" }{}}{\fldrslt {\cs37\ul\cf2 terminate}}}
+();\par
+  270     \}\par
+  271 \par
+  272 \}\par
+  273 \par
+  274 void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADA" }{}}{\fldrslt {\cs37\ul\cf2 Thread::terminate}}}
+()\{\par
+  275     // <-- wits till the thread has exited\par
+  276     this->deleteLater();\par
+  277     this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACO" }{}}{\fldrslt {\cs37\ul\cf2 runl}}}
+ = false;\par
+  278 \}\par
+  279 \par
+  280 void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADB" }{}}{\fldrslt {\cs37\ul\cf2 Thread::State0}}}
+()\{\par
+  281      // Receive until the peer closes the connection\par
+  283     QString a;\par
+  284     fd_set ReadFDs;\par
+  285     FD_ZERO(&ReadFDs);\par
+  286     FD_SET({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACZ" }{}}{\fldrslt {\cs37\ul\cf2 ClientSocket}}}
+, &ReadFDs);\par
+  287             struct timeval *tv = new timeval();\par
+  288             tv->tv_sec = 0;\par
+  289             tv->tv_usec = 250000;\par
+  290     if(::select(0,&ReadFDs ,NULL, NULL,tv) != 0)\{\par
+  291         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACS" }{}}{\fldrslt {\cs37\ul\cf2 iResult}}}
+ = recv({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACZ" }{}}{\fldrslt {\cs37\ul\cf2 ClientSocket}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADH" }{}}{\fldrslt {\cs37\ul\cf2 recvbuf}}}
+, {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADI" }{}}{\fldrslt {\cs37\ul\cf2 recvbuflen}}}
+, 0);\par
+  292         if ( {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACS" }{}}{\fldrslt {\cs37\ul\cf2 iResult}}}
+ > 0 )\{\par
+  293             a="Bytes received cliente:\\n";\par
+  294             a+= {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADH" }{}}{\fldrslt {\cs37\ul\cf2 recvbuf}}}
+;\par
+  295             emit {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAP" }{}}{\fldrslt {\cs37\ul\cf2 commClient}}}
+(a);\par
+  296             this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADK" }{}}{\fldrslt {\cs37\ul\cf2 Aliz}}}
+({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADH" }{}}{\fldrslt {\cs37\ul\cf2 recvbuf}}}
+);\par
+  297         \}\par
+  298         else if ( {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACS" }{}}{\fldrslt {\cs37\ul\cf2 iResult}}}
+ == 0 )\{\par
+  299             a="Connection closed\\n";\par
+  300            emit {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAP" }{}}{\fldrslt {\cs37\ul\cf2 commClient}}}
+(a);\par
+  301         \}\par
+  302         else\{\par
+  303             a="recv failed with error: %d\\n";\par
+  304                 char aChar = '0' + WSAGetLastError();\par
+  305             a=a+ aChar;\par
+  306             emit {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAP" }{}}{\fldrslt {\cs37\ul\cf2 commClient}}}
+(a);\par
+  307         \}\par
+  308     \}else\{\par
+  309         a = "pasaron 200 millisegundos y voy a repetirlo escuchandoooo.....";\par
+  310         emit {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAP" }{}}{\fldrslt {\cs37\ul\cf2 commClient}}}
+(a);\par
+  311     \}\par
+  312 \}\par
+  313 \par
+  314 void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADC" }{}}{\fldrslt {\cs37\ul\cf2 Thread::State1}}}
+()\{\par
+  315     // state to send message\par
+  316     QString a;\par
+  317      a = "p|";\par
+  318      a =  a + this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADL" }{}}{\fldrslt {\cs37\ul\cf2 Room}}}
+;\par
+  319     std::string xs  = a.toLocal8Bit().constData();\par
+  320     xs = xs + "|";\par
+  321     xs = xs + this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADM" }{}}{\fldrslt {\cs37\ul\cf2 message}}}
+;\par
+  322     const char *cstr = xs.c_str();\par
+  323     int i = (int)xs.length();\par
+  324         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACS" }{}}{\fldrslt {\cs37\ul\cf2 iResult}}}
+ = send( {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACZ" }{}}{\fldrslt {\cs37\ul\cf2 ClientSocket}}}
+, cstr,i, 0 );\par
+  325         a="Bytes Sent:\\n";\par
+  326         a = a+ cstr;\par
+  327         emit {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAP" }{}}{\fldrslt {\cs37\ul\cf2 commClient}}}
+(a);\par
+  328     if ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACS" }{}}{\fldrslt {\cs37\ul\cf2 iResult}}}
+ == SOCKET_ERROR) \{\par
+  329         a="send failed with error: ";\par
+  330         char aChar = '0' + WSAGetLastError();\par
+  331         a = a + aChar;\par
+  332         emit {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAP" }{}}{\fldrslt {\cs37\ul\cf2 commClient}}}
+(a);\par
+  333         closesocket({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACZ" }{}}{\fldrslt {\cs37\ul\cf2 ClientSocket}}}
+);\par
+  334         WSACleanup();\par
+  335     \}\par
+  336      this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACR" }{}}{\fldrslt {\cs37\ul\cf2 state}}}
+ = 0;\par
+  337 \}\par
+  338 \par
+  339 void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADD" }{}}{\fldrslt {\cs37\ul\cf2 Thread::State2}}}
+()\{\par
+  340     QString a;\par
+  341      a = "s|";\par
+  342      a =  a + this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADL" }{}}{\fldrslt {\cs37\ul\cf2 Room}}}
+;\par
+  343     std::string xs  = a.toLocal8Bit().constData();\par
+  344     const char *cstr = xs.c_str();\par
+  345     int i = (int)xs.length();\par
+  346         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACS" }{}}{\fldrslt {\cs37\ul\cf2 iResult}}}
+ = send( {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACZ" }{}}{\fldrslt {\cs37\ul\cf2 ClientSocket}}}
+, cstr,i, 0 );\par
+  347         a="Bytes Sent:\\n";\par
+  348         a = a+ cstr;\par
+  349         emit {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAP" }{}}{\fldrslt {\cs37\ul\cf2 commClient}}}
+(a);\par
+  350     if ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACS" }{}}{\fldrslt {\cs37\ul\cf2 iResult}}}
+ == SOCKET_ERROR) \{\par
+  351         a="send failed with error: ";\par
+  352         char aChar = '0' + WSAGetLastError();\par
+  353         a = a + aChar;\par
+  354         emit {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAP" }{}}{\fldrslt {\cs37\ul\cf2 commClient}}}
+(a);\par
+  355         closesocket({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACZ" }{}}{\fldrslt {\cs37\ul\cf2 ClientSocket}}}
+);\par
+  356         WSACleanup();\par
+  357     \}\par
+  358      this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACR" }{}}{\fldrslt {\cs37\ul\cf2 state}}}
+ = 0;\par
+  359 \}\par
+  360 \par
+  361 void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADE" }{}}{\fldrslt {\cs37\ul\cf2 Thread::State3}}}
+()\{\par
+  362     QString a;\par
+  363      a = "m|";\par
+  364      a =  a + this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADL" }{}}{\fldrslt {\cs37\ul\cf2 Room}}}
+;\par
+  365     std::string xs  = a.toLocal8Bit().constData();\par
+  366     xs = xs + "|";\par
+  367     xs = xs + {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACJ" }{}}{\fldrslt {\cs37\ul\cf2 MessageN}}}
+.toLocal8Bit().constData();   \par
+  368     xs = xs + "|";\par
+  369      xs = xs + "10";   \par
+  370     const char *cstr = xs.c_str();\par
+  371     int i = (int)xs.length();\par
+  372         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACS" }{}}{\fldrslt {\cs37\ul\cf2 iResult}}}
+ = send( {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACZ" }{}}{\fldrslt {\cs37\ul\cf2 ClientSocket}}}
+, cstr,i, 0 );\par
+  373         a="Bytes Sent:\\n";\par
+  374         a = a+ cstr;\par
+  375         emit {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAP" }{}}{\fldrslt {\cs37\ul\cf2 commClient}}}
+(a);\par
+  376     if ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACS" }{}}{\fldrslt {\cs37\ul\cf2 iResult}}}
+ == SOCKET_ERROR) \{\par
+  377         a="send failed with error: ";\par
+  378         char aChar = '0' + WSAGetLastError();\par
+  379         a = a + aChar;\par
+  380         emit {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAP" }{}}{\fldrslt {\cs37\ul\cf2 commClient}}}
+(a);\par
+  381         closesocket({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACZ" }{}}{\fldrslt {\cs37\ul\cf2 ClientSocket}}}
+);\par
+  382         WSACleanup();\par
+  383     \}\par
+  384      this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACR" }{}}{\fldrslt {\cs37\ul\cf2 state}}}
+ = 0;\par
+  385 \}\par
+  386 \par
+  387 void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADF" }{}}{\fldrslt {\cs37\ul\cf2 Thread::State4}}}
+()\{\par
+  388     QString a;\par
+  389      a = "n|";\par
+  390      a =  a + this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADN" }{}}{\fldrslt {\cs37\ul\cf2 Poster}}}
+;\par
+  391     std::string xs  = a.toLocal8Bit().constData();\par
+  392     const char *cstr = xs.c_str();\par
+  393     int i = (int)xs.length();\par
+  394         {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACS" }{}}{\fldrslt {\cs37\ul\cf2 iResult}}}
+ = send( {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACZ" }{}}{\fldrslt {\cs37\ul\cf2 ClientSocket}}}
+, cstr,i, 0 );\par
+  395         a="Bytes Sent:\\n";\par
+  396         a = a+ cstr;\par
+  397         emit {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAP" }{}}{\fldrslt {\cs37\ul\cf2 commClient}}}
+(a);\par
+  398     if ({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACS" }{}}{\fldrslt {\cs37\ul\cf2 iResult}}}
+ == SOCKET_ERROR) \{\par
+  399         a="send failed with error: ";\par
+  400         char aChar = '0' + WSAGetLastError();\par
+  401         a = a + aChar;\par
+  402         emit {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAP" }{}}{\fldrslt {\cs37\ul\cf2 commClient}}}
+(a);\par
+  403         closesocket({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACZ" }{}}{\fldrslt {\cs37\ul\cf2 ClientSocket}}}
+);\par
+  404         WSACleanup();\par
+  405     \}\par
+  406      this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACR" }{}}{\fldrslt {\cs37\ul\cf2 state}}}
+ = 0;\par
+  407 \par
+  408 \}\par
+  409 \par
+  410 void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADK" }{}}{\fldrslt {\cs37\ul\cf2 Thread::Aliz}}}
+(char charArray[])\{\par
+  411    QString a ;\par
+  412    a = a +charArray;\par
+  413    this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADO" }{}}{\fldrslt {\cs37\ul\cf2 read}}}
+ =a.split("|");\par
+  414    if({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADO" }{}}{\fldrslt {\cs37\ul\cf2 read}}}
+.value(0)=="OK")\{\par
+  415         this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADP" }{}}{\fldrslt {\cs37\ul\cf2 React0}}}
+();\par
+  416    \}\par
+  417    if({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADO" }{}}{\fldrslt {\cs37\ul\cf2 read}}}
+.value(0)=="Bad Message")\{\par
+  418         this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADQ" }{}}{\fldrslt {\cs37\ul\cf2 React1}}}
+();\par
+  419    \}\par
+  420    if({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADO" }{}}{\fldrslt {\cs37\ul\cf2 read}}}
+.value(0)=="n")\{\par
+  421         this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADR" }{}}{\fldrslt {\cs37\ul\cf2 React2}}}
+(this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADO" }{}}{\fldrslt {\cs37\ul\cf2 read}}}
+);\par
+  422    \}\par
+  423    if({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADO" }{}}{\fldrslt {\cs37\ul\cf2 read}}}
+.value(0)=="m")\{\par
+  424         this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADS" }{}}{\fldrslt {\cs37\ul\cf2 React3}}}
+(this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADO" }{}}{\fldrslt {\cs37\ul\cf2 read}}}
+);\par
+  425    \}\par
+  426    if({\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADO" }{}}{\fldrslt {\cs37\ul\cf2 read}}}
+.value(0)=="w")\{\par
+  427         this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADT" }{}}{\fldrslt {\cs37\ul\cf2 React4}}}
+(this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADO" }{}}{\fldrslt {\cs37\ul\cf2 read}}}
+);\par
+  428    \}\par
+  429 \}\par
+  430 \par
+  431 void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADP" }{}}{\fldrslt {\cs37\ul\cf2 Thread::React0}}}
+()\{\par
+  432     // doo nothig beacuase  you dont need to do nothing\par
+  433 \}\par
+  434 \par
+  435 void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADQ" }{}}{\fldrslt {\cs37\ul\cf2 Thread::React1}}}
+()\{\par
+  436     // probably give an allert because you fucked up already but maybe  impement it later\par
+  437 \}\par
+  438 \par
+  439 void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADR" }{}}{\fldrslt {\cs37\ul\cf2 Thread::React2}}}
+( QStringList read)\{\par
+  440     // n\par
+  441 \}\par
+  442 \par
+  443 void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADS" }{}}{\fldrslt {\cs37\ul\cf2 Thread::React3}}}
+( QStringList read)\{\par
+  444     //m\par
+  445 \}\par
+  446 \par
+  447 void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADT" }{}}{\fldrslt {\cs37\ul\cf2 Thread::React4}}}
+( QStringList read)\{\par
+  448     //w\par
+  449 \}\par
+  450 \par
+  452 void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAV" }{}}{\fldrslt {\cs37\ul\cf2 Thread::c_State}}}
+(int a)\{\par
+  453     this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACR" }{}}{\fldrslt {\cs37\ul\cf2 state}}}
+ = a ;\par
+  454 \}\par
+  455 \par
+  456 void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACD" }{}}{\fldrslt {\cs37\ul\cf2 Thread::set_Message}}}
+(QString x)\{\par
+  457     this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADM" }{}}{\fldrslt {\cs37\ul\cf2 message}}}
+ = x.toLocal8Bit().constData();\par
+  458 \}\par
+  459 \par
+  460 void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAS" }{}}{\fldrslt {\cs37\ul\cf2 Thread::set_serverIP}}}
+(QString z)\{\par
+  461     this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACV" }{}}{\fldrslt {\cs37\ul\cf2 qs}}}
+ = z;\par
+  462 \}\par
+  463 \par
+  464 void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACC" }{}}{\fldrslt {\cs37\ul\cf2 Thread::set_Room}}}
+(QString str)\{\par
+  465     this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADL" }{}}{\fldrslt {\cs37\ul\cf2 Room}}}
+ = str;\par
+  466 \}\par
+  467 \par
+  468 void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAU" }{}}{\fldrslt {\cs37\ul\cf2 Thread::set_Poster}}}
+(QString str)\{\par
+  469     this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADN" }{}}{\fldrslt {\cs37\ul\cf2 Poster}}}
+ = str;\par
+  470 \}\par
+  471 \par
+  472 void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADU" }{}}{\fldrslt {\cs37\ul\cf2 Thread::set_Sub}}}
+(QString str)\{\par
+  473     this->{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADV" }{}}{\fldrslt {\cs37\ul\cf2 Sub}}}
+ = str;\par
+  474 \}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+thread.h File Reference\par \pard\plain 
+{\tc\tcl2 \v thread.h}
+{\xe \v thread.h}
+{\bkmkstart AAAAAAAAAB}
+{\bkmkend AAAAAAAAAB}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <Windows.h>}\par
+{\f2 #include <WinSock2.h>}\par
+{\f2 #include <WS2tcpip.h>}\par
+{\f2 #include <stdlib.h>}\par
+{\f2 #include <stdio.h>}\par
+{\f2 #include <string>}\par
+{\f2 #include <cstring>}\par
+{\f2 #include <QDebug>}\par
+{\f2 #include <QtCore>}\par
+{\f2 #include <QString>}\par
+}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Include dependency graph for thread.h:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "thread_8h__incl.jpg" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid This graph shows which files directly or indirectly include this file:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "thread_8h__dep__incl.jpg" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Data Structures\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAJ" }{}}{\fldrslt {\cs37\ul\cf2 Thread}}}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Macros\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEI" }{}}{\fldrslt {\cs37\ul\cf2 WIN32_LEAN_AND_MEAN}}}
+\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADX" }{}}{\fldrslt {\cs37\ul\cf2 DEFAULT_BUFLEN}}}
+\~ 1024\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACW" }{}}{\fldrslt {\cs37\ul\cf2 DEFAULT_PORT}}}
+\~ "7789"\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Macro Definition Documentation\par
+\pard\plain 
+{\xe \v DEFAULT_BUFLEN\:thread.h}
+{\xe \v thread.h\:DEFAULT_BUFLEN}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define DEFAULT_BUFLEN\~ 1024}}
+\par
+{\bkmkstart AAAAAAAADX}
+{\bkmkend AAAAAAAADX}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEJ" }{}}{\fldrslt {\cs37\ul\cf2 15}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEK" }{}}{\fldrslt {\cs37\ul\cf2 thread.h}}}
+.}\par
+}
+{\xe \v DEFAULT_PORT\:thread.h}
+{\xe \v thread.h\:DEFAULT_PORT}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define DEFAULT_PORT\~ "7789"}}
+\par
+{\bkmkstart AAAAAAAACW}
+{\bkmkend AAAAAAAACW}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEL" }{}}{\fldrslt {\cs37\ul\cf2 16}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEK" }{}}{\fldrslt {\cs37\ul\cf2 thread.h}}}
+.}\par
+}
+{\xe \v WIN32_LEAN_AND_MEAN\:thread.h}
+{\xe \v thread.h\:WIN32_LEAN_AND_MEAN}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define WIN32_LEAN_AND_MEAN}}
+\par
+{\bkmkstart AAAAAAAAEI}
+{\bkmkend AAAAAAAAEI}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definition at line {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEM" }{}}{\fldrslt {\cs37\ul\cf2 4}}}
+ of file {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAEK" }{}}{\fldrslt {\cs37\ul\cf2 thread.h}}}
+.}\par
+}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+thread.h\par \pard\plain 
+{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     1     #ifndef THREAD_H\par
+    2     #define THREAD_H\par
+    3     #undef UNICODE\par
+    4     #define WIN32_LEAN_AND_MEAN\par
+    5     #include <Windows.h>\par
+    6     #include <WinSock2.h>\par
+    7     #include <WS2tcpip.h>\par
+    8     #include <stdlib.h>\par
+    9     #include <stdio.h>\par
+   10     #include <string>\par
+   11     #include <cstring>\par
+   12     #include<QDebug>\par
+   13     #pragma comment (lib, "Ws2_32.lib")\par
+   14     // #pragma comment (lib, "Mswsock.lib")\par
+   15     #define DEFAULT_BUFLEN 1024\par
+   16     #define DEFAULT_PORT "7789"\par
+   17     #include <QtCore>\par
+   18     #include <QString>\par
+   19 \par
+   20     class {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAJ" }{}}{\fldrslt {\cs37\ul\cf2 Thread}}}
+ : public QThread\{\par
+   21     Q_OBJECT\par
+   22     public:\par
+   23         void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAR" }{}}{\fldrslt {\cs37\ul\cf2 StartThread}}}
+( int x , int y);\par
+   24         void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAV" }{}}{\fldrslt {\cs37\ul\cf2 c_State}}}
+(int a);\par
+   25         void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACD" }{}}{\fldrslt {\cs37\ul\cf2 set_Message}}}
+(QString x);\par
+   26         void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAS" }{}}{\fldrslt {\cs37\ul\cf2 set_serverIP}}}
+(QString z);\par
+   27         void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACC" }{}}{\fldrslt {\cs37\ul\cf2 set_Room}}}
+(QString str);\par
+   28         void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAU" }{}}{\fldrslt {\cs37\ul\cf2 set_Poster}}}
+(QString str);\par
+   29         void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADU" }{}}{\fldrslt {\cs37\ul\cf2 set_Sub}}}
+(QString str);\par
+   30         void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACK" }{}}{\fldrslt {\cs37\ul\cf2 client}}}
+(int x);\par
+   31         void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACM" }{}}{\fldrslt {\cs37\ul\cf2 server}}}
+();\par
+   32         void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABM" }{}}{\fldrslt {\cs37\ul\cf2 cut}}}
+();\par
+   33         void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADA" }{}}{\fldrslt {\cs37\ul\cf2 terminate}}}
+();\par
+   34         void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAT" }{}}{\fldrslt {\cs37\ul\cf2 clientConnect}}}
+();\par
+   35         QString {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACJ" }{}}{\fldrslt {\cs37\ul\cf2 MessageN}}}
+;\par
+   36 \par
+   37         signals:\par
+   38             void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAN" }{}}{\fldrslt {\cs37\ul\cf2 resultReady}}}
+( QString str);\par
+   39             void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAP" }{}}{\fldrslt {\cs37\ul\cf2 commClient}}}
+(QString str);\par
+   40             void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAABI" }{}}{\fldrslt {\cs37\ul\cf2 commServer}}}
+ (QString str);\par
+   41 \par
+   42     private:\par
+   43         void  {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACN" }{}}{\fldrslt {\cs37\ul\cf2 run}}}
+()  ;\par
+   44         void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADW" }{}}{\fldrslt {\cs37\ul\cf2 sendy}}}
+(QString str,char* buffer);\par
+   45         void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACP" }{}}{\fldrslt {\cs37\ul\cf2 clientEx}}}
+();\par
+   46         void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACQ" }{}}{\fldrslt {\cs37\ul\cf2 serverEx}}}
+();\par
+   47         void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADB" }{}}{\fldrslt {\cs37\ul\cf2 State0}}}
+();\par
+   48         void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADC" }{}}{\fldrslt {\cs37\ul\cf2 State1}}}
+();\par
+   49         void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADD" }{}}{\fldrslt {\cs37\ul\cf2 State2}}}
+();\par
+   50         void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADE" }{}}{\fldrslt {\cs37\ul\cf2 State3}}}
+();\par
+   51         void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADF" }{}}{\fldrslt {\cs37\ul\cf2 State4}}}
+();\par
+   52         void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADP" }{}}{\fldrslt {\cs37\ul\cf2 React0}}}
+();\par
+   53         void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADQ" }{}}{\fldrslt {\cs37\ul\cf2 React1}}}
+();\par
+   54         void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADR" }{}}{\fldrslt {\cs37\ul\cf2 React2}}}
+(QStringList {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADO" }{}}{\fldrslt {\cs37\ul\cf2 read}}}
+);\par
+   55         void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADS" }{}}{\fldrslt {\cs37\ul\cf2 React3}}}
+(QStringList {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADO" }{}}{\fldrslt {\cs37\ul\cf2 read}}}
+);\par
+   56         void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADT" }{}}{\fldrslt {\cs37\ul\cf2 React4}}}
+(QStringList {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADO" }{}}{\fldrslt {\cs37\ul\cf2 read}}}
+);\par
+   57         void {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADK" }{}}{\fldrslt {\cs37\ul\cf2 Aliz}}}
+(char charArray[]);\par
+   58 \par
+   59 \par
+   60     private:\par
+   61         WSADATA {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACT" }{}}{\fldrslt {\cs37\ul\cf2 wsaData}}}
+;\par
+   62          QStringList {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADO" }{}}{\fldrslt {\cs37\ul\cf2 read}}}
+;\par
+   63         int {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACS" }{}}{\fldrslt {\cs37\ul\cf2 iResult}}}
+;\par
+   64         int {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACR" }{}}{\fldrslt {\cs37\ul\cf2 state}}}
+ = 0; // state = 0  DO NOTHING\par
+   65         int {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACL" }{}}{\fldrslt {\cs37\ul\cf2 tp}}}
+=0; //  type of thread client or server\par
+   66         SOCKET {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADG" }{}}{\fldrslt {\cs37\ul\cf2 ListenSocket}}}
+ = INVALID_SOCKET;\par
+   67         SOCKET {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACZ" }{}}{\fldrslt {\cs37\ul\cf2 ClientSocket}}}
+ = INVALID_SOCKET;\par
+   68         struct addrinfo *{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACX" }{}}{\fldrslt {\cs37\ul\cf2 result}}}
+ = NULL,*{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACY" }{}}{\fldrslt {\cs37\ul\cf2 ptr}}}
+ = NULL;\par
+   69         struct addrinfo {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACU" }{}}{\fldrslt {\cs37\ul\cf2 hints}}}
+;\par
+   70         int {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADJ" }{}}{\fldrslt {\cs37\ul\cf2 iSendResult}}}
+;\par
+   71         char {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADH" }{}}{\fldrslt {\cs37\ul\cf2 recvbuf}}}
+[{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADX" }{}}{\fldrslt {\cs37\ul\cf2 DEFAULT_BUFLEN}}}
+];\par
+   72         int {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADI" }{}}{\fldrslt {\cs37\ul\cf2 recvbuflen}}}
+ = {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADX" }{}}{\fldrslt {\cs37\ul\cf2 DEFAULT_BUFLEN}}}
+;\par
+   73         std::string {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADM" }{}}{\fldrslt {\cs37\ul\cf2 message}}}
+;\par
+   74         QString {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACV" }{}}{\fldrslt {\cs37\ul\cf2 qs}}}
+;\par
+   75         bool {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAACO" }{}}{\fldrslt {\cs37\ul\cf2 runl}}}
+ = TRUE;\par
+   76         QString {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADL" }{}}{\fldrslt {\cs37\ul\cf2 Room}}}
+;\par
+   77         QString {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADN" }{}}{\fldrslt {\cs37\ul\cf2 Poster}}}
+;\par
+   78         QString {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAADV" }{}}{\fldrslt {\cs37\ul\cf2 Sub}}}
+;\par
+   79 \par
+   80 \par
+   81     \};\par
+   82 \par
+   83     #endif // THREAD_H\par
+}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Index\par 
+\pard\plain 
+{\tc \v Index}
+{\field\fldedit {\*\fldinst INDEX \\c2 \\*MERGEFORMAT}{\fldrslt INDEX}}
+}

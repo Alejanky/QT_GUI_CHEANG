@@ -40,11 +40,42 @@
 ///
 
     void MainWindow::on_pB_Log_clicked(){
+        ///client server
+        if(this->serverClient!=nullptr){
+            /// o marco una senal para marcar error
+            /// o borro  la implementacion anterior
+            /// y desconecto cliente y servidor
+            ///  :C fuuuck
+        }else{
+            Thread* Cservice;
+            Cservice = new Thread();
+            this->serverClient = Cservice;
+        }
+
+        QObject::connect(serverClient,&Thread::resultReady,this,&MainWindow::updateLabel2);
+        QObject::connect(serverClient,&Thread::commClient,this,&MainWindow::client_EM);
+
+        QString a = "poi.coffee";
+
+        serverClient->StartThread(0,0);
+        serverClient->set_serverIP(a);
+        serverClient->clientConnect();
+        serverClient->start();
+
+        a = this->ui->le_User->text();
+
+        this->serverClient->set_Poster(a);
+        this->serverClient->c_State(4);
+
+
+        /////  guiiii
         Roomf_Form *al;
         al = new Roomf_Form();
         connect(al,&Roomf_Form::new_room,this,&MainWindow::new_room);
         ui->tabWidget->setTabsClosable(true);
         ui->tabWidget->addTab(al,"cuarto1");
+        al->server1 = this->server1;
+        al->serverClient = this->serverClient;
        // ui->tabWidget->setCurrentIndex(2);
        // ui->tabWidget->removeTab(0);
         //ui->tabWidget->removeTab(0);
@@ -106,30 +137,16 @@
     }
 
     void MainWindow::on_pB_CCS_clicked(){
-        if(this->serverClient!=nullptr){
-            /// o marco una senal para marcar error
-            /// o borro  la implementacion anterior
-            /// y desconecto cliente y servidor
-            ///  :C fuuuck
-        }else{
-            Thread* Cservice;
-            Cservice = new Thread();
-            this->serverClient = Cservice;
-        }
+
         //Connect signal and
     }
 
     void MainWindow::on_pB_ACS_clicked(){
-        QObject::connect(serverClient,&Thread::resultReady,this,&MainWindow::updateLabel2);
-        QObject::connect(serverClient,&Thread::commClient,this,&MainWindow::client_EM);
+
     }
 
     void MainWindow::on_pB_ConnCS_clicked(){
-        QString a = ui->le_Server->text();
-        serverClient->StartThread(0,0);
-        serverClient->set_serverIP(a);
-        serverClient->clientConnect();
-        serverClient->start();
+
     }
 
     void MainWindow::on_pB_SmCS_clicked(){

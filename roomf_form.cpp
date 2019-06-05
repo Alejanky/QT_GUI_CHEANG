@@ -17,3 +17,22 @@ void Roomf_Form::on_pB_NCuarto_clicked()
 {
     emit new_room();
 }
+
+void Roomf_Form::on_pB_Mensaje_clicked()
+{
+    if(this->ui->lE_Cuarto->text()==""){
+        QString x = "Todavia no te has Suscrito a un room";
+            this->ui->lE_Mensaje->setText(x);
+    }else{
+        QString a =this->ui->lE_Mensaje->text();
+        this->serverClient->set_Room(this->ui->lE_Cuarto->text());
+        this->serverClient->set_Message(a);
+        this->serverClient->c_State(1);
+    }
+}
+
+void Roomf_Form::on_pB_TCuarto_clicked()
+{
+    this->serverClient->set_Room(this->ui->lE_Cuarto->text());
+    this->serverClient->c_State(2);
+}

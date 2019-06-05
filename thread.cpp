@@ -48,8 +48,8 @@ void Thread::clientConnect(){
     QString a;
     ZeroMemory( &hints, sizeof(hints) );
     hints.ai_family = AF_INET;
-    hints.ai_socktype = SOCK_DGRAM;
-    hints.ai_protocol = IPPROTO_UDP;
+    hints.ai_socktype = SOCK_STREAM;
+    hints.ai_protocol = IPPROTO_TCP;
     // Resolve the server address and port
     // socket to get ip adress
     std::string current_locale_text = qs.toLocal8Bit().constData();
@@ -108,8 +108,11 @@ void Thread::clientEx(){
         case 2: //case 2 = Subribe to a room
             this->State2();
         break;
-        case 3: //case 2 = Query older messages
+        case 3: //case 3 = Query older messages
             this->State3();
+        break;
+        case 4: //case 4 = Query older messages
+            this->State4();
         break;
     }
 }
@@ -286,8 +289,6 @@ void Thread::State0(){
             tv->tv_sec = 0;
             tv->tv_usec = 250000;
     if(::select(0,&ReadFDs ,NULL, NULL,tv) != 0){
-        a = " entre a recv";
-        emit commClient(a);
         iResult = recv(ClientSocket, recvbuf, recvbuflen, 0);
         if ( iResult > 0 ){
             a="Bytes received cliente:\n";
@@ -313,28 +314,19 @@ void Thread::State0(){
 void Thread::State1(){
     // state to send message
     QString a;
-     a = "POSTING";
-     emit commClient(a);
-    /*
-    std::string xs ;
-    std::string current_locale_text = message;
-    const char *cstr = current_locale_text.c_str();
-    int i = (int)current_locale_text.length();
-    if(!std::strcmp(cstr,"")){
-            xs = "hola";
-            cstr = xs.c_str();
-            i=5;
-            iResult = send( ClientSocket, cstr,i-1, 0 );
-            a="Bytes Sent:\n";
-            a = a+ cstr;
-            emit commClient(a);
-    }
-    else{
-        iResult = send( ClientSocket, cstr,i-1, 0 );
+     a = "p|";
+     a =  a + this->Room;
+    std::string xs  = a.toLocal8Bit().constData();
+    xs = xs + "|";
+    xs = xs + this->message;
+    xs = xs + "|";
+    xs = xs + this->Poster.toLocal8Bit().constData();
+    const char *cstr = xs.c_str();
+    int i = (int)xs.length();
+        iResult = send( ClientSocket, cstr,i, 0 );
         a="Bytes Sent:\n";
         a = a+ cstr;
         emit commClient(a);
-    }
     if (iResult == SOCKET_ERROR) {
         a="send failed with error: ";
         char aChar = '0' + WSAGetLastError();
@@ -343,23 +335,79 @@ void Thread::State1(){
         closesocket(ClientSocket);
         WSACleanup();
     }
-*/
      this->state = 0;
 }
 
 void Thread::State2(){
     QString a;
-        a= "SUBSCRIBING";
-    emit commClient(a);
+     a = "s|";
+     a =  a + this->Room;
+    std::string xs  = a.toLocal8Bit().constData();
+    const char *cstr = xs.c_str();
+    int i = (int)xs.length();
+        iResult = send( ClientSocket, cstr,i, 0 );
+        a="Bytes Sent:\n";
+        a = a+ cstr;
+        emit commClient(a);
+    if (iResult == SOCKET_ERROR) {
+        a="send failed with error: ";
+        char aChar = '0' + WSAGetLastError();
+        a = a + aChar;
+        emit commClient(a);
+        closesocket(ClientSocket);
+        WSACleanup();
+    }
      this->state = 0;
 }
 
 void Thread::State3(){
     QString a;
-        a= "MESSAGES";
-        emit commClient(a);
+     a = "m|";
+     a =  a + this->Room;
+    std::string xs  = a.toLocal8Bit().constData();
+    xs = xs + "|";
+    xs = xs + this->message;   ///pos
+    xs = xs + "|";
+     xs = xs + this->message;   ///nmemb
 
-    this->state =0;
+    const char *cstr = xs.c_str();
+    int i = (int)xs.length();
+        iResult = send( ClientSocket, cstr,i, 0 );
+        a="Bytes Sent:\n";
+        a = a+ cstr;
+        emit commClient(a);
+    if (iResult == SOCKET_ERROR) {
+        a="send failed with error: ";
+        char aChar = '0' + WSAGetLastError();
+        a = a + aChar;
+        emit commClient(a);
+        closesocket(ClientSocket);
+        WSACleanup();
+    }
+     this->state = 0;
+}
+
+void Thread::State4(){
+    QString a;
+     a = "n|";
+     a =  a + this->Poster;
+    std::string xs  = a.toLocal8Bit().constData();
+    const char *cstr = xs.c_str();
+    int i = (int)xs.length();
+        iResult = send( ClientSocket, cstr,i, 0 );
+        a="Bytes Sent:\n";
+        a = a+ cstr;
+        emit commClient(a);
+    if (iResult == SOCKET_ERROR) {
+        a="send failed with error: ";
+        char aChar = '0' + WSAGetLastError();
+        a = a + aChar;
+        emit commClient(a);
+        closesocket(ClientSocket);
+        WSACleanup();
+    }
+     this->state = 0;
+
 }
 
 ///////// Set and setting Variables /////////////////
@@ -375,3 +423,14 @@ void Thread::set_serverIP(QString z){
     this->qs = z;
 }
 
+void Thread::set_Room(QString str){
+    this->Room = str;
+}
+
+void Thread::set_Poster(QString str){
+    this->Poster = str;
+}
+
+void Thread::set_Sub(QString str){
+    this->Sub = str;
+}

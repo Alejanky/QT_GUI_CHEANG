@@ -10,7 +10,6 @@
     #include <string>
     #include <cstring>
     #include<QDebug>
-    // Need to link with Ws2_32.lib
     #pragma comment (lib, "Ws2_32.lib")
     // #pragma comment (lib, "Mswsock.lib")
     #define DEFAULT_BUFLEN 1024
@@ -25,6 +24,9 @@
         void c_State(int a);
         void set_Message(QString x);
         void set_serverIP(QString z);
+        void set_Room(QString str);
+        void set_Poster(QString str);
+        void set_Sub(QString str);
         void client(int x);
         void server();
         void cut();
@@ -45,8 +47,7 @@
         void State1();
         void State2();
         void State3();
-
-
+        void State4();
 
 
     private:
@@ -64,6 +65,10 @@
         std::string message;
         QString qs;
         bool runl = TRUE;
+        QString Room;
+        QString Poster;
+        QString Sub;
+
     };
 
     #endif // THREAD_H

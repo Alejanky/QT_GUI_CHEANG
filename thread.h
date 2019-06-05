@@ -32,6 +32,7 @@
         void cut();
         void terminate();
         void clientConnect();
+        QString MessageN;
 
         signals:
             void resultReady( QString str);
@@ -48,7 +49,12 @@
         void State2();
         void State3();
         void State4();
-
+        void React0();
+        void React1();
+        void React2();
+        void React3();
+        void React4();
+        void Aliz(char charArray[]);
 
     private:
         WSADATA wsaData;
@@ -68,6 +74,7 @@
         QString Room;
         QString Poster;
         QString Sub;
+
 
     };
 

@@ -277,7 +277,6 @@ void Thread::terminate(){
     this->runl = false;
 }
 
-
 void Thread::State0(){
      // Receive until the peer closes the connection
     /// aqui tengo que utilzar el select y si no sale el timout entonces  buelbo ha preguntar
@@ -294,6 +293,7 @@ void Thread::State0(){
             a="Bytes received cliente:\n";
             a+= recvbuf;
             emit commClient(a);
+            this->Aliz(recvbuf);
         }
         else if ( iResult == 0 ){
             a="Connection closed\n";
@@ -319,8 +319,6 @@ void Thread::State1(){
     std::string xs  = a.toLocal8Bit().constData();
     xs = xs + "|";
     xs = xs + this->message;
-    xs = xs + "|";
-    xs = xs + this->Poster.toLocal8Bit().constData();
     const char *cstr = xs.c_str();
     int i = (int)xs.length();
         iResult = send( ClientSocket, cstr,i, 0 );
@@ -366,10 +364,9 @@ void Thread::State3(){
      a =  a + this->Room;
     std::string xs  = a.toLocal8Bit().constData();
     xs = xs + "|";
-    xs = xs + this->message;   ///pos
+    xs = xs + MessageN.toLocal8Bit().constData();   ///pos
     xs = xs + "|";
-     xs = xs + this->message;   ///nmemb
-
+     xs = xs + "10";   ///nmemb
     const char *cstr = xs.c_str();
     int i = (int)xs.length();
         iResult = send( ClientSocket, cstr,i, 0 );
@@ -410,6 +407,31 @@ void Thread::State4(){
 
 }
 
+void Thread::Aliz(char charArray[]){
+    std::string a = charArray;
+   auto x  = std::remove(std::begin(a), std::end(a), 0);
+    int n = a.size();
+    n ++;
+
+    //strcpy(char_array, a.c_str());
+    //n++;
+}
+
+void Thread::React0(){
+
+}
+void Thread::React1(){
+
+}
+void Thread::React2(){
+
+}
+void Thread::React3(){
+
+}
+void Thread::React4(){
+
+}
 ///////// Set and setting Variables /////////////////
 void Thread::c_State(int a){
     this->state = a ;

@@ -33,6 +33,25 @@ void Roomf_Form::on_pB_Mensaje_clicked()
 
 void Roomf_Form::on_pB_TCuarto_clicked()
 {
-    this->serverClient->set_Room(this->ui->lE_Cuarto->text());
-    this->serverClient->c_State(2);
+    if(this->ui->lE_Cuarto->text()=="" || this->ui->lE_Cuarto->text() == " "){
+        QString x = "El Cuerto no puede estar vacio o con empezando con espacio";
+            this->ui->lE_Mensaje->setText(x);
+    }else{
+        this->Room=  this->ui->lE_Cuarto->text();
+        this->serverClient->set_Room(this->ui->lE_Cuarto->text());
+        this->serverClient->c_State(2);
+    }
+}
+
+void Roomf_Form::on_pB_CM_clicked()
+{
+    //pB_CM
+    if(this->Room== ""){
+    }else{
+        nMessages = 10;
+        this->serverClient->set_Room(this->ui->lE_Cuarto->text());
+        this->nMess =  QString::number(nMessages); ;
+        this->serverClient->MessageN = this->nMess;
+        this->serverClient->c_State(3);
+    }
 }

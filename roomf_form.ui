@@ -140,6 +140,19 @@
     <string>Entrar</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="pB_CM">
+   <property name="geometry">
+    <rect>
+     <x>679</x>
+     <y>504</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cargar Mensajes</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

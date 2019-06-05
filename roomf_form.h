@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include <thread.h>
+#include <QString>
 
 namespace Ui {
 class Roomf_Form;
@@ -17,6 +18,9 @@ public:
     ~Roomf_Form();
     Thread* server1 = nullptr;//Local Server
     Thread* serverClient= nullptr;// Server for Client listening
+    QString Room;
+    int nMessages;
+    QString nMess;
      signals:
     void new_room();
 
@@ -28,6 +32,8 @@ private slots:
     void on_pB_Mensaje_clicked();
 
     void on_pB_TCuarto_clicked();
+
+    void on_pB_CM_clicked();
 
 private:
     Ui::Roomf_Form *ui;
